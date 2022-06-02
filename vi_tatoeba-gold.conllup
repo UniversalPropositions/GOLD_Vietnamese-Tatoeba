@@ -18,7 +18,7 @@
 5	sẽ	sẽ	ADV	ADV	_	8	advmod	_	_
 6	không	không	ADV	ADV	_	7	advmod:neg	_	_
 7	bao giờ	bao giờ	PRON	PRO	_	8	obl:tmod	_	_
-8	quay	quay	VERB	V	_	2	ccomp	comeback.01	A1:4|AM-TMP:5|AM-TMP:7|AM-DIR:9|A4:10
+8	quay	quay	VERB	V	_	2	ccomp	comeback.01	A1:4|AM-TMP:5|AM-TMP:7|AM-DIR:9|A4:10|AM-NEG:6
 9	trở lại	trở lại	VERB	V	_	8	compound:svc	_	_
 10	Boston	boston	NOUN	NNP	_	9	obl	_	_
 11	.	.	PUNCT	PUNCT	_	2	punct	_	_
@@ -28,7 +28,7 @@
 2	đồng ý	đồng ý	VERB	V	_	0	root	agree.01	A0:1|A2:4|A1:8
 3	với	với	ADP	PRE	_	4	case	_	_
 4	ý kiến	ý kiến	NOUN	N	_	2	obl:with	_	_
-5	rằng	rằng	SCONJ	C	_	8	obj	_	_
+5	rằng	rằng	SCONJ	C	_	8	mark	_	_
 6	bất động sản	bất động sản	NOUN	N	_	8	nsubj	_	_
 7	bị	bị	VERB	V	_	8	aux:pass	_	_
 8	định giá	định giá	VERB	V	_	4	acl	appraise.01	A1:6|AMR-MNR:10
@@ -63,27 +63,27 @@
 # text = Tôi muốn biết thêm về cuộc sống học đường của bạn .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	muốn	muốn	VERB	V	_	3	aux	_	_
-3	biết	biết	VERB	V	_	0	root	_	_
+3	biết	biết	VERB	V	_	0	root	know.01	A0:1|A1:6
 4	thêm	thêm	VERB	V	_	3	compound:svc	_	_
 5	về	về	ADP	PRE	_	6	case	_	_
 6	cuộc sống	cuộc sống	NOUN	N	_	4	obl	_	_
 7	học đường	học đường	NOUN	N	_	6	compound	_	_
 8	của	của	ADP	PRE	_	9	case	_	_
 9	bạn	bạn	NOUN	N	_	6	nmod:poss	_	_
-10	.	.	PUNCT	PUNCT	_	3	punct	know.01	A0:1|A1:6
+10	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Bạn có thể nhắc lại lời bạn vừa nói được không ?
 1	Bạn	bạn	NOUN	N	_	3	nsubj	_	_
 2	có thể	có thể	ADV	ADV	_	3	advmod	_	_
-3	nhắc	nhắc	VERB	V	_	0	root	_	_
+3	nhắc	nhắc	VERB	V	_	0	root	repeat.01	A0:1|A1:5|AM-ADV:7
 4	lại	lại	ADV	ADV	_	3	compound:prt	_	_
 5	lời	lời	NOUN	N	_	3	obj	_	_
 6	bạn	bạn	NOUN	N	_	5	nmod	_	_
 7	vừa	vừa	ADV	ADV	_	8	advmod	_	_
-8	nói	nói	VERB	V	_	5	acl:subj	say.01	A10:6
+8	nói	nói	VERB	V	_	5	acl:subj	say.01	A0:6
 9	được	được	ADV	ADV	_	8	advmod	_	_
 10	không	không	ADV	ADV	_	3	advmod	_	_
-11	?	?	PUNCT	PUNCT	_	3	punct	repeat.01	A0:1|A1:5|AM-ADV:7
+11	?	?	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Tôi đã nghĩ là bạn muốn tôi đưa cái đó cho bạn .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
@@ -117,7 +117,7 @@
 1	Bạn	bạn	NOUN	N	_	4	nsubj:pass	_	_
 2	không	không	ADV	ADV	_	4	advmod:neg	_	_
 3	được	được	VERB	V	_	4	aux:pass	_	_
-4	xâm phạm	xâm phạm	VERB	V	_	0	root	invade.01	A0:1|A1:5
+4	xâm phạm	xâm phạm	VERB	V	_	0	root	invade.01	A0:1|A1:5|AM-NEG:2
 5	sự	sự	NOUN	N	_	4	obj	_	_
 6	riêng tư	riêng tư	ADJ	ADJ	_	5	compound:amod	_	_
 7	của	của	ADP	PRE	_	8	case	_	_
@@ -128,14 +128,14 @@
 # text = Tôi không bắt được đủ số cá như mong đợi .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	bắt	bắt	VERB	V	_	0	root	_	_
+3	bắt	bắt	VERB	V	_	0	root	catch.01	A0:1|AM-EXT:5|A1:6|AM-NEG:2
 4	được	được	ADV	ADV	_	3	advmod	_	_
 5	đủ	đủ	ADJ	ADJ	_	3	acomp	_	_
 6	số	số	NOUN	N	_	5	obl:adj	_	_
 7	cá	cá	NOUN	N	_	6	nmod	_	_
 8	như	như	SCONJ	C	_	9	case	_	_
 9	mong đợi	mong đợi	VERB	V	_	5	obl	expect.01	_
-10	.	.	PUNCT	PUNCT	_	3	punct	catch.01	A0:1|AM-EXT:5|A1:6
+10	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Tất nhiên , bạn có thể làm bất cứ thứ gì mà bạn muốn .
 1	Tất nhiên	tất nhiên	ADJ	ADJ	_	5	advcl	_	_
@@ -154,13 +154,13 @@
 # text = Tôi đã bảo anh đừng có gọi tôi mà Tom .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	đã	đã	ADV	ADV	_	3	advmod	_	_
-3	bảo	bảo	VERB	V	_	0	root	tell.01	A0:1|AM-TMP:2|A1:6
+3	bảo	bảo	VERB	V	_	0	root	tell.01	A0:1|AM-TMP:2|A1:7
 4	anh	anh	NOUN	N	_	7	nsubj	_	_
 5	đừng	đừng	ADV	ADV	_	7	advmod	_	_
 6	có	có	VERB	V	_	7	mark	_	_
-7	gọi	gọi	VERB	V	_	6	xcomp	call.02	A1:8
+7	gọi	gọi	VERB	V	_	6	xcomp	call.02	A0:4|A1:8
 8	tôi	tôi	PRON	PRO	_	7	obj	_	_
-9	mà	mà	SCONJ	C	_	7	punct	_	_
+9	mà	mà	SCONJ	C	_	7	mark	_	_
 10	Tom	tom	NOUN	NNP	_	7	vocative	_	_
 11	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
@@ -170,9 +170,9 @@
 3	là	là	SCONJ	C	_	8	mark	_	_
 4	cậu	cậu	NOUN	N	_	8	nsubj	_	_
 5	ấy	ấy	PRON	PRO	_	8	nsubj	_	_
-6	không	không	ADV	ADV	_	8	advmod	_	_
+6	không	không	ADV	ADV	_	8	advmod:neg	_	_
 7	hề	hề	PART	PART:G	_	8	discourse	_	_
-8	biết	biết	VERB	V	_	2	ccomp	know.01	A0:4|A1:9|A2:11
+8	biết	biết	VERB	V	_	2	ccomp	know.01	A0:4|A1:9|A2:11|AM-NEG:6
 9	gì	gì	PRON	PRO	_	8	obj	_	_
 10	về	về	ADP	PRE	_	12	case	_	_
 11	vụ	vụ	NOUN	Nc	_	8	obl:about	_	_
@@ -186,7 +186,7 @@
 4	tôi	tôi	PRON	PRO	_	7	nsubj	_	_
 5	không	không	ADV	ADV	_	6	advmod:neg	_	_
 6	muốn	muốn	VERB	V	_	7	aux	_	_
-7	đi	đi	VERB	V	_	0	root	go.01	A1:4|AM-MNR:9
+7	đi	đi	VERB	V	_	0	root	go.01	A0:4|AM-MNR:9|AM-NEG:5
 8	bằng	bằng	ADP	PRE	_	9	case	_	_
 9	máy bay	máy bay	NOUN	N	_	7	obl	_	_
 10	.	.	PUNCT	PUNCT	_	7	punct	_	_
@@ -223,7 +223,7 @@
 4	nghĩ	nghĩ	VERB	V	_	0	root	think.01	A0:2|A1:7
 5	cậu	cậu	NOUN	N	_	7	nsubj	_	_
 6	bị	bị	VERB	V	_	7	aux:pass	_	_
-7	điên	điên	VERB	V	_	4	ccomp	_	_
+7	điên	điên	ADJ	ADJ	_	4	ccomp	_	_
 8	nếu như	nếu như	SCONJ	C	_	10	mark	_	_
 9	cậu	cậu	NOUN	N	_	10	nsubj	_	_
 10	làm	làm	VERB	V	_	4	advcl	do.02	A0:9|A1:11
@@ -234,7 +234,7 @@
 # text = Thiền định không tốn kém gì cả , nhưng phải mất thời gian .
 1	Thiền định	thiền định	VERB	V	_	3	csubj:vsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	tốn kém	tốn kém	VERB	V	_	0	root	cost.01	A0:1
+3	tốn kém	tốn kém	VERB	V	_	0	root	cost.01	A0:1|AM-NEG:2
 4	gì	gì	PRON	PRO	_	3	obj	_	_
 5	cả	cả	PART	PART:G	_	3	discourse	_	_
 6	,	,	PUNCT	PUNCT	_	9	punct	_	_
@@ -263,13 +263,13 @@
 1	Sao	sao	PRON	PRO	_	4	obl	_	_
 2	bạn	bạn	NOUN	N	_	4	nsubj	_	_
 3	lại	lại	ADV	ADV	_	4	advmod	_	_
-4	biết	biết	VERB	V	_	0	root	know.01	A0:2|AM-TMP:3|A1:10
+4	biết	biết	VERB	V	_	0	root	know.01	A0:2|A1:10
 5	là	là	SCONJ	C	_	10	mark	_	_
 6	Tom	tom	NOUN	NNP	_	10	nsubj	_	_
 7	không	không	ADV	ADV	_	8	advmod:neg	_	_
 8	cần	cần	VERB	V	_	10	aux	_	_
 9	phải	phải	VERB	V	_	10	mark	_	_
-10	làm	làm	VERB	V	_	4	ccomp	do.02	A0:6|A1:11
+10	làm	làm	VERB	V	_	4	ccomp	do.02	A0:6|A1:11|AM-NEG:7
 11	điều	điều	NOUN	N	_	10	obj	_	_
 12	đó	đó	PRON	PRO	_	11	det:pmod	_	_
 13	?	?	PUNCT	PUNCT	_	4	punct	_	_
@@ -280,7 +280,7 @@
 3	bọn	bọn	NOUN	Nc	_	4	det:clf	_	_
 4	mình	mình	PRON	PRO	_	6	nsubj	_	_
 5	có thể	có thể	ADV	ADV	_	6	aux	_	_
-6	làm	làm	VERB	V	_	2	ccomp	do.02	A0:4|AM-MNR:7|A1:10
+6	làm	làm	VERB	V	_	2	ccomp	do.02	A0:4|AM-MNR:7
 7	tốt	tốt	ADJ	ADJ	_	6	acomp	_	_
 8	hơn	hơn	ADJ	ADJ	_	7	advmod:adj	_	_
 9	rất	rất	ADV	ADV	_	10	advmod	_	_
@@ -312,7 +312,7 @@
 7	Tôi	tôi	PRON	PRO	_	10	nsubj	_	_
 8	sẽ	sẽ	ADV	ADV	_	10	advmod	_	_
 9	không	không	ADV	ADV	_	10	advmod:neg	_	_
-10	nói	nói	VERB	V	_	2	parataxis	say.01	A0:7|A1:11
+10	nói	nói	VERB	V	_	2	parataxis	say.01	A0:7|A1:11|AM-NEG:9
 11	gì	gì	PRON	PRO	_	10	obj	_	_
 12	đâu	đâu	PART	PART:G	_	10	discourse	_	_
 13	.	.	PUNCT	PUNCT	_	2	punct	_	_
@@ -328,7 +328,7 @@
 8	sinh nhật	sinh nhật	NOUN	N	_	7	obj	_	_
 9	cho	cho	ADP	PRE	_	10	case	_	_
 10	cậu	cậu	NOUN	N	_	7	obl:iobj	_	_
-11	nhớ	nhớ	VERB	V	_	10	acl:subj	remember.01	A10:10
+11	nhớ	nhớ	VERB	V	_	10	acl:subj	remember.01	A0:10
 12	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Bà tôi dần dần trở nên hay quên và yếu hơn .
@@ -346,10 +346,10 @@
 # text = Hầu như không có người Ấn Độ sống ở Nhật .
 1	Hầu như	hầu như	ADV	ADV	_	3	advmod	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	có	có	VERB	V	_	0	root	have.03	AM-TMP:1|A1:6
+3	có	có	VERB	V	_	0	root	have.03	AM-TMP:1|A1:6|AM-NEG:2
 4	người	người	NOUN	Nc	_	5	amod	_	_
 5	Ấn Độ	ấn độ	NOUN	NNP	_	6	obj	_	_
-6	sống	sống	VERB	V	_	5	acl:subj	live.01	A0:4|AM-LOC:8
+6	sống	sống	VERB	V	_	5	acl:subj	live.01	A0:5|AM-LOC:8
 7	ở	ở	ADP	PRE	_	8	case	_	_
 8	Nhật	nhật	NOUN	NNP	_	6	obl:comp	_	_
 9	.	.	PUNCT	PUNCT	_	3	punct	_	_
@@ -377,11 +377,11 @@
 7	điều	điều	NOUN	N	_	10	nsubj	_	_
 8	tương tự	tương tự	ADJ	ADJ	_	7	amod	_	_
 9	sẽ	sẽ	ADV	ADV	_	10	advmod	_	_
-10	xảy	xảy	VERB	V	_	0	root	_	_
+10	xảy	xảy	VERB	V	_	0	root	happen.01	A1:7|AM-TMP:9|A2:13
 11	đến	đến	VERB	V	_	10	xcomp	_	_
 12	với	với	ADP	PRE	_	13	case	_	_
 13	chúng ta	chúng ta	PRON	PRO	_	10	obl:with	_	_
-14	.	.	PUNCT	PUNCT	_	10	punct	happen.01	A1:7|AM-TMP:9|A2:11|A2:13
+14	.	.	PUNCT	PUNCT	_	10	punct	_	_
 
 # text = Cậu hát cho bọn tớ nghe một bài được không ?
 1	Cậu	cậu	NOUN	N	_	2	nsubj	_	_
@@ -389,7 +389,7 @@
 3	cho	cho	ADP	PRE	_	5	case	_	_
 4	bọn	bọn	NOUN	Nc	_	5	det:clf	_	_
 5	tớ	tớ	NOUN	N	_	2	obl:iobj	_	_
-6	nghe	nghe	VERB	V	_	2	xcomp	hear.01	A0:4|A1:8
+6	nghe	nghe	VERB	V	_	2	xcomp	hear.01	A0:5|A1:8
 7	một	một	NUM	NUM	_	8	det	_	_
 8	bài	bài	NOUN	N	_	2	obj	_	_
 9	được	được	ADV	ADV	_	8	advmod	_	_
@@ -435,13 +435,13 @@
 # text = Tôi không có ký ức nào về chuyện đã xảy ra .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	có	có	VERB	V	_	0	root	have.03	A0:1|A1:4
+3	có	có	VERB	V	_	0	root	have.03	A0:1|A1:4|AM-NEG:2
 4	ký ức	ký ức	NOUN	N	_	3	obj	_	_
 5	nào	nào	PRON	PRO	_	4	det:pmod	_	_
 6	về	về	VERB	V	_	7	case	come.01	A1:7
 7	chuyện	chuyện	NOUN	N	_	9	nmod	_	_
 8	đã	đã	ADV	ADV	_	9	advmod	_	_
-9	xảy	xảy	VERB	V	_	7	acl:subj	happen.01	AM-TMP:8|AM-TMP:10
+9	xảy	xảy	VERB	V	_	7	acl:subj	happen.01	A0:7|AM-TMP:8
 10	ra	ra	ADV	ADV	_	9	advmod	_	_
 11	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
@@ -449,7 +449,7 @@
 1	Anh	anh	NOUN	N	_	4	nsubj	_	_
 2	ấy	ấy	PRON	PRO	_	1	det:pmod	_	_
 3	đã	đã	ADV	ADV	_	4	advmod	_	_
-4	từ chối	từ chối	VERB	V	_	0	root	refuse.01	A0:1|AM-TMP:3
+4	từ chối	từ chối	VERB	V	_	0	root	refuse.01	A0:1|AM-TMP:3|A1:5
 5	nói	nói	VERB	V	_	4	xcomp	say.01	A1:8
 6	thêm	thêm	VERB	V	_	5	compound:svc	_	_
 7	về	về	ADP	PRE	_	8	case	_	_
@@ -546,7 +546,7 @@
 4	anh	anh	NOUN	N	_	7	nsubj	_	_
 5	ấy	ấy	PRON	PRO	_	4	det:pmod	_	_
 6	không	không	ADV	ADV	_	7	advmod	_	_
-7	nghĩ	nghĩ	VERB	V	_	2	ccomp	think.01	A1:9|A0:11
+7	nghĩ	nghĩ	VERB	V	_	2	ccomp	think.01	A1:9|A0:11|AM-NEG:6
 8	nó	nó	PRON	PRO	_	9	cop	_	_
 9	an toàn	an toàn	ADJ	ADJ	_	7	ccomp	_	_
 10	để	để	ADP	PRE	_	11	case	_	_
@@ -571,12 +571,12 @@
 
 # text = Hãy nói cho tôi biết bạn cần tôi làm gì .
 1	Hãy	hãy	ADV	ADV	_	2	advmod	_	_
-2	nói	nói	VERB	V	_	0	root	say.01	A2:4
+2	nói	nói	VERB	V	_	0	root	say.01	A2:4|A1:5
 3	cho	cho	ADP	PRE	_	4	case	_	_
 4	tôi	tôi	PRON	PRO	_	2	obl:iobj	_	_
 5	biết	biết	VERB	V	_	4	acl:subj	know.01	A1:7
 6	bạn	bạn	NOUN	N	_	7	nsubj	_	_
-7	cần	cần	VERB	V	_	5	ccomp	need.01	A0:6|A1:8
+7	cần	cần	VERB	V	_	5	ccomp	need.01	A0:6|A1:9
 8	tôi	tôi	PRON	PRO	_	7	obj	_	_
 9	làm	làm	VERB	V	_	8	acl:subj	do.02	A0:8|A1:10
 10	gì	gì	PRON	PRO	_	9	obj	_	_
@@ -594,7 +594,7 @@
 9	tóc	tóc	NOUN	N	_	8	amod	_	_
 10	trắng	trắng	ADJ	ADJ	_	9	amod	_	_
 11	đang	đang	ADV	ADV	_	12	advmod	_	_
-12	chơi	chơi	VERB	V	_	8	acl:subj	play.01	A0:8|A1:13
+12	chơi	chơi	VERB	V	_	8	acl:subj	play.01	A0:8|A1:13|AM-LOC:1
 13	accordion	accordion	NOUN	N	_	12	obj	_	_
 14	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
@@ -614,7 +614,7 @@
 2	sẽ	sẽ	ADV	ADV	_	5	advmod	_	_
 3	không	không	ADV	ADV	_	4	advmod:neg	_	_
 4	bao giờ	bao giờ	PRON	PRO	_	5	obl:tmod	_	_
-5	quên	quên	VERB	V	_	0	root	forget.01	A0:1|AM-TMP:2|AM-ADV:6
+5	quên	quên	VERB	V	_	0	root	forget.01	A0:1|AM-TMP:2|A1:6|AM-NEG:3
 6	quãng	quãng	NOUN	N	_	5	obl	_	_
 7	thời gian	thời gian	NOUN	N	_	6	nmod	_	_
 8	Mary	mary	NOUN	NNP	_	7	nmod	_	_
@@ -641,7 +641,7 @@
 # text = Tôi không nghĩ hiện tại mình đủ khả năng chi trả cho nó .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	nghĩ	nghĩ	VERB	V	_	0	root	think.01	A0:1|AM-TMP:4
+3	nghĩ	nghĩ	VERB	V	_	0	root	think.01	A0:1|AM-TMP:4|AM-NEG:2
 4	hiện tại	hiện tại	NOUN	N	_	3	obl:tmod	_	_
 5	mình	mình	PRON	PRO	_	6	nsubj	_	_
 6	đủ	đủ	ADJ	ADJ	_	4	acl:tmod	_	_
@@ -655,10 +655,10 @@
 1	Anh	anh	NOUN	N	_	4	nsubj	_	_
 2	ấy	ấy	PRON	PRO	_	1	det:pmod	_	_
 3	đã	đã	ADV	ADV	_	4	advmod	_	_
-4	hắng giọng	hắng giọng	VERB	V	_	0	root	clear.01	A0:1|AM-TMP:3
+4	hắng giọng	hắng giọng	VERB	V	_	0	root	clear.01	A0:1|AM-TMP:3|AM-TMP:6
 5	trước	trước	ADP	PRE	_	6	case	_	_
 6	khi	khi	NOUN	N	_	4	obl:tmod	_	_
-7	bắt đầu	bắt đầu	VERB	V	_	6	acl:tmod	start.01	AM-TMP:6|A1:9
+7	bắt đầu	bắt đầu	VERB	V	_	6	acl:tmod	start.01	A1:9
 8	bài	bài	NOUN	Nc	_	9	det	_	_
 9	giảng	giảng	NOUN	N	_	7	obj	_	_
 10	.	.	PUNCT	PUNCT	_	4	punct	_	_
@@ -684,13 +684,13 @@
 1	Bạn	bạn	NOUN	N	_	4	nsubj	_	_
 2	không	không	ADV	ADV	_	4	advmod:neg	_	_
 3	được	được	VERB	V	_	4	aux	_	_
-4	đậu	đậu	VERB	V	_	0	root	park.01	A0:1|A1:5|AM-LOC:7
+4	đậu	đậu	VERB	V	_	0	root	park.01	A0:1|A1:5|AM-LOC:7|AM-NEG:2
 5	xe	xe	NOUN	N	_	4	obj	_	_
 6	ở	ở	ADP	PRE	_	7	case	_	_
 7	đây	đây	PRON	PRO	_	4	obl	_	_
 8	mà	mà	SCONJ	C	_	10	mark	_	_
 9	không	không	ADV	ADV	_	10	advmod:neg	_	_
-10	có	có	VERB	V	_	4	conj	have.03	A1:11
+10	có	có	VERB	V	_	4	conj	have.03	A1:11|AM-NEG:9
 11	sự	sự	NOUN	N	_	10	obj	_	_
 12	cho phép	cho phép	VERB	V	_	11	compound:vmod	_	_
 13	.	.	PUNCT	PUNCT	_	4	punct	_	_
@@ -702,7 +702,7 @@
 4	Tom	tom	NOUN	NNP	_	6	nsubj	_	_
 5	không	không	ADV	ADV	_	6	advmod:neg	_	_
 6	muốn	muốn	VERB	V	_	7	aux	_	_
-7	trở nên	trở nên	VERB	V	_	8	cop	become.01	A1:4|A2:8
+7	trở nên	trở nên	VERB	V	_	8	cop	become.01	A0:4|A1:8
 8	cô đơn	cô đơn	ADJ	ADJ	_	6	acomp	_	_
 9	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
@@ -773,7 +773,7 @@
 # text = Tôi đã hứa với Tom là tôi sẽ chờ đợi .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	đã	đã	ADV	ADV	_	3	advmod	_	_
-3	hứa	hứa	VERB	V	_	0	root	promise.01	A0:1|AM-TMP:2|AM-COM:3|A1:5|A2:9
+3	hứa	hứa	VERB	V	_	0	root	promise.01	A0:1|AM-TMP:2|A1:5|A2:9
 4	với	với	ADP	PRE	_	5	case	_	_
 5	Tom	tom	NOUN	NNP	_	3	obl:with	_	_
 6	là	là	SCONJ	C	_	9	mark	_	_
@@ -791,7 +791,7 @@
 6	anh	anh	NOUN	N	_	9	nsubj	_	_
 7	ấy	ấy	PRON	PRO	_	6	det:pmod	_	_
 8	không	không	ADV	ADV	_	14	advmod	_	_
-9	nghĩ	nghĩ	VERB	V	_	2	ccomp	think.01	A0:6|A1:13
+9	nghĩ	nghĩ	VERB	V	_	2	ccomp	think.01	A0:6|A1:13|AM-NEG:8
 10	là	là	SCONJ	C	_	13	mark	_	_
 11	John	john	NOUN	NNP	_	14	nsubj	_	_
 12	đã	đã	ADV	ADV	_	13	advmod	_	_
@@ -804,14 +804,14 @@
 2	ấy	ấy	PRON	PRO	_	1	det:pmod	_	_
 3	đã	đã	ADV	ADV	_	5	advmod	_	_
 4	bị	bị	VERB	V	_	5	aux:pass	_	_
-5	tổn thương	tổn thương	VERB	V	_	0	root	hurt.01	A0:1|AM-TMP:6
+5	tổn thương	tổn thương	VERB	V	_	0	root	hurt.01	A0:1|AM-TMP:6|AM-TMP:3
 6	khi	khi	NOUN	N	_	5	obl:tmod	_	_
 7	thấy	thấy	VERB	V	_	6	acl:tmod	see.01	A1:12
 8	rằng	rằng	SCONJ	C	_	11	det	_	_
 9	không	không	ADV	ADV	_	12	det	_	_
 10	một	một	NUM	NUM	_	11	nummod	_	_
 11	ai	ai	PRON	PRO	_	12	nsubj	_	_
-12	để tâm	để tâm	VERB	V	_	12	obj	_	_
+12	để tâm	để tâm	VERB	V	_	12	obj	mind.01	A0:11|A1:14	
 13	đến	đến	ADP	PRE	_	14	case	_	_
 14	cô	cô	NOUN	N	_	12	obl:comp	_	_
 15	ấy	ấy	PRON	PRO	_	14	det:pmod	_	_
@@ -819,7 +819,7 @@
 
 # text = Bạn có anh chị em nào không ? " Không , tôi là con một . "
 1	Bạn	bạn	NOUN	N	_	2	nsubj	_	_
-2	có	có	VERB	V	_	0	root	have.03	A0:1|A1:3|AM-TMP:5
+2	có	có	VERB	V	_	0	root	have.03	A0:1|A1:3
 3	anh chị em	anh chị em	NOUN	N	_	2	obj	_	_
 4	nào	nào	PRON	PRO	_	3	det	_	_
 5	không	không	ADV	ADV	_	2	advmod	_	_
@@ -848,7 +848,7 @@
 # text = Chúng tôi đang tiết kiệm để xây một ngôi nhà mới .
 1	Chúng tôi	chúng tôi	PRON	PRO	_	5	nsubj	_	_
 2	đang	đang	ADV	ADV	_	3	advmod	_	_
-3	tiết kiệm	tiết kiệm	VERB	V	_	0	root	save.01	A0:1|A2:5
+3	tiết kiệm	tiết kiệm	VERB	V	_	0	root	save.01	A0:1|A2:5|AM-TMP:2
 4	để	để	ADP	PRE	_	5	mark:pcomp	_	_
 5	xây	xây	VERB	V	_	3	advcl:objective	build.01	A1:8
 6	một	một	NUM	NUM	_	8	nummod	_	_
@@ -877,7 +877,7 @@
 4	tôi	tôi	PRON	PRO	_	7	nsubj	_	_
 5	sẽ	sẽ	ADV	ADV	_	7	aux	_	_
 6	không	không	ADV	ADV	_	7	advmod	_	_
-7	đi	đi	VERB	V	_	8	case	go.01	A1:4|AM-TMP:5|AM-NEG:6|A1:8|AM-TMP:9
+7	đi	đi	VERB	V	_	8	case	go.01	A0:4|AM-TMP:5|AM-NEG:6|A1:8|AM-TMP:9
 8	Úc	úc	NOUN	NNP	_	7	obl	_	_
 9	mùa	mùa	NOUN	N	_	7	obl:tmod	_	_
 10	đông	đông	NOUN	N	_	9	compound	_	_
@@ -887,7 +887,7 @@
 
 # text = Bạn có thực sự nghĩ là Tom sẽ tin tôi ?
 1	Bạn	bạn	NOUN	N	_	4	nsubj	_	_
-2	có	có	VERB	V	_	0	root	have.03	A0:1|AM-TMP:3|A1:4
+2	có	có	VERB	V	_	0	root	have.03	A0:1|A1:4
 3	thực sự	thực sự	ADJ	ADJ	_	4	advmod:adj	_	_
 4	nghĩ	nghĩ	VERB	V	_	2	xcomp	think.01	A1:8
 5	là	là	SCONJ	C	_	7	aux	_	_
@@ -900,8 +900,8 @@
 # text = Ngay khi trông thấy viên cảnh sát , anh ta chạy đi .
 1	Ngay	ngay	PART	PART:G	_	2	discourse	_	_
 2	khi	khi	NOUN	N	_	10	obl:tmod	_	_
-3	trông	trông	VERB	V	_	2	acl:tmod	_	_
-4	thấy	thấy	VERB	V	_	3	compound:svc	see.01	A1:5
+3	trông	trông	VERB	V	_	2	acl:tmod	see.01	A1:5
+4	thấy	thấy	VERB	V	_	3	compound:svc	_	_
 5	viên	viên	NOUN	Nc	_	6	det:clf	_	_
 6	cảnh sát	cảnh sát	NOUN	N	_	3	obj	_	_
 7	,	,	PUNCT	PUNCT	_	2	punct	_	_
@@ -920,7 +920,7 @@
 6	muốn	muốn	VERB	V	_	7	aux	want.01	A0:4|A1:7|A2:9
 7	biết	biết	VERB	V	_	2	ccomp	know.01	A1:9
 8	tôi	tôi	PRON	PRO	_	11	nsubj	_	_
-9	có	có	VERB	V	_	7	ccomp	have.03	A0:8|A1:10|AM-NEG:13
+9	có	có	VERB	V	_	7	ccomp	have.03	A0:8|A1:10
 10	biết	biết	VERB	V	_	9	xcomp	know.01	A1:11
 11	bơi	bơi	VERB	V	_	10	xcomp	swim.01	_
 12	hay	hay	SCONJ	C	_	13	cc	_	_
@@ -945,7 +945,7 @@
 1	Bạn	bạn	NOUN	N	_	4	nsubj	_	_
 2	sẽ	sẽ	ADV	ADV	_	4	advmod	_	_
 3	không	không	ADV	ADV	_	4	advmod:neg	_	_
-4	có	có	VERB	V	_	0	root	have.03	A0:1|AM-NEG:3|A1:8|AM-TMP:10
+4	có	có	VERB	V	_	0	root	have.03	A0:1|AM-NEG:3|A1:8
 5	thêm	thêm	VERB	V	_	4	compound:svc	_	_
 6	bất cứ	bất cứ	ADV	ADV	_	8	advmod	_	_
 7	một	một	NUM	NUM	_	8	nummod	_	_
@@ -962,7 +962,7 @@
 5	,	,	PUNCT	PUNCT	_	8	punct	_	_
 6	tôi	tôi	PRON	PRO	_	8	nsubj	_	_
 7	sẽ	sẽ	ADV	ADV	_	8	advmod	_	_
-8	mua	mua	VERB	V	_	0	root	buy.01	A0:6|AM-TMP:7|A1:9
+8	mua	mua	VERB	V	_	0	root	buy.01	A0:6|AM-TMP:7|A1:9|AM-ADV:3
 9	máy vi tính	máy vi tính	NOUN	N	_	8	obj	_	_
 10	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
@@ -971,10 +971,10 @@
 2	triệu	triệu	NUM	NUM	_	1	flat:number	_	_
 3	người	người	NOUN	Nc	_	7	det	_	_
 4	Mỹ	mỹ	NOUN	NNP	_	3	nmod	_	_
-5	sống	sống	VERB	V	_	0	root	live.01	A0:3|AM-TMP:10
+5	sống	sống	VERB	V	_	0	root	live.01	A0:3|AM-TMP:10|AM-MNR:7
 6	dưới	dưới	ADP	PRE	_	7	case	_	_
-7	ngưỡng	ngưỡng	NOUN	N	_	7	compound	_	_
-8	nghèo	nghèo	ADJ	ADJ	_	7	amod	_	_
+7	ngưỡng	ngưỡng	NOUN	N	_	5	acomp	_	_
+8	nghèo	nghèo	ADJ	ADJ	_	7	compound	_	_
 9	trong	trong	ADP	PRE	_	10	case	_	_
 10	năm	năm	NOUN	N	_	5	obl:tmod	_	_
 11	2010	2010	NUM	NUM	_	10	flat:date	_	_
@@ -983,14 +983,14 @@
 # text = Tôi vừa mới dậy . Cho tôi chút thời gian để chuẩn bị đi .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	vừa mới	vừa mới	ADV	ADV	_	3	advmod	_	_
-3	dậy	dậy	VERB	V	_	0	root	_	_
+3	dậy	dậy	VERB	V	_	0	root	wake_up.01	A0:1
 4	.	.	PUNCT	PUNCT	_	5	punct	_	_
-5	Cho	cho	VERB	V	_	3	conj	give.01	A2:6|A1:8|chuẩn bị:10
+5	Cho	cho	VERB	V	_	3	conj	give.01	A2:6|A1:8|AM-PRP:10
 6	tôi	tôi	PRON	PRO	_	5	obj	_	_
 7	chút	chút	DET	DET	_	8	det	_	_
 8	thời gian	thời gian	NOUN	N	_	5	obj	_	_
 9	để	để	ADP	PRE	_	11	mark	_	_
-10	chuẩn bị	chuẩn bị	VERB	V	_	11	xcomp	prepare.02	_
+10	chuẩn bị	chuẩn bị	VERB	V	_	11	xcomp	prepare.02	A1:11
 11	đi	đi	VERB	V	_	10	xcomp	_	_
 12	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
@@ -1031,7 +1031,7 @@
 3	giữ	giữ	VERB	V	_	0	root	keep.02	A0:1|A1:4|AM-TMP:5
 4	bình tĩnh	bình tĩnh	ADJ	ADJ	_	3	acomp	_	_
 5	khi	khi	NOUN	N	_	3	obl:tmod	_	_
-6	đối mặt	đối mặt	VERB	V	_	5	acl:tmod		A1:8
+6	đối mặt	đối mặt	VERB	V	_	5	acl:tmod	face.01	A1:8
 7	với	với	ADP	PRE	_	8	case	_	_
 8	nguy hiểm	nguy hiểm	NOUN	N	_	6	obl:with	_	_
 9	.	.	PUNCT	PUNCT	_	3	punct	_	_
@@ -1039,7 +1039,7 @@
 # text = Bạn hãy cho tôi biết những ngày bạn có thể đến được .
 1	Bạn	bạn	NOUN	N	_	3	nsubj	_	_
 2	hãy	hãy	ADV	ADV	_	3	advmod	_	_
-3	cho	cho	VERB	V	_	0	root	give.01	A0:1|A1:5
+3	cho	cho	VERB	V	_	0	root	let.01	A0:1|A1:5|A2:4
 4	tôi	tôi	PRON	PRO	_	3	obj	_	_
 5	biết	biết	VERB	V	_	4	acl:subj	know.01	A0:4|A1:7
 6	những	những	DET	DET	_	7	det	_	_
@@ -1058,7 +1058,7 @@
 5	ấy	ấy	PRON	PRO	_	4	det:pmod	_	_
 6	vẫn	vẫn	ADV	ADV	_	8	advmod	_	_
 7	chưa thể	chưa thể	ADV	ADV	_	8	aux	_	_
-8	tin	tin	VERB	V	_	2	ccomp	believe.01	A0:4|AM-TMP:6|A1:10
+8	tin	tin	VERB	V	_	2	ccomp	believe.01	A0:4|AM-TMP:6|A1:10|AM-NEG:7
 9	được	được	ADV	ADV	_	8	advmod	_	_
 10	điều	điều	NOUN	N	_	8	obj	_	_
 11	đó	đó	PRON	PRO	_	10	det:pmod	_	_
@@ -1090,12 +1090,12 @@
 
 # text = Tôi ngủ dậy và thấy mình nằm trên sàn nhà .
 1	Tôi	tôi	PRON	PRO	_	5	nsubj	_	_
-2	ngủ	ngủ	VERB	V	_	0	root	sleep.01	A0:1|A1:3
+2	ngủ	ngủ	VERB	V	_	0	root	wake_up.01	A0:1|A1:3
 3	dậy	dậy	VERB	V	_	2	compound:svc	_	_
 4	và	và	CCONJ	CC	_	5	cc	_	_
 5	thấy	thấy	VERB	V	_	2	conj	see.01	A1:7
 6	mình	mình	PRON	PRO	_	7	nsubj	_	_
-7	nằm	nằm	VERB	V	_	5	ccomp		A0:6
+7	nằm	nằm	VERB	V	_	5	ccomp	lie.01	A0:6|AM-LOC:9
 8	trên	trên	ADP	PRE	_	9	case	_	_
 9	sàn	sàn	NOUN	N	_	7	obl	_	_
 10	nhà	nhà	NOUN	N	_	9	det	_	_
@@ -1103,7 +1103,7 @@
 
 # text = Tôi muốn biết là Tom đã ăn bao nhiêu bánh .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
-2	muốn	muốn	VERB	V	_	3	aux	want to.01	A0:1|A1:3
+2	muốn	muốn	VERB	V	_	3	aux	want_to.01	A0:1|A1:3
 3	biết	biết	VERB	V	_	0	root	know.01	A1:7
 4	là	là	SCONJ	C	_	7	mark	_	_
 5	Tom	tom	NOUN	NNP	_	7	nsubj	_	_
@@ -1132,8 +1132,8 @@
 # text = Tôi không nên làm cho bạn miếng san quít đó .
 1	Tôi	tôi	PRON	PRO	_	4	nsubj	_	_
 2	không	không	ADV	ADV	_	4	advmod:neg	_	_
-3	nên	nên	VERB	V	_	4	aux	should.02	A0:1|A1:4
-4	làm	làm	VERB	V	_	0	root	make.02	A2:6
+3	nên	nên	VERB	V	_	4	aux	_	_
+4	làm	làm	VERB	V	_	0	root	make.02	A2:6|AM-NEG:2|A0:1|A1:7
 5	cho	cho	ADP	PRE	_	6	case	_	_
 6	bạn	bạn	NOUN	N	_	4	obl:iobj	_	_
 7	miếng	miếng	NOUN	Nc	_	4	obj	_	_
@@ -1150,7 +1150,7 @@
 5	mèo	mèo	NOUN	N	_	8	nsubj	_	_
 6	đen	đen	ADJ	ADJ	_	5	amod	_	_
 7	đó	đó	PRON	PRO	_	5	det:pmod	_	_
-8	mang	mang	VERB	V	_	3	ccomp	take.01	A0:5|AM-MNR:9|A1:10
+8	mang	mang	VERB	V	_	3	ccomp	take.01	A0:5|A1:10
 9	đến	đến	ADV	ADV	_	8	compound:dir	_	_
 10	điều	điều	NOUN	N	_	8	obj	_	_
 11	xui xẻo	xui xẻo	ADJ	ADJ	_	10	amod	_	_
@@ -1184,7 +1184,7 @@
 # text = Tôi không có thời gian làm việc đó , và ngoài ra , tôi không có tiền .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	không	không	ADV	ADV	_	4	det	_	_
-3	có	có	VERB	V	_	0	root	have.03	A0:1|AM-NEG:2|A1:4
+3	có	có	VERB	V	_	0	root	have.03	A0:1|AM-NEG:2|A1:4|AM-PRP:5
 4	thời gian	thời gian	NOUN	N	_	3	obj	_	_
 5	làm việc	làm việc	VERB	V	_	6	case	work.01	A1:6
 6	đó	đó	PRON	PRO	_	4	nmod	_	_
@@ -1201,7 +1201,7 @@
 # text = Tom đã trở nên rất nổi tiếng một cách nhanh chóng .
 1	Tom	tom	NOUN	NNP	_	3	nsubj	_	_
 2	đã	đã	ADV	ADV	_	3	advmod	_	_
-3	trở nên	trở nên	VERB	V	_	0	root	become.01	A1:1|AM-TMP:2|A2:5|AM-MNR:6
+3	trở nên	trở nên	VERB	V	_	0	root	become.01	A0:1|AM-TMP:2|A1:5|AM-MNR:6
 4	rất	rất	ADV	ADV	_	5	advmod	_	_
 5	nổi tiếng	nổi tiếng	ADJ	ADJ	_	3	acomp	_	_
 6	một cách	một cách	ADV	ADV	_	7	advmod	_	_
@@ -1215,8 +1215,8 @@
 4	bạn	bạn	NOUN	N	_	7	nsubj	_	_
 5	thực ra	thực ra	X	X	_	7	advmod	_	_
 6	không	không	ADV	ADV	_	7	advmod:neg	_	_
-7	muốn	muốn	VERB	V	_	10	aux	want.03	A0:4|A1:8
-8	đi	đi	VERB	V	_	7	xcomp	get.03	A2:9
+7	muốn	muốn	VERB	V	_	10	aux	want.03	A0:4|A1:8|AM-NEG:6
+8	đi	đi	VERB	V	_	7	xcomp	go.01	A4:9
 9	Boston	boston	NOUN	NNP	_	8	obl	_	_
 10	có	có	VERB	V	_	0	root	_	_
 11	đúng	đúng	ADJ	ADJ	_	10	acomp	_	_
@@ -1248,15 +1248,15 @@
 6	nói	nói	VERB	V	_	0	root	say.01	AM-TMP:1|A0:2|AM-TMP:4|A1:9
 7	tiền	tiền	NOUN	N	_	6	obj	_	_
 8	không	không	ADV	ADV	_	9	advmod:neg	_	_
-9	phải	phải	ADJ	ADJ	_	11	aux	be.01	A1:7|A2:11
-10	là	là	SCONJ	C	_	11	cop	_	_
+9	phải	phải	ADJ	ADJ	_	8	compound	_	_
+10	là	là	VERB	V	_	11	cop	be.01	A1:7|A2:11|AM-NEG:8
 11	tất cả	tất cả	PRON	PRO	_	0	root	_	_
 12	.	.	PUNCT	PUNCT	_	11	punct	_	_
 
 # text = Chúng ta hãy bỏ phiếu để quyết định người thắng cuộc .
 1	Chúng ta	chúng ta	PRON	PRO	_	5	nsubj	_	_
 2	hãy	hãy	ADV	ADV	_	3	advmod	_	_
-3	bỏ phiếu	bỏ phiếu	VERB	V	_	0	root	vote.01	A0:1
+3	bỏ phiếu	bỏ phiếu	VERB	V	_	0	root	vote.01	A0:1|AM-PRP:5
 4	để	để	ADP	PRE	_	5	mark:pcomp	_	_
 5	quyết định	quyết định	VERB	V	_	3	advcl:objective	decide.01	A1:6
 6	người	người	NOUN	N	_	5	obj	_	_
@@ -1292,13 +1292,13 @@
 
 # text = Tôi dạy tiếng Pháp đến nay đã được 3 năm .
 1	Tôi	tôi	PRON	PRO	_	2	nsubj	_	_
-2	dạy	dạy	VERB	V	_	0	root	teach.01	A0:1
+2	dạy	dạy	VERB	V	_	0	root	teach.01	A0:1|A1:3|AM-TMP:10
 3	tiếng	tiếng	NOUN	N	_	2	obj	_	_
 4	Pháp	pháp	NOUN	NNP	_	3	nmod	_	_
 5	đến	đến	ADP	PRE	_	10	case	_	_
 6	nay	nay	PRON	PRO	_	2	obl:tmod	_	_
 7	đã	đã	ADV	ADV	_	8	advmod	_	_
-8	được	được	VERB	V	_	2	conj	be.01	AM-TMP:6|AM-TMP:7|A1:10
+8	được	được	VERB	V	_	2	conj	_	_
 9	3	3	NUM	NUM	_	10	nummod	_	_
 10	năm	năm	NOUN	N	_	2	obj	_	_
 11	.	.	PUNCT	PUNCT	_	2	punct	_	_
@@ -1312,7 +1312,7 @@
 6	không	không	ADV	ADV	_	7	advmod:neg	_	_
 7	muốn	muốn	VERB	V	_	2	ccomp	want.01	A0:5|AM-NEG:6|A1:8
 8	tôi	tôi	PRON	PRO	_	7	obj	_	_
-9	đợi	đợi	VERB	V	_	8	acl:subj	wait.01	A2:14
+9	đợi	đợi	VERB	V	_	8	acl:subj	wait.01	A2:14|A0:8
 10	ở	ở	ADP	PRE	_	11	case	_	_
 11	đây	đây	PRON	PRO	_	9	obl:comp	_	_
 12	cùng	cùng	SCONJ	C	_	14	cc	_	_
@@ -1332,7 +1332,7 @@
 9	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
 # text = Đi dọc theo con phố và rẽ trái ở nút giao thứ ba .
-1	Đi	đi	VERB	V	_	0	root	_	_
+1	Đi	đi	VERB	V	_	0	root	go.01	A2:5
 2	dọc	dọc	ADJ	ADJ	_	5	case	_	_
 3	theo	theo	ADP	PRE	_	5	case	_	_
 4	con	con	NOUN	Nc	_	5	det:clf	_	_
@@ -1351,7 +1351,7 @@
 1	Tom	tom	NOUN	N	_	4	nsubj	_	_
 2	và	và	CCONJ	CC	_	3	cc	_	_
 3	tôi	tôi	PRON	PRO	_	1	conj	_	_
-4	có	có	VERB	V	_	0	root	have.03	A0:2|A1:6
+4	có	có	VERB	V	_	0	root	have.03	A0:1|A1:6
 5	nhiều	nhiều	ADJ	ADJ	_	6	amod	_	_
 6	điểm	điểm	NOUN	N	_	4	obj	_	_
 7	chung	chung	ADJ	ADJ	_	6	amod	_	_
@@ -1384,7 +1384,7 @@
 4	vài	vài	DET	DET	_	6	det	_	_
 5	cuốn	cuốn	NOUN	Nc	_	4	clf	_	_
 6	sách	sách	NOUN	N	_	3	obj	_	_
-7	nằm	nằm	VERB	V	_	6	acl	lie	A0:6|A1:10
+7	nằm	nằm	VERB	V	_	6	acl	lie.01	A0:6|A1:10
 8	trên	trên	ADP	PRE	_	10	case	_	_
 9	cây	cây	NOUN	Nc	_	10	det:clf	_	_
 10	đàn	đàn	NOUN	N	_	7	obl:comp	_	_
@@ -1462,7 +1462,7 @@
 7	rồi	rồi	SCONJ	C	_	8	cc	_	_
 8	cắt	cắt	VERB	V	_	2	conj	cut.02	A1:9|A2:13
 9	phần	phần	NOUN	N	_	8	obj	_	_
-10	còn	còn	VERB	V	_	9	acl:subj	have.03	A0:11
+10	còn	còn	VERB	V	_	9	acl:subj	_	_
 11	lại	lại	ADV	ADV	_	10	advmod	_	_
 12	vào	vào	ADP	PRE	_	13	case	_	_
 13	tủ lạnh	tủ lạnh	NOUN	N	_	8	obl:comp	_	_
@@ -1483,12 +1483,12 @@
 # text = Tôi đã quyết định kể từ bây giờ sẽ học chăm chỉ hơn .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	đã	đã	ADV	ADV	_	3	advmod	_	_
-3	quyết định	quyết định	VERB	V	_	0	root	decide.01	A0:1|AM-TMP:2|AM-TMP:6
+3	quyết định	quyết định	VERB	V	_	0	root	decide.01	A0:1|AM-TMP:2|AM-TMP:6|A1:8
 4	kể	kể	VERB	V	_	3	xcomp	_	_
 5	từ	từ	ADP	PRE	_	6	case	_	_
 6	bây giờ	bây giờ	PRON	PRO	_	8	obl:tmod	_	_
 7	sẽ	sẽ	ADV	ADV	_	8	advmod	_	_
-8	học	học	VERB	V	_	3	ccomp	study.01	A1:3|AM-TMP:7|AM-MNR:9
+8	học	học	VERB	V	_	3	ccomp	study.01	AM-TMP:7|AM-MNR:9
 9	chăm chỉ	chăm chỉ	ADJ	ADJ	_	8	acomp	_	_
 10	hơn	hơn	ADJ	ADJ	_	9	advmod:adj	_	_
 11	.	.	PUNCT	PUNCT	_	3	punct	_	_
@@ -1496,7 +1496,7 @@
 # text = Chúng tôi không nghĩ là họ sẽ mua một chiếc ô tô mới .
 1	Chúng tôi	chúng tôi	PRON	PRO	_	7	nsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	nghĩ	nghĩ	VERB	V	_	0	root	think.01	A0:1|AM-TMP:6|A1:7
+3	nghĩ	nghĩ	VERB	V	_	0	root	think.01	A0:1|A1:7|AM-NEG:2
 4	là	là	SCONJ	C	_	7	mark	_	_
 5	họ	họ	PRON	PRO	_	7	nsubj	_	_
 6	sẽ	sẽ	ADV	ADV	_	7	advmod	_	_
@@ -1510,7 +1510,7 @@
 # text = Tom sẽ giải đáp cho bạn ngay sau khi anh ấy trở lại .
 1	Tom	tom	NOUN	NNP	_	3	nsubj	_	_
 2	sẽ	sẽ	ADV	ADV	_	3	advmod	_	_
-3	giải đáp	giải đáp	VERB	V	_	0	root	explain.01	A0:1|AM-TMP:2|A1:5|AM-TMP:8
+3	giải đáp	giải đáp	VERB	V	_	0	root	explain.01	A0:1|AM-TMP:2|A2:5|AM-TMP:8
 4	cho	cho	ADP	PRE	_	5	case	_	_
 5	bạn	bạn	NOUN	N	_	3	obl:iobj	_	_
 6	ngay	ngay	PART	PART:G	_	8	discourse	_	_
@@ -1518,18 +1518,18 @@
 8	khi	khi	NOUN	N	_	3	obl:tmod	_	_
 9	anh	anh	NOUN	N	_	11	nsubj	_	_
 10	ấy	ấy	PRON	PRO	_	9	det:pmod	_	_
-11	trở lại	trở lại	VERB	V	_	8	acl:tmod	_	_
+11	trở lại	trở lại	VERB	V	_	8	acl:tmod	comeback.01	A0:9
 12	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Cô ấy không thể thuyết phục được anh ấy mua cho cô ấy một chiếc ô tô mới .
 1	Cô	cô	NOUN	N	_	4	nsubj	_	_
 2	ấy	ấy	PRON	PRO	_	1	det:pmod	_	_
 3	không thể	không thể	ADV	ADV	_	4	advmod:neg	_	_
-4	thuyết phục	thuyết phục	VERB	V	_	0	root	convince.01	A0:1|A1:8
+4	thuyết phục	thuyết phục	VERB	V	_	0	root	convince.01	A0:1|A1:8|AM-NEG:3
 5	được	được	ADV	ADV	_	4	advmod	_	_
 6	anh	anh	NOUN	N	_	8	nsubj	_	_
 7	ấy	ấy	PRON	PRO	_	6	det:pmod	_	_
-8	mua	mua	VERB	V	_	4	ccomp	buy.01	A0:6|A4:10|A1:14
+8	mua	mua	VERB	V	_	4	ccomp	buy.01	A0:6|A2:10|A1:14
 9	cho	cho	ADP	PRE	_	8	mark	_	_
 10	cô	cô	NOUN	N	_	8	obl:iobj	_	_
 11	ấy	ấy	PRON	PRO	_	10	det:pmod	_	_
@@ -1559,23 +1559,23 @@
 4	tôi	tôi	PRON	PRO	_	2	obl:with	_	_
 5	rằng	rằng	SCONJ	C	_	7	mark	_	_
 6	Mary	mary	NOUN	NNP	_	7	nsubj	_	_
-7	nói	nói	VERB	V	_	2	ccomp	say.01	A0:6
+7	nói	nói	VERB	V	_	2	ccomp	say.01	A0:6|A1:13
 8	là	là	SCONJ	C	_	7	mark	_	_
 9	cô	cô	NOUN	N	_	12	nsubj	_	_
 10	ấy	ấy	PRON	PRO	_	9	det:pmod	_	_
 11	không	không	ADV	ADV	_	12	advmod:neg	_	_
 12	muốn	muốn	VERB	V	_	13	aux	_	_
-13	làm việc	làm việc	VERB	V	_	12	ccomp	_	_
+13	làm việc	làm việc	VERB	V	_	12	ccomp	do.02	A0:9|AM-NEG:11|A1:14
 14	đó	đó	PRON	PRO	_	13	obj	_	_
 15	nữa	nữa	ADV	ADV	_	13	advmod	_	_
-16	.	.	PUNCT	PUNCT	_	2	punct	do.02	_
+16	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Bạn biết Tom không phải là người làm điều đó , có đúng không ?
 1	Bạn	bạn	NOUN	N	_	2	nsubj	_	_
 2	biết	biết	VERB	V	_	0	root	know.01	A0:1|A1:7
 3	Tom	tom	NOUN	NNP	_	7	nsubj	_	_
 4	không	không	ADV	ADV	_	7	advmod	_	_
-5	phải	phải	ADJ	ADJ	_	7	aux	do.02	A0:3
+5	phải	phải	ADJ	ADJ	_	7	aux	_	_
 6	là	là	VERB	V	_	7	cop	_	_
 7	người	người	NOUN	N	_	8	ccomp	_	_
 8	làm	làm	VERB	V	_	7	acl:subj	do.02	A1:9
@@ -1591,9 +1591,9 @@
 1	Thật ra	thật ra	X	X	_	6	advmod	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
 3	phải	phải	ADJ	ADJ	_	6	aux	_	_
-4	là	là	SCONJ	C	_	6	mark	be.01	A0:5|A1:7
+4	là	là	SCONJ	C	_	6	mark	_	_
 5	tôi	tôi	PRON	PRO	_	7	nmod	_	_
-6	quên	quên	VERB	V	_	0	root	forget.01	_
+6	quên	quên	VERB	V	_	0	root	forget.01	A0:5|A1:7
 7	máy ảnh	máy ảnh	NOUN	N	_	6	obj	_	_
 8	.	.	PUNCT	PUNCT	_	6	punct	_	_
 9	Chỉ	chỉ	ADV	ADV	_	13	advmod	_	_
@@ -1601,7 +1601,7 @@
 11	tôi	tôi	PRON	PRO	_	13	parataxis	_	_
 12	không	không	ADV	ADV	_	13	advmod:neg	_	_
 13	muốn	muốn	VERB	V	_	14	aux	_	_
-14	chụp	chụp	VERB	V	_	11	acl:subj	take.01	A1:15|AM-DIS:16
+14	chụp	chụp	VERB	V	_	11	acl:subj	take.01	A1:15|AM-DIS:16|AM-NEG:12
 15	ảnh	ảnh	NOUN	N	_	16	obj	_	_
 16	thôi	thôi	PART	PART:G	_	13	discourse	_	_
 17	.	.	PUNCT	PUNCT	_	6	punct	_	_
@@ -1615,14 +1615,14 @@
 6	nào	nào	PRON	PRO	_	5	det	_	_
 7	Tom	tom	NOUN	NNP	_	10	nsubj	_	_
 8	cũng	cũng	ADV	ADV	_	9	advmod	_	_
-9	đi	đi	VERB	V	_	0	root	_	_
+9	đi	đi	VERB	V	_	0	root	work.01	A0:7|AM-TMP:5
 10	làm	làm	VERB	V	_	9	compound:svc	_	_
-11	.	.	PUNCT	PUNCT	_	9	punct	work.01	A2:1|AM-TMP:5|A1:7|AM-TMP:8
+11	.	.	PUNCT	PUNCT	_	9	punct	_	_
 
 # text = Tôi sẽ giúp anh ta bất kể bạn nói gì .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	sẽ	sẽ	ADV	ADV	_	3	advmod	_	_
-3	giúp	giúp	VERB	V	_	0	root	help.01	A0:1|AM-TMP:2|A1:8
+3	giúp	giúp	VERB	V	_	0	root	help.01	A0:1|AM-TMP:2|A1:8|A2:4
 4	anh	anh	NOUN	N	_	3	obj	_	_
 5	ta	ta	PRON	PRO	_	4	nmod	_	_
 6	bất kể	bất kể	ADV	ADV	_	6	advmod	_	_
@@ -1633,7 +1633,7 @@
 
 # text = Tôi tỉnh dậy và thấy mình nằm trên ghế sofa .
 1	Tôi	tôi	PRON	PRO	_	5	nsubj	_	_
-2	tỉnh	tỉnh	VERB	V	_	0	root	_	_
+2	tỉnh	tỉnh	VERB	V	_	0	root	wake_up.02	A0:1
 3	dậy	dậy	VERB	V	_	2	compound:svc	_	_
 4	và	và	CCONJ	CC	_	5	cc	_	_
 5	thấy	thấy	VERB	V	_	2	conj	see.01	A1:7
@@ -1646,7 +1646,7 @@
 
 # text = Tom nhuộm tóc bạc để có thể trông già dặn hơn .
 1	Tom	tom	NOUN	N	_	2	nsubj	_	_
-2	nhuộm	nhuộm	VERB	V	_	0	root	dye.01	A0:1|AM-GOL:7
+2	nhuộm	nhuộm	VERB	V	_	0	root	dye.01	A0:1|AM-PRP:7|A1:3
 3	tóc	tóc	NOUN	N	_	2	obj	_	_
 4	bạc	bạc	ADJ	ADJ	_	3	amod	_	_
 5	để	để	ADP	PRE	_	7	mark:pcomp	_	_
@@ -1660,10 +1660,10 @@
 1	Tổng thống	tổng thống	NOUN	N	_	4	nsubj	_	_
 2	Jefferson	jefferson	NOUN	NNP	_	1	flat	_	_
 3	không	không	ADV	ADV	_	4	advmod:neg	_	_
-4	muốn	muốn	VERB	V	_	0	root	want.01	A0:1
-5	cấm vận	cấm vận	VERB	V	_	0	root	ban.01	A0:5|A1:6
+4	muốn	muốn	VERB	V	_	0	root	want.01	A0:1|AM-NEG:3
+5	cấm vận	cấm vận	VERB	V	_	0	root	ban.01	A0:1|A1:6
 6	thương mại	thương mại	NOUN	N	_	5	obj	_	_
-7	kéo dài	kéo dài	VERB	V	_	5	xcomp	last.01	A1:7
+7	kéo dài	kéo dài	VERB	V	_	5	xcomp	_	_
 8	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
 # text = Bạn có bất cứ suy luận nào về người đã giết Tom không ?
@@ -1682,16 +1682,16 @@
 
 # text = Tôi nghe thấy ai đó trên phố gọi tên tôi .
 1	Tôi	tôi	PRON	PRO	_	2	nsubj	_	_
-2	nghe	nghe	VERB	V	_	0	root	_	_
+2	nghe	nghe	VERB	V	_	0	root	hear.01	A0:1|A1:8
 3	thấy	thấy	VERB	V	_	2	compound:svc	_	_
 4	ai	ai	PRON	PRO	_	8	nsubj	_	_
 5	đó	đó	PRON	PRO	_	4	det:pmod	_	_
 6	trên	trên	ADP	PRE	_	7	det	_	_
 7	phố	phố	NOUN	N	_	4	nmod	_	_
-8	gọi	gọi	VERB	V	_	2	ccomp	call.01	AM-LOC:7
+8	gọi	gọi	VERB	V	_	2	ccomp	call.01	AM-LOC:7|A0:4|A1:9
 9	tên	tên	NOUN	N	_	8	obj	_	_
-10	tôi	tôi	PRON	PRO	_	8	obj	_	_
-11	.	.	PUNCT	PUNCT	_	2	punct	hear.01	A0:1|C-A1:8
+10	tôi	tôi	PRON	PRO	_	9	nmod	_	_
+11	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Tom đã nhờ Mary nói với John là anh ta không định làm việc đó .
 1	Tom	tom	NOUN	NNP	_	3	nsubj	_	_
@@ -1705,8 +1705,8 @@
 9	anh	anh	NOUN	N	_	12	nsubj	_	_
 10	ta	ta	PRON	PRO	_	9	det:pmod	_	_
 11	không	không	ADV	ADV	_	12	advmod	_	_
-12	định	định	VERB	V	_	5	ccomp	plan.01	A0:9|A1:13
-13	làm việc	làm việc	VERB	V	_	12	xcomp	work.01	_
+12	định	định	VERB	V	_	5	ccomp	plan.01	A0:9|A1:13|AM-NEG:11
+13	làm việc	làm việc	VERB	V	_	12	xcomp	work.01	A1:14
 14	đó	đó	PRON	PRO	_	13	obj	_	_
 15	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
@@ -1734,13 +1734,13 @@
 7	chúng ta	chúng ta	PRON	PRO	_	10	nsubj	_	_
 8	sẽ	sẽ	ADV	ADV	_	10	advmod	_	_
 9	không	không	ADV	ADV	_	10	advmod:neg	_	_
-10	thành công	thành công	VERB	V	_	5	ccomp	succeed.01	A0:7|AM-TMP:8
+10	thành công	thành công	VERB	V	_	5	ccomp	succeed.01	A0:7|AM-TMP:8|AM-NEG:9
 11	?	?	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Việc đó xảy ra mười bảy năm trước khi hai anh em Wright bay thử lần đầu .
 1	Việc	việc	NOUN	N	_	3	nsubj	_	_
 2	đó	đó	PRON	PRO	_	1	det:pmod	_	_
-3	xảy	xảy	VERB	V	_	0	root	_	_
+3	xảy	xảy	VERB	V	_	0	root	happen.01	A1:1|AM-TMP:6
 4	ra	ra	ADV	ADV	_	3	compound:svc	_	_
 5	mười bảy	mười bảy	NUM	NUM	_	6	nummod	_	_
 6	năm	năm	NOUN	N	_	3	obl:tmod	_	_
@@ -1749,16 +1749,16 @@
 9	hai	hai	NUM	NUM	_	10	nummod	_	_
 10	anh em	anh em	NOUN	N	_	12	nsubj	_	_
 11	Wright	wright	NOUN	NNP	_	10	compound	_	_
-12	bay	bay	VERB	V	_	8	acl:tmod	fly.01	A0:10|A1:13|AM-PRP:14
+12	bay	bay	VERB	V	_	8	acl:tmod	fly.01	A0:10|AM-MNR:13|AM-TMP:14
 13	thử	thử	VERB	V	_	12	compound:svc	try.01	_
-14	lần	lần	NOUN	N	_	12	obl	_	_
-15	đầu	đầu	NOUN	N	_	14	amod	_	_
-16	.	.	PUNCT	PUNCT	_	3	punct	happen.01	A1:1|AM-TMP:6
+14	lần	lần	NOUN	N	_	12	obl:tmod	_	_
+15	đầu	đầu	NOUN	N	_	14	nmod	_	_
+16	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Tôi đã dùng tiền thừa kế của ông tôi để mua một ngôi nhà .
 1	Tôi	tôi	PRON	PRO	_	10	nsubj	_	_
 2	đã	đã	ADV	ADV	_	4	det	_	_
-3	dùng	dùng	VERB	V	_	0	root	use.01	A0:1|AM-TMP:2|A1:4|A2:10
+3	dùng	dùng	VERB	V	_	0	root	use.01	A0:1|AM-TMP:2|A1:4|AM-PRP:10
 4	tiền	tiền	NOUN	N	_	10	obj	_	_
 5	thừa kế	thừa kế	VERB	V	_	4	acl	_	_
 6	của	của	ADP	PRE	_	7	nmod	_	_
@@ -1772,15 +1772,15 @@
 14	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Anh ta miễn cưỡng đồng ý với đề nghị của tôi .
-1	Anh	anh	NOUN	N	_	3	nsubj	_	_
+1	Anh	anh	NOUN	N	_	4	nsubj	_	_
 2	ta	ta	PRON	PRO	_	1	det:pmod	_	_
-3	miễn cưỡng	miễn cưỡng	VERB	V	_	4	root		A0:1
-4	đồng ý	đồng ý	VERB	V	_	3	xcomp	agree.01	A1:6
+3	miễn cưỡng	miễn cưỡng	VERB	V	_	4	aux	_	_
+4	đồng ý	đồng ý	VERB	V	_	0	root	agree.01	A0:1|A1:6
 5	với	với	ADP	PRE	_	6	case	_	_
 6	đề nghị	đề nghị	NOUN	N	_	4	obl:with	_	_
 7	của	của	ADP	PRE	_	8	case	_	_
 8	tôi	tôi	PRON	PRO	_	6	nmod:poss	_	_
-9	.	.	PUNCT	PUNCT	_	3	punct	_	_
+9	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
 # text = Tom nói là anh ấy mong bạn sẽ không làm điều đó .
 1	Tom	tom	NOUN	NNP	_	2	nsubj	_	_
@@ -1792,7 +1792,7 @@
 7	bạn	bạn	NOUN	N	_	10	nsubj	_	_
 8	sẽ	sẽ	ADV	ADV	_	10	aux	_	_
 9	không	không	ADV	ADV	_	10	advmod	_	_
-10	làm	làm	VERB	V	_	6	ccomp	do.02	A0:7|AM-TMP:8|A1:11
+10	làm	làm	VERB	V	_	6	ccomp	do.02	A0:7|AM-TMP:8|A1:11|AM-NEG:9
 11	điều	điều	NOUN	N	_	10	obj	_	_
 12	đó	đó	PRON	PRO	_	11	det:pmod	_	_
 13	.	.	PUNCT	PUNCT	_	2	punct	_	_
@@ -1816,14 +1816,14 @@
 4	,	,	PUNCT	PUNCT	_	7	punct	_	_
 5	tôi	tôi	PRON	PRO	_	7	nsubj	_	_
 6	không	không	ADV	ADV	_	7	advmod:neg	_	_
-7	muốn	muốn	VERB	V	_	0	root	want.01	A0:5|A1:8
+7	muốn	muốn	VERB	V	_	0	root	want.01	A0:5|A1:8|AM-NEG:6
 8	biết điều	biết điều	ADJ	ADJ	_	3	case	_	_
 9	gì	gì	PRON	PRO	_	8	obj	_	_
 10	nữa	nữa	ADV	ADV	_	8	advmod	_	_
 11	.	.	PUNCT	PUNCT	_	7	punct	_	_
 
 # text = Xe buýt sân bay tới sân bay mất bao nhiêu lâu ?
-1	Xe buýt	xe buýt	VERB	V	_	5	csubj:vsubj	_	_
+1	Xe buýt	xe buýt	NOUN	N	_	5	nsubj	_	_
 2	sân bay	sân bay	NOUN	N	_	1	obj	_	_
 3	tới	tới	ADP	PRE	_	4	det	come.01	A0:1|A2:4
 4	sân bay	sân bay	NOUN	N	_	5	obl	_	_
@@ -1839,7 +1839,7 @@
 4	chỗ	chỗ	NOUN	N	_	3	obj	_	_
 5	nào	nào	PRON	PRO	_	4	det:pmod	_	_
 6	không	không	ADV	ADV	_	7	advmod:neg	_	_
-7	hiểu	hiểu	VERB	V	_	4	acl:subj	understand.01	_
+7	hiểu	hiểu	VERB	V	_	4	acl:subj	understand.01	AM-NEG:6
 8	,	,	PUNCT	PUNCT	_	11	punct	_	_
 9	bạn	bạn	NOUN	N	_	11	nsubj	_	_
 10	có thể	có thể	ADV	ADV	_	11	advmod	_	_
@@ -1852,8 +1852,8 @@
 # text = Tôi đã muốn dành nhiều thời gian hơn tại Úc .
 1	Tôi	tôi	PRON	PRO	_	4	nsubj	_	_
 2	đã	đã	ADV	ADV	_	3	advmod	_	_
-3	muốn	muốn	VERB	V	_	0	root	_	_
-4	dành	dành	VERB	V	_	0	root	spend.02	A0:1|AM-TMP:2|A1:6|AM-LOC:9
+3	muốn	muốn	VERB	V	_	0	root	want.01	A0:1|AM-TMP:2|A1:4
+4	dành	dành	VERB	V	_	3	xcomp	spend.02	A0:1|AM-TMP:2|A1:6|AM-LOC:9
 5	nhiều	nhiều	ADJ	ADJ	_	6	advmod:adj	_	_
 6	thời gian	thời gian	NOUN	N	_	4	obj	_	_
 7	hơn	hơn	ADJ	ADJ	_	6	advmod:adj	_	_
@@ -1866,7 +1866,7 @@
 2	tất cả	tất cả	PRON	PRO	_	3	det	_	_
 3	chúng ta	chúng ta	PRON	PRO	_	5	nsubj	_	_
 4	không	không	ADV	ADV	_	5	advmod:neg	_	_
-5	làm	làm	VERB	V	_	0	root	do.02	A0:3|A1:6|AM-MNR:8
+5	làm	làm	VERB	V	_	0	root	do.02	A0:3|A1:6|AM-MNR:8|AM-NEG:4
 6	điều	điều	NOUN	N	_	5	obj	_	_
 7	đó	đó	PRON	PRO	_	6	det:pmod	_	_
 8	cùng	cùng	ADJ	ADJ	_	5	advmod:adj	_	_
@@ -1889,20 +1889,20 @@
 
 # text = Tôi mong là Tom sẽ không muốn làm việc đó .
 1	Tôi	tôi	PRON	PRO	_	2	nsubj	_	_
-2	mong	mong	VERB	V	_	0	root	hope.01	A0:1
+2	mong	mong	VERB	V	_	0	root	hope.01	A0:1|A1:
 3	là	là	SCONJ	C	_	8	mark	_	_
 4	Tom	tom	NOUN	NNP	_	7	nsubj	_	_
 5	sẽ	sẽ	ADV	ADV	_	7	advmod	_	_
 6	không	không	ADV	ADV	_	7	advmod:neg	_	_
 7	muốn	muốn	VERB	V	_	8	aux	_	_
-8	làm việc	làm việc	VERB	V	_	7	ccomp	work.01	A0:4|AM-TMP:5
+8	làm việc	làm việc	VERB	V	_	2	ccomp	work.01	A0:4|AM-TMP:5|A1:9
 9	đó	đó	PRON	PRO	_	8	obj	_	_
 10	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Tôi chẳng học được gì từ thầy giáo đó cả .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	chẳng	chẳng	ADV	ADV	_	3	advmod:neg	_	_
-3	học	học	VERB	V	_	0	root	learn.01	A0:1|AM-DIS:4|AM-DIS:5|A2:7
+3	học	học	VERB	V	_	0	root	learn.01	A0:1|AM-DIS:4|AM-DIS:5|A2:7|AM-NEG:2
 4	được	được	ADV	ADV	_	3	advmod	_	_
 5	gì	gì	PRON	PRO	_	3	obj	_	_
 6	từ	từ	ADP	PRE	_	7	case	_	_
@@ -1916,7 +1916,7 @@
 2	tôi	tôi	PRON	PRO	_	1	nmod	_	_
 3	sẽ	sẽ	ADV	ADV	_	5	advmod	_	_
 4	không	không	ADV	ADV	_	5	advmod:neg	_	_
-5	cho	cho	VERB	V	_	0	root	let.01	A0:1|AM-TMP:3|A1:7
+5	cho	cho	VERB	V	_	0	root	let.01	A0:1|AM-TMP:3|A1:7|AM-NEG:4
 6	chúng tôi	chúng tôi	PRON	PRO	_	5	obj	_	_
 7	nuôi	nuôi	VERB	V	_	6	acl:subj	keep.01	A0:6|A1:8|AM-LOC:11
 8	thú	thú	NOUN	N	_	7	obj	_	_
@@ -1928,33 +1928,33 @@
 # text = Mary đã nhờ Tom kéo khoá váy lên giúp cô ấy .
 1	Mary	mary	NOUN	NNP	_	3	nsubj	_	_
 2	đã	đã	ADV	ADV	_	3	advmod	_	_
-3	nhờ	nhờ	VERB	V	_	0	root	ask.02	A0:1|AM-TMP:2
+3	nhờ	nhờ	VERB	V	_	0	root	ask.02	A0:1|AM-TMP:2|A1:5|A2:4
 4	Tom	tom	NOUN	NNP	_	3	obj	_	_
 5	kéo	kéo	VERB	V	_	4	acl:subj	zip.01	A2:4|A1:6
 6	khoá	khoá	NOUN	N	_	5	obj	_	_
 7	váy	váy	VERB	V	_	6	compound:vmod	_	_
 8	lên	lên	ADV	ADV	_	5	advmod:dir	_	_
-9	giúp	giúp	VERB	V	_	5	advcl:objective	help.01	A2:10
+9	giúp	giúp	VERB	V	_	5	advcl:objective	_	_
 10	cô	cô	NOUN	N	_	9	obj	_	_
 11	ấy	ấy	PRON	PRO	_	10	det:pmod	_	_
 12	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Cậu có nghĩ Tom thực sự thích việc đó không ?
 1	Cậu	cậu	NOUN	N	_	3	nsubj	_	_
-2	có	có	VERB	V	_	0	root	_	_
-3	nghĩ	nghĩ	VERB	V	_	2	xcomp	think.01	A0:1
+2	có	có	VERB	V	_	3	cop	_	_
+3	nghĩ	nghĩ	VERB	V	_	0	root	think.01	A0:1|A1:6
 4	Tom	tom	NOUN	NNP	_	6	nsubj	_	_
 5	thực sự	thực sự	ADJ	ADJ	_	6	advmod:adj	_	_
-6	thích	thích	VERB	V	_	3	ccomp	like.02	A1:6
+6	thích	thích	VERB	V	_	3	ccomp	like.02	A1:6|A0:4
 7	việc	việc	NOUN	N	_	6	obj	_	_
 8	đó	đó	PRON	PRO	_	7	det:pmod	_	_
 9	không	không	ADV	ADV	_	6	advmod:neg	_	_
-10	?	?	PUNCT	PUNCT	_	2	punct	_	_
+10	?	?	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Chúng tôi luôn đi bộ ngang qua bưu điện trên đường đi làm
 1	Chúng tôi	chúng tôi	PRON	PRO	_	3	nsubj	_	_
 2	luôn	luôn	ADV	ADV	_	3	advmod	_	_
-3	đi	đi	VERB	V	_	0	root	_	_
+3	đi	đi	VERB	V	_	0	root	walk.01	A0:1|AM-ADV:2|AM-DIR:5
 4	bộ	bộ	NOUN	N	_	3	obj	_	_
 5	ngang	ngang	VERB	V	_	3	xcomp	_	_
 6	qua	qua	ADP	PRE	_	7	case	_	_
@@ -1962,7 +1962,7 @@
 8	trên	trên	ADP	PRE	_	9	case	_	_
 9	đường	đường	NOUN	N	_	11	obl:comp	_	_
 10	đi	đi	VERB	V	_	9	acl:subj	_	_
-11	làm	làm	VERB	V	_	3	conj	work.01	A1:1|AM-ADV:2|AM-DIR:5
+11	làm	làm	VERB	V	_	3	conj	_	_
 
 # text = Tôi đã hy vọng có thể hoàn thành việc này hôm qua .
 1	Tôi	tôi	PRON	PRO	_	5	nsubj	_	_
@@ -1979,7 +1979,7 @@
 1	Bạn	bạn	NOUN	N	_	4	nsubj	_	_
 2	cho	cho	ADP	PRE	_	10	case	_	_
 3	tôi	tôi	PRON	PRO	_	4	obl:comp	_	_
-4	mượn	mượn	VERB	V	_	0	root	lend.01	A0:1|A1:6|AM-DIS:10
+4	mượn	mượn	VERB	V	_	0	root	lend.01	A0:1|A1:6|AM-DIS:10|A2:3
 5	cái	cái	NOUN	Nc	_	6	det:clf	_	_
 6	lược	lược	NOUN	N	_	4	obj	_	_
 7	của	của	ADP	PRE	_	8	case	_	_
@@ -2011,7 +2011,7 @@
 7	gì	gì	PRON	PRO	_	5	obj	_	_
 8	Tom	tom	NOUN	NNP	_	10	nsubj	_	_
 9	đang	đang	ADV	ADV	_	10	advmod	_	_
-10	nghĩ	nghĩ	VERB	V	_	7	acl	think.01	A0:8|AM-LOC:12
+10	nghĩ	nghĩ	VERB	V	_	7	acl	think.01	A0:8|AM-LOC:12|AM-TMP:9
 11	trong	trong	ADP	PRE	_	12	case	_	_
 12	đầu	đầu	NOUN	N	_	10	obl:comp	_	_
 13	.	.	PUNCT	PUNCT	_	2	punct	_	_
@@ -2019,15 +2019,15 @@
 # text = Tôi cần gọi bố mẹ để báo họ biết tôi sẽ về ăn tối muộn .
 1	Tôi	tôi	PRON	PRO	_	8	nsubj	_	_
 2	cần	cần	VERB	V	_	3	aux	_	_
-3	gọi	gọi	VERB	V	_	0	root	call.01	A0:1|A1:4|AM-PNC:6
+3	gọi	gọi	VERB	V	_	0	root	call.01	A0:1|A1:4|AM-PRP:6
 4	bố mẹ	bố mẹ	NOUN	N	_	3	obj	_	_
 5	để	để	ADP	PRE	_	3	mark	_	_
-6	báo	báo	VERB	V	_	8	cc	call.01	A1:7
+6	báo	báo	VERB	V	_	8	ccomp	let.01	A2:7|A1:8
 7	họ	họ	PRON	PRO	_	8	obj	_	_
 8	biết	biết	VERB	V	_	6	ccomp	know.01	A1:11
 9	tôi	tôi	PRON	PRO	_	14	nsubj	_	_
 10	sẽ	sẽ	ADV	ADV	_	14	cop	_	_
-11	về	về	VERB	V	_	13	case	come.01	A1:9|AM-TMP:10
+11	về	về	VERB	V	_	13	case	come.01	A0:9|AM-TMP:10
 12	ăn	ăn	VERB	V	_	11	xcomp	eat.01	AM-TMP:14
 13	tối	tối	NOUN	N	_	14	obl	_	_
 14	muộn	muộn	ADJ	ADJ	_	8	ccomp	_	_
@@ -2036,7 +2036,7 @@
 # text = Tôi không muốn bất cứ ai biết là tôi giàu .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	muốn	muốn	VERB	V	_	0	root	want.01	A0:1|A1:6
+3	muốn	muốn	VERB	V	_	0	root	want.01	A0:1|A1:6|AM-NEG:2
 4	bất cứ	bất cứ	ADV	ADV	_	5	advmod	_	_
 5	ai	ai	PRON	PRO	_	6	nsubj	_	_
 6	biết	biết	VERB	V	_	3	ccomp	know.01	A0:5|A1:8
@@ -2095,14 +2095,14 @@
 
 # text = Tom cúi người trước cụ già một cách đầy kính trọng .
 1	Tom	tom	NOUN	N	_	2	nsubj	_	_
-2	cúi	cúi	VERB	V	_	0	root	_	_
+2	cúi	cúi	VERB	V	_	0	root	bow.01	A0:1|AM-MNR:6
 3	người	người	NOUN	N	_	2	obj	_	_
 4	trước	trước	ADP	PRE	_	5	case	_	_
 5	cụ già	cụ già	NOUN	N	_	2	obl:comp	_	_
 6	một cách	một cách	NOUN	N	_	2	obl	_	_
 7	đầy	đầy	ADJ	ADJ	_	8	advmod:adj	_	_
 8	kính trọng	kính trọng	VERB	V	_	6	acl:subj	_	_
-9	.	.	PUNCT	PUNCT	_	2	punct	bow.01	A0:1|AM-MNR:6
+9	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Có lẽ tôi sẽ gọi cho cậu lúc nào đó .
 1	Có lẽ	có lẽ	X	X	_	4	advmod	_	_
@@ -2121,7 +2121,7 @@
 3	là	là	SCONJ	C	_	6	mark	_	_
 4	bạn	bạn	NOUN	N	_	6	nsubj	_	_
 5	có thể	có thể	ADV	ADV	_	6	advmod	_	_
-6	giúp	giúp	VERB	V	_	2	ccomp	help.01	A0:4|A1:7
+6	giúp	giúp	VERB	V	_	2	ccomp	help.01	A0:4|A2:7
 7	tôi	tôi	PRON	PRO	_	6	obj	_	_
 8	được	được	VERB	V	_	6	advmod	_	_
 9	không	không	ADV	ADV	_	10	advmod:neg	_	_
@@ -2132,15 +2132,15 @@
 1	Nếu	nếu	SCONJ	C	_	4	mark	_	_
 2	tôi	tôi	PRON	PRO	_	4	nsubj	_	_
 3	không	không	ADV	ADV	_	4	advmod:neg	_	_
-4	làm	làm	VERB	V	_	12	advcl	do.02	A0:2
-5	bay	bay	VERB	V	_	4	xcomp	_	_
+4	làm	làm	VERB	V	_	12	advcl	do.02	A0:2|AM-NEG:3|AM-TMP:5
+5	bây	bây	VERB	V	_	4	xcomp	_	_
 6	giờ	giờ	NOUN	N	_	5	obl	_	_
 7	thì	thì	SCONJ	C	_	12	mark	_	_
 8	tôi	tôi	PRON	PRO	_	12	nsubj	_	_
 9	sẽ	sẽ	ADV	ADV	_	12	advmod	_	_
 10	không	không	ADV	ADV	_	11	advmod:neg	_	_
 11	bao giờ	bao giờ	PRON	PRO	_	12	obl:tmod	_	_
-12	làm	làm	VERB	V	_	0	root	do.02	AM-TMP:5|A0:8|AM-TMP:11
+12	làm	làm	VERB	V	_	0	root	do.02	AM-NEG:10|A0:8|AM-TMP:11|AM-ADV:4
 13	hết	hết	VERB	V	_	12	compound:svc	_	_
 14	.	.	PUNCT	PUNCT	_	12	punct	_	_
 
@@ -2149,7 +2149,7 @@
 2	nghĩ	nghĩ	VERB	V	_	0	root	think.01	A0:1|A1:5
 3	bạn	bạn	NOUN	N	_	5	nsubj	_	_
 4	đang	đang	ADV	ADV	_	5	aux	_	_
-5	làm việc	làm việc	VERB	V	_	2	ccomp	work.01	A0:3|AM-TMP:4|AM-MNR:7
+5	làm việc	làm việc	VERB	V	_	2	ccomp	work.01	A0:3|AM-TMP:4|AM-MNR:7|AM-LOC:9
 6	rất	rất	ADV	ADV	_	7	advmod	_	_
 7	tốt	tốt	ADJ	ADJ	_	5	advmod	_	_
 8	ở	ở	ADP	PRE	_	9	case	_	_
@@ -2160,7 +2160,7 @@
 1	John	john	NOUN	NNP	_	3	nsubj	_	_
 2	đã	đã	ADV	ADV	_	3	advmod	_	_
 3	lấy	lấy	VERB	V	_	0	root	take.01	A0:1|AM-TMP:2|A1:4|AM-LOC:7
-4	chỉa	chỉa	NOUN	N	_	3	obj	_	_
+4	chìa	chìa	NOUN	N	_	3	obj	_	_
 5	khoá	khoá	VERB	V	_	3	xcomp	_	_
 6	ra	ra	ADV	ADV	_	5	compound:dir	_	_
 7	túi	túi	NOUN	N	_	3	obj	_	_
@@ -2171,7 +2171,7 @@
 
 # text = Tôi tỉnh dậy và thấy một tên trộm trong phòng mình .
 1	Tôi	tôi	PRON	PRO	_	5	nsubj	_	_
-2	tỉnh	tỉnh	VERB	V	_	0	root	_	_
+2	tỉnh	tỉnh	VERB	V	_	0	root	get_up.01	A0:1
 3	dậy	dậy	VERB	V	_	2	compound:svc	_	_
 4	và	và	CCONJ	CC	_	5	cc	_	_
 5	thấy	thấy	VERB	V	_	2	conj	find.01	A0:1|A1:7|AM-LOC:10
@@ -2181,18 +2181,18 @@
 9	trong	trong	ADP	PRE	_	10	case	_	_
 10	phòng	phòng	NOUN	N	_	5	obl	_	_
 11	mình	mình	PRON	PRO	_	10	det:pmod	_	_
-12	.	.	PUNCT	PUNCT	_	2	punct	get_up.01	A0:1
+12	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Tom thắc mắc không biết mất bao lâu thì Mary hoàn thành công việc .
 1	Tom	tom	NOUN	N	_	2	nsubj	_	_
-2	thắc mắc	thắc mắc	VERB	V	_	0	root	_	_
+2	thắc mắc	thắc mắc	VERB	V	_	0	root	wonder.01	A0:1|A1:5
 3	không	không	ADV	ADV	_	4	advmod:neg	_	_
 4	biết	biết	VERB	V	_	2	xcomp	know.01	A0:1|A1:5
 5	mất	mất	VERB	V	_	4	xcomp	take.01	A1:6
 6	bao lâu	bao lâu	PRON	PRO	_	5	obj	_	_
 7	thì	thì	SCONJ	C	_	9	mark	_	_
 8	Mary	mary	NOUN	NNP	_	9	nsubj	_	_
-9	hoàn thành	hoàn thành	VERB	V	_	5	ccomp	finish.02	A1:8|A1:10
+9	hoàn thành	hoàn thành	VERB	V	_	5	ccomp	finish.02	A0:8|A1:10
 10	công việc	công việc	NOUN	N	_	9	obj	_	_
 11	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
@@ -2205,12 +2205,12 @@
 6	mà	mà	SCONJ	C	_	9	mark	_	_
 7	không	không	ADV	ADV	_	8	advmod:neg	_	_
 8	tự	tự	PRON	PRO	_	9	advmod	_	_
-9	giải quyết	giải quyết	VERB	V	_	4	conj	solve.01	A0:3
+9	giải quyết	giải quyết	VERB	V	_	4	conj	solve.01	A0:3|AM-MNR:8
 10	được	được	ADV	ADV	_	9	advmod	_	_
 11	,	,	PUNCT	PUNCT	_	14	punct	_	_
 12	tôi	tôi	PRON	PRO	_	14	nsubj	_	_
 13	đều	đều	ADV	ADV	_	14	advmod	_	_
-14	nhờ	nhờ	VERB	V	_	0	root	ask.02	AM-TMP:2|A0:12|AM-ADV:13|A2:16
+14	nhờ	nhờ	VERB	V	_	0	root	ask.02	AM-TMP:2|A0:12|A2:16
 15	đến	đến	ADP	PRE	_	16	case	_	_
 16	Tom	tom	NOUN	NNP	_	14	obl:comp	_	_
 17	.	.	PUNCT	PUNCT	_	14	punct	_	_
@@ -2224,7 +2224,7 @@
 6	việc	việc	NOUN	Nc	_	3	nmod	_	_
 7	Tom	tom	NOUN	NNP	_	8	nsubj	_	_
 8	cần	cần	VERB	V	_	9	aux	_	_
-9	làm	làm	VERB	V	_	6	acl	do.02	A0:7
+9	làm	làm	VERB	V	_	6	acl	do.02	A0:7|A1:6
 10	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Cả thế giới cần phải chung tay đối phó với vấn đề biến đổi khí hậu .
@@ -2232,21 +2232,21 @@
 2	thế giới	thế giới	NOUN	N	_	3	nsubj	_	_
 3	cần	cần	VERB	V	_	5	aux	_	_
 4	phải	phải	VERB	V	_	7	mark	_	_
-5	chung	chung	VERB	V	_	0	root	_	_
+5	chung	chung	VERB	V	_	0	root	join.01	A0:2
 6	tay	tay	NOUN	N	_	5	obj	_	_
 7	đối phó	đối phó	VERB	V	_	3	xcomp	deal.01	A0:2|A1:9
 8	với	với	ADP	PRE	_	9	det	_	_
 9	vấn đề	vấn đề	NOUN	N	_	7	obj	_	_
 10	biến đổi	biến đổi	VERB	V	_	9	acl:subj	_	_
 11	khí hậu	khí hậu	NOUN	N	_	10	obj	_	_
-12	.	.	PUNCT	PUNCT	_	5	punct	join.01	A0:2
+12	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
 # text = Xin lỗi nhưng tôi không thể cho bạn mượn ô tô của tôi vào cuối tuần sau .
 1	Xin lỗi	xin lỗi	VERB	V	_	0	root	apologize.01	_
 2	nhưng	nhưng	SCONJ	C	_	5	mark	_	_
 3	tôi	tôi	PRON	PRO	_	7	nsubj	_	_
 4	không thể	không thể	ADV	ADV	_	7	advmod:neg	_	_
-5	cho	cho	VERB	V	_	1	conj	give.01	A0:3|A2:6|A1:7
+5	cho	cho	VERB	V	_	1	conj	give.01	A0:3|A2:6|A1:7|AM-NEG:4
 6	bạn	bạn	NOUN	N	_	7	obj	_	_
 7	mượn	mượn	VERB	V	_	6	acl:subj	lend.01	A1:8|AM-TMP:12
 8	ô tô	ô tô	NOUN	N	_	7	obj	_	_
@@ -2340,12 +2340,12 @@
 
 # text = Tôi nghĩ là tôi còn một chút pizza thừa trong tủ lạnh
 1	Tôi	tôi	PRON	PRO	_	2	nsubj	_	_
-2	nghĩ	nghĩ	VERB	V	_	0	root	think.01	A1:7
+2	nghĩ	nghĩ	VERB	V	_	0	root	think.01	A0:1|A1:5
 3	là	là	SCONJ	C	_	7	mark	_	_
 4	tôi	tôi	PRON	PRO	_	7	nsubj	_	_
-5	còn	còn	ADV	ADV	_	7	advmod	_	_
+5	còn	còn	VERB	V	_	2	ccomp	have.01	A0:4|A1:7
 6	một chút	một chút	DET	DET	_	7	det	_	_
-7	pizza	pizza	NOUN	N	_	2	ccomp	_	_
+7	pizza	pizza	NOUN	N	_	5	obj	_	_
 8	thừa	thừa	VERB	V	_	7	acl:subj	_	_
 9	trong	trong	ADP	PRE	_	10	case	_	_
 10	tủ lạnh	tủ lạnh	NOUN	N	_	8	obl:comp	_	_
@@ -2369,7 +2369,7 @@
 3	mỗi	mỗi	NUM	NUM	_	4	det	_	_
 4	khi	khi	NOUN	N	_	2	obl:tmod	_	_
 5	nó	nó	PRON	PRO	_	6	nsubj	_	_
-6	nói chuyện	nói chuyện	VERB	V	_	4	acl:tmod	speak.01	A0:5
+6	nói chuyện	nói chuyện	VERB	V	_	4	acl:tmod	speak.01	A0:5|AM-LOC:8
 7	trước	trước	ADP	PRE	_	8	case	_	_
 8	công chúng	công chúng	NOUN	N	_	6	obl	_	_
 9	.	.	PUNCT	PUNCT	_	2	punct	_	_
@@ -2377,7 +2377,7 @@
 # text = Tom không muốn Mary tự làm điều đó một mình .
 1	Tom	tom	NOUN	NNP	_	3	nsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	muốn	muốn	VERB	V	_	0	root	want.01	A0:1|A1:6
+3	muốn	muốn	VERB	V	_	0	root	want.01	A0:1|A1:6|AM-NEG:2
 4	Mary	mary	NOUN	NNP	_	6	nsubj	_	_
 5	tự	tự	PRON	PRO	_	6	advmod	_	_
 6	làm	làm	VERB	V	_	3	ccomp	do.02	A0:4|AM-ADV:5|A1:7|AM-MNR:9
@@ -2397,7 +2397,7 @@
 8	tôi	tôi	PRON	PRO	_	11	nsubj	_	_
 9	vẫn	vẫn	ADV	ADV	_	11	advmod	_	_
 10	không thể	không thể	ADV	ADV	_	11	advmod:neg	_	_
-11	hiểu	hiểu	VERB	V	_	0	root	understand.01	A0:8|AM-ADV:9|A1:13
+11	hiểu	hiểu	VERB	V	_	0	root	understand.01	A0:8|AM-ADV:9|A1:13|AM-NEG:10
 12	được	được	ADV	ADV	_	11	advmod	_	_
 13	chuyện	chuyện	NOUN	N	_	11	obj	_	_
 14	này	này	PRON	PRO	_	13	det:pmod	_	_
@@ -2406,7 +2406,7 @@
 # text = Tôi có thể kể cho cậu mọi chi tiết nếu cậu muốn biết về chúng .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	có thể	có thể	ADV	ADV	_	3	advmod	_	_
-3	kể	kể	VERB	V	_	0	root	tell.01	A0:1|A2:5|AM-MNR:7
+3	kể	kể	VERB	V	_	0	root	tell.01	A0:1|A2:5|A1:7|AM-ADV:11
 4	cho	cho	ADP	PRE	_	5	case	_	_
 5	cậu	cậu	NOUN	N	_	3	obl:iobj	_	_
 6	mọi	mọi	DET	DET	_	7	det	_	_
@@ -2414,8 +2414,8 @@
 8	nếu	nếu	SCONJ	C	_	11	mark	_	_
 9	cậu	cậu	NOUN	N	_	10	nsubj	_	_
 10	muốn	muốn	VERB	V	_	11	aux	_	_
-11	biết	biết	VERB	V	_	10	advcl	know.01	A0:9|A1:13
-12	về	về	ADP	PRE	_	11	mark	_	_
+11	biết	biết	VERB	V	_	3	advcl	know.01	A0:9|A1:13
+12	về	về	ADP	PRE	_	13	case	_	_
 13	chúng	chúng	PRON	PRO	_	11	obj	_	_
 14	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
@@ -2424,7 +2424,7 @@
 2	biết	biết	VERB	V	_	0	root	know.01	A0:1|A1:5
 3	cô	cô	NOUN	N	_	5	nsubj	_	_
 4	không	không	ADV	ADV	_	5	advmod:neg	_	_
-5	có	có	VERB	V	_	2	ccomp	have.03	A0:3|A1:6
+5	có	có	VERB	V	_	2	ccomp	have.03	A0:3|A1:6|AM-NEG:4
 6	sự	sự	NOUN	N	_	5	obj	_	_
 7	chọn lựa	chọn lựa	VERB	V	_	6	compound:vmod	_	_
 8	nào	nào	PRON	PRO	_	6	det:pmod	_	_
@@ -2437,7 +2437,7 @@
 3	này	này	PRON	PRO	_	2	det	_	_
 4	cũng	cũng	ADV	ADV	_	6	advmod	_	_
 5	được	được	VERB	V	_	6	aux:pass	_	_
-6	dịch	dịch	VERB	V	_	0	root	translate.01	A1:2|C-A1:7
+6	dịch	dịch	VERB	V	_	0	root	translate.01	A1:2
 7	sang	sang	VERB	V	_	6	xcomp	_	_
 8	tiếng	tiếng	NOUN	N	_	7	obl:comp	_	_
 9	Pháp	pháp	NOUN	NNP	_	8	compound	_	_
@@ -2447,12 +2447,12 @@
 1	Tôi	tôi	PRON	PRO	_	4	nsubj	_	_
 2	sẽ	sẽ	ADV	ADV	_	4	advmod	_	_
 3	không thể	không thể	ADV	ADV	_	4	advmod:neg	_	_
-4	xong	xong	VERB	V	_	0	root	finish.02	A1:1|AM-TMP:2
+4	xong	xong	VERB	V	_	0	root	finish.02	A0:1|AM-TMP:2|AM-NEG:3|AM-ADV:9
 5	được	được	ADV	ADV	_	4	advmod	_	_
 6	nếu	nếu	SCONJ	C	_	9	mark	_	_
 7	bạn	bạn	NOUN	N	_	9	nsubj	_	_
 8	không	không	ADV	ADV	_	9	advmod	_	_
-9	giúp	giúp	VERB	V	_	4	advcl	help.01	A0:7|A1:10
+9	giúp	giúp	VERB	V	_	4	advcl	help.01	A0:7|A2:10
 10	tôi	tôi	PRON	PRO	_	9	obj	_	_
 11	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
@@ -2463,7 +2463,7 @@
 4	là	là	SCONJ	C	_	7	mark	_	_
 5	bạn	bạn	NOUN	N	_	7	nsubj	_	_
 6	có thể	có thể	ADV	ADV	_	7	aux	_	_
-7	giúp	giúp	VERB	V	_	3	ccomp	help.01	A0:5|A1:8|C-A1:9
+7	giúp	giúp	VERB	V	_	3	ccomp	help.01	A0:5|A2:8|A1:9
 8	tôi	tôi	PRON	PRO	_	9	obj	_	_
 9	làm	làm	VERB	V	_	7	xcomp	do.02	A1:10
 10	điều	điều	NOUN	N	_	9	obj	_	_
@@ -2524,7 +2524,7 @@
 # text = Anh ấy rửa đôi tay bẩn của con bé trước khi ăn .
 1	Anh	anh	NOUN	N	_	3	nsubj	_	_
 2	ấy	ấy	PRON	PRO	_	5	nmod	_	_
-3	rửa	rửa	VERB	V	_	0	root	wash.01	A0:1|A3:5|AM-TMP:10
+3	rửa	rửa	VERB	V	_	0	root	wash.01	A0:1|A1:5|AM-TMP:10
 4	đôi	đôi	NUM	NUM	_	5	nummod	_	_
 5	tay	tay	NOUN	N	_	3	obj	_	_
 6	bẩn	bẩn	ADJ	ADJ	_	5	amod	_	_
@@ -2532,7 +2532,7 @@
 8	con bé	con bé	NOUN	N	_	5	nmod:poss	_	_
 9	trước	trước	ADP	PRE	_	10	case	_	_
 10	khi	khi	NOUN	N	_	3	obl:tmod	_	_
-11	ăn	ăn	VERB	V	_	10	compound:vmod	eat.01	_
+11	ăn	ăn	VERB	V	_	10	acl:tmod	eat.01	_
 12	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Tôi nghĩ là hôm qua Tom không đi chạy bộ , nhưng mà tôi không chắc .
@@ -2542,14 +2542,14 @@
 4	hôm qua	hôm qua	NOUN	N	_	7	obl:tmod	_	_
 5	Tom	tom	NOUN	NNP	_	7	nsubj	_	_
 6	không	không	ADV	ADV	_	7	advmod	_	_
-7	đi	đi	VERB	V	_	2	ccomp	get.03	AM-TMP:4|A1:5|A2:8
+7	đi	đi	VERB	V	_	2	ccomp	get.03	AM-TMP:4|A0:5|A2:8|AM-NEG:6
 8	chạy	chạy	VERB	V	_	7	xcomp	_	_
 9	bộ	bộ	NOUN	N	_	8	obj	_	_
 10	,	,	PUNCT	PUNCT	_	14	punct	_	_
 11	nhưng mà	nhưng mà	SCONJ	C	_	14	cc	_	_
 12	tôi	tôi	PRON	PRO	_	14	nsubj	_	_
 13	không	không	ADV	ADV	_	14	advmod:neg	_	_
-14	chắc	chắc	ADJ	ADJ	_	2	conj	_	_
+14	chắc	chắc	ADJ	ADJ	_	2	conj		A0:12|AM-NEG:13
 15	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Tom ngồi trong quán bar , chỉ nhìn chằm chằm vào đồ uống của mình .
@@ -2576,7 +2576,7 @@
 4	rằng	rằng	SCONJ	C	_	7	mark	_	_
 5	tôi	tôi	PRON	PRO	_	7	nsubj	_	_
 6	không thể	không thể	ADV	ADV	_	7	advmod:neg	_	_
-7	thắng	thắng	VERB	V	_	3	ccomp	win.01	A0:5
+7	thắng	thắng	VERB	V	_	3	ccomp	win.01	A0:5|AM-NEG:6
 8	được	được	ADV	ADV	_	7	advmod	_	_
 9	à	à	PART	PART:G	_	7	discourse	_	_
 10	?	?	PUNCT	PUNCT	_	3	punct	_	_
@@ -2605,11 +2605,11 @@
 # text = Bạn không được để cô ta đợi bên ngoài trong thời tiết lạnh giá thế này .
 1	Bạn	bạn	NOUN	N	_	3	nsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	được	được	VERB	V	_	0	root	_	_
-4	để	để	ADP	PRE	_	7	mark:pcomp	_	_
+3	được	được	ADV	ADV	_	4	aux	_	_
+4	để	để	VERB	V	_	0	root	leave.12	let.01|A0:1|A1:7
 5	cô	cô	NOUN	N	_	7	nsubj	_	_
 6	ta	ta	PRON	PRO	_	5	det:pmod	_	_
-7	đợi	đợi	VERB	V	_	3	advcl:objective	wait.01	A1:5|A2:8|AM-LOC:11
+7	đợi	đợi	VERB	V	_	4	ccomp	wait.01	A1:5|AM-LOC:8|AM-TMP:11
 8	bên	bên	NOUN	N	_	7	obl	_	_
 9	ngoài	ngoài	NOUN	N	_	8	compound	_	_
 10	trong	trong	ADP	PRE	_	11	case	_	_
@@ -2622,7 +2622,7 @@
 1	Nếu	nếu	SCONJ	C	_	4	mark	_	_
 2	cậu	cậu	NOUN	N	_	4	nsubj	_	_
 3	không	không	ADV	ADV	_	4	advmod:neg	_	_
-4	trả	trả	VERB	V	_	11	advcl	pay.01	A0:2|A1:5|A2:7
+4	trả	trả	VERB	V	_	11	advcl	pay.01	A0:2|A1:5|A2:7|AM-NEG:3
 5	đồ	đồ	NOUN	N	_	4	obj	_	_
 6	cho	cho	ADP	PRE	_	7	case	_	_
 7	nó	nó	PRON	PRO	_	5	obl	_	_
@@ -2654,7 +2654,7 @@
 3	,	,	PUNCT	PUNCT	_	6	punct	_	_
 4	tôi	tôi	PRON	PRO	_	6	nsubj	_	_
 5	không	không	ADV	ADV	_	6	advmod:neg	_	_
-6	nghe	nghe	VERB	V	_	2	conj	hear.01	A0:4
+6	nghe	nghe	VERB	V	_	2	conj	hear.01	A0:4|A1:9|AM-NEG:5
 7	được	được	ADV	ADV	_	6	advmod	_	_
 8	bạn	bạn	NOUN	N	_	6	nsubj	_	_
 9	nói	nói	VERB	V	_	6	ccomp	say.01	A0:8|A1:10
@@ -2692,7 +2692,7 @@
 1	Các	các	DET	DET	_	2	det	_	_
 2	sinh viên	sinh viên	NOUN	N	_	4	nsubj	_	_
 3	đã	đã	ADV	ADV	_	4	advmod	_	_
-4	học	học	VERB	V	_	0	root	learn.01	A0:2|AM-TMP:3|A1:5
+4	học	học	VERB	V	_	0	root	learn.01	A0:2|AM-TMP:3|AM-MNR:5
 5	thuộc lòng	thuộc lòng	VERB	V	_	4	xcomp	_	_
 6	rất	rất	ADV	ADV	_	9	advmod	_	_
 7	nhiều	nhiều	ADJ	ADJ	_	9	advmod:adj	_	_
@@ -2733,7 +2733,7 @@
 1	Tôi	tôi	PRON	PRO	_	4	nsubj	_	_
 2	thật sự	thật sự	ADJ	ADJ	_	4	advmod:adj	_	_
 3	không	không	ADV	ADV	_	4	advmod:neg	_	_
-4	thích	thích	VERB	V	_	0	root	like.02	A0:1|A1:5
+4	thích	thích	VERB	V	_	0	root	like.02	A0:1|A1:5|AM-NEG:3
 5	đồ ăn	đồ ăn	NOUN	N	_	4	obj	_	_
 6	Ý	ý	NOUN	NNP	_	5	amod	_	_
 7	cho	cho	VERB	V	_	4	xcomp	_	_
@@ -2768,19 +2768,19 @@
 14	ta	ta	PRON	PRO	_	13	compound:pron	_	_
 15	lại	lại	ADV	ADV	_	17	advmod	_	_
 16	không thể	không thể	ADV	ADV	_	17	advmod:neg	_	_
-17	làm	làm	VERB	V	_	7	conj	do.02	A0:13|AM-TMP:15
+17	làm	làm	VERB	V	_	7	conj	do.02	A0:13|AM-TMP:15|AM-NEG:16
 18	được	được	ADV	ADV	_	17	advmod	_	_
 19	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Tôi muốn biết người mà Tom đã nói chuyện cùng .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	muốn	muốn	VERB	V	_	3	aux	_	_
-3	biết	biết	VERB	V	_	0	root	know.01	A0:1
+3	biết	biết	VERB	V	_	0	root	know.01	A0:1|A1:5
 4	người	người	NOUN	N	_	8	nsubj	_	_
 5	mà	mà	SCONJ	C	_	8	mark	_	_
 6	Tom	tom	NOUN	NNP	_	8	nsubj	_	_
 7	đã	đã	ADV	ADV	_	8	aux	_	_
-8	nói chuyện	nói chuyện	VERB	V	_	3	ccomp	talk.01	A2:4|A0:6|AM-TMP:7
+8	nói chuyện	nói chuyện	VERB	V	_	3	acl:relcl	talk.01	A0:6|AM-TMP:7
 9	cùng	cùng	ADJ	ADJ	_	8	acomp	_	_
 10	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
@@ -2799,7 +2799,7 @@
 
 # text = Bạn làm cách nào để trả tiền cho cái máy tính này ?
 1	Bạn	bạn	NOUN	N	_	6	nsubj	_	_
-2	làm	làm	VERB	V	_	0	root	do.02	A0:1|A1:3|A2:6
+2	làm	làm	VERB	V	_	0	root	do.02	A0:1|A1:3|AM-PRP:6
 3	cách	cách	NOUN	N	_	6	obj	_	_
 4	nào	nào	PRON	PRO	_	3	det:pmod	_	_
 5	để	để	ADP	PRE	_	6	mark:pcomp	_	_
@@ -2826,7 +2826,7 @@
 2	đầu	đầu	NOUN	N	_	1	nmod	_	_
 3	tôi	tôi	PRON	PRO	_	5	nsubj	_	_
 4	không	không	ADV	ADV	_	5	advmod:neg	_	_
-5	thích	thích	VERB	V	_	0	root	like.02	AM-TMP:1|A0:3|A1:6
+5	thích	thích	VERB	V	_	0	root	like.02	AM-TMP:1|A0:3|A1:6|AM-NEG:4
 6	cô	cô	NOUN	N	_	5	obj	_	_
 7	ấy	ấy	PRON	PRO	_	6	det:pmod	_	_
 8	,	,	PUNCT	PUNCT	_	12	punct	_	_
@@ -2875,7 +2875,7 @@
 # text = Tôi không nghĩ là Tom biết Mary đang đi đâu .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	nghĩ	nghĩ	VERB	V	_	0	root	think.01	A0:1|AM-NEG:2|A1:6
+3	nghĩ	nghĩ	VERB	V	_	0	root	think.01	A0:1|A1:6|AM-NEG:2
 4	là	là	SCONJ	C	_	3	mark	_	_
 5	Tom	tom	NOUN	NNP	_	6	nsubj	_	_
 6	biết	biết	VERB	V	_	3	ccomp	know.01	A0:5|A1:9
@@ -2960,13 +2960,13 @@
 12	ấy	ấy	PRON	PRO	_	11	det:pmod	_	_
 13	đã	đã	ADV	ADV	_	15	advmod	_	_
 14	không	không	ADV	ADV	_	15	advmod:neg	_	_
-15	mua	mua	VERB	V	_	7	parataxis	buy.01	A0:11|AM-TMP:13|AM-NEG:14|A1:16
+15	mua	mua	VERB	V	_	7	parataxis	buy.01	A0:11|AM-TMP:13|A1:16|AM-NEG:14
 16	nó	nó	PRON	PRO	_	15	obj	_	_
 17	.	.	PUNCT	PUNCT	_	7	punct	_	_
 
 # text = Tôi chưa bao giờ mượn bất kì thứ gì của bạn mà không hỏi trước cả .
 1	Tôi	tôi	PRON	PRO	_	4	nsubj	_	_
-2	chưa	chưa	ADV	ADV	_	3	advmod	_	_
+2	chưa	chưa	ADV	ADV	_	3	advmod:neg	_	_
 3	bao giờ	bao giờ	PRON	PRO	_	4	obl:tmod	_	_
 4	mượn	mượn	VERB	V	_	0	root	lend.01	A0:1|AM-TMP:3|A1:6
 5	bất kì	bất kì	ADV	ADV	_	6	advmod	_	_
@@ -2976,7 +2976,7 @@
 9	bạn	bạn	NOUN	N	_	6	nmod:poss	_	_
 10	mà	mà	SCONJ	C	_	12	mark	_	_
 11	không	không	ADV	ADV	_	12	advmod:neg	_	_
-12	hỏi	hỏi	VERB	V	_	4	conj	ask.02	AM-NEG:11|AM-TMP:13
+12	hỏi	hỏi	VERB	V	_	4	conj	ask.02	AM-TMP:13|AM-NEG:11
 13	trước	trước	ADP	PRE	_	12	obl	_	_
 14	cả	cả	PRON	PRO	_	12	det	_	_
 15	.	.	PUNCT	PUNCT	_	4	punct	_	_
@@ -2984,14 +2984,14 @@
 # text = Tom cần nói chuyện với một người nào đó có thể hiểu được anh ta .
 1	Tom	tom	NOUN	N	_	3	nsubj	_	_
 2	cần	cần	VERB	V	_	3	aux	need.01	A0:1|A2:6
-3	nói chuyện	nói chuyện	VERB	V	_	0	root	talk.01	A2:10
+3	nói chuyện	nói chuyện	VERB	V	_	0	root	talk.01	A2:5
 4	với	với	ADP	PRE	_	6	case	_	_
 5	một	một	NUM	NUM	_	6	nummod	_	_
-6	người	người	NOUN	N	_	10	nsubj	_	_
-7	nào	nào	PRON	PRO	_	9	cop	_	_
+6	người	người	NOUN	N	_	10	obl:comp	_	_
+7	nào	nào	PRON	PRO	_	9	det:pmod	_	_
 8	đó	đó	PRON	PRO	_	7	compound	_	_
-9	có thể	có thể	ADV	ADV	_	6	acl	_	_
-10	hiểu	hiểu	VERB	V	_	3	xcomp	understand.01	A0:6|A1:12
+9	có thể	có thể	ADV	ADV	_	6	acl:subj	_	_
+10	hiểu	hiểu	VERB	V	_	3	xcomp	understand.01	A1:12
 11	được	được	ADV	ADV	_	10	advmod	_	_
 12	anh	anh	NOUN	N	_	10	obj	_	_
 13	ta	ta	PRON	PRO	_	12	det:pmod	_	_
@@ -3000,13 +3000,13 @@
 # text = Tôi không muốn nghe thêm bất kì lời than vãn nào từ cậu nữa .
 1	Tôi	tôi	PRON	PRO	_	4	nsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	muốn	muốn	VERB	V	_	0	root	want.01	A0:1|AM-NEG:2|A1:4
-4	nghe	nghe	VERB	V	_	3	xcomp	hear.01	A1:7|A2:11
-5	thêm	thêm	VERB	V	_	4	obj	_	_
+3	muốn	muốn	VERB	V	_	4	aux	_	_
+4	nghe	nghe	VERB	V	_	0	root	hear.01	A1:7|A2:11|A0:1
+5	thêm	thêm	VERB	V	_	4	compound:svc	_	_
 6	bất kì	bất kì	ADV	ADV	_	7	advmod	_	_
 7	lời	lời	NOUN	N	_	4	obj	_	_
 8	than vãn	than vãn	VERB	V	_	7	compound:vmod	_	_
-9	nào	nào	PRON	PRO	_	5	det	_	_
+9	nào	nào	PRON	PRO	_	5	det:pmod	_	_
 10	từ	từ	ADP	PRE	_	11	case	_	_
 11	cậu	cậu	NOUN	N	_	4	obl:comp	_	_
 12	nữa	nữa	ADV	ADV	_	4	advmod	_	_
@@ -3016,11 +3016,11 @@
 1	Cô	cô	NOUN	N	_	4	nsubj	_	_
 2	ấy	ấy	PRON	PRO	_	1	det:pmod	_	_
 3	không thể	không thể	ADV	ADV	_	4	advmod:neg	_	_
-4	đến	đến	VERB	V	_	0	root	come.01	A1:1|AM-NEG:3|AM-CAU:5
+4	đến	đến	VERB	V	_	0	root	come.01	A1:1|AM-CAU:5|AM-NEG:3
 5	bởi vì	bởi vì	ADP	PRE	_	8	mark	_	_
 6	anh	anh	NOUN	N	_	8	nsubj	_	_
 7	ấy	ấy	PRON	PRO	_	8	cop	_	_
-8	bệnh	bệnh	NOUN	N	_	4	advcl	_	_
+8	bệnh	bệnh	ADJ	ADJ	_	4	advcl	_	_
 9	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
 # text = Lúc đó nếu tôi biết là Tom ở Boston thì tôi đã nói cho bạn biết rồi .
@@ -3028,18 +3028,18 @@
 2	đó	đó	PRON	PRO	_	1	det:pmod	_	_
 3	nếu	nếu	SCONJ	C	_	5	mark	_	_
 4	tôi	tôi	PRON	PRO	_	5	nsubj	_	_
-5	biết	biết	VERB	V	_	13	advcl	know.01	AM-TMP:1|A0:4|A1:7
+5	biết	biết	VERB	V	_	13	advcl	know.01	AM-TMP:1|A0:4|A1:8
 6	là	là	VERB	V	_	13	mark	_	_
 7	Tom	tom	NOUN	NNP	_	5	nsubj	_	_
-8	ở	ở	ADP	PRE	_	9	case	_	_
-9	Boston	boston	NOUN	NNP	_	7	nmod	_	_
+8	ở	ở	VERB	V	_	9	ccomp	be.02	A0:7|AM-LOC:9
+9	Boston	boston	NOUN	NNP	_	8	obl:comp	_	_
 10	thì	thì	SCONJ	C	_	13	mark	_	_
 11	tôi	tôi	PRON	PRO	_	13	nsubj	_	_
 12	đã	đã	ADV	ADV	_	13	advmod	_	_
-13	nói	nói	VERB	V	_	0	root	say.01	A0:11|A2:16
+13	nói	nói	VERB	V	_	0	root	say.01	A0:11|A2:16|AM-TMP:12
 14	cho	cho	ADP	PRE	_	15	case	_	_
 15	bạn	bạn	NOUN	N	_	13	obl:iobj	_	_
-16	biết	biết	VERB	V	_	13	xcomp	know.01	AM-TMP:12|A0:15
+16	biết	biết	VERB	V	_	13	xcomp	know.01	A0:15
 17	rồi	rồi	ADV	ADV	_	16	advmod	_	_
 18	.	.	PUNCT	PUNCT	_	13	punct	_	_
 
@@ -3083,10 +3083,10 @@
 
 # text = Tom muốn biết chúng ta sẽ ở lại đây trong bao lâu .
 1	Tom	tom	NOUN	N	_	2	nsubj	_	_
-2	muốn	muốn	VERB	V	_	3	aux	want.01	A0:1
+2	muốn	muốn	VERB	V	_	3	aux	_	_
 3	biết	biết	VERB	V	_	2	root	know.01	A1:3|A1:6
 4	chúng ta	chúng ta	PRON	PRO	_	5	nsubj	_	_
-5	sẽ	sẽ	ADV	ADV	_	3	ccomp	_	_
+5	sẽ	sẽ	ADV	ADV	_	3	advmod	_	_
 6	ở	ở	VERB	V	_	3	ccomp	stay.01	A0:4|AM-TMP:5|AM-DIR:7|AM-LOC:8
 7	lại	lại	ADV	ADV	_	6	advmod	_	_
 8	đây	đây	PRON	PRO	_	5	xcomp	_	_
@@ -3144,7 +3144,7 @@
 5	ấy	ấy	PRON	PRO	_	4	det:pmod	_	_
 6	lên	lên	VERB	V	_	2	ccomp	get.01	A0:4|A1:8
 7	kế hoạch	kế hoạch	NOUN	N	_	2	obj	_	_
-8	ở	ở	VERB	V	_	7	acl	stay.01	AM-DIR:9|A2:10
+8	ở	ở	VERB	V	_	7	acl	stay.01	AM-DIR:9|AM-LOC:10
 9	lại	lại	ADV	ADV	_	8	advmod	_	_
 10	Boston	boston	NOUN	NNP	_	8	obl	_	_
 11	miễn là	miễn là	ADP	PRE	_	14	mark	_	_
@@ -3187,7 +3187,7 @@
 4	nhưng	nhưng	SCONJ	C	_	6	cc	_	_
 5	không	không	ADV	ADV	_	6	advmod:neg	_	_
 6	ai	ai	PRON	PRO	_	3	conj	_	_
-7	tới	tới	VERB	V	_	3	conj	come.01	A1:6
+7	tới	tới	VERB	V	_	3	conj	come.01	A0:6
 8	thì	thì	SCONJ	C	_	9	mark	_	_
 9	sao	sao	PRON	PRO	_	0	root	_	_
 10	?	?	PUNCT	PUNCT	_	9	punct	_	_
@@ -3207,7 +3207,7 @@
 # text = Tôi đã ghé thăm Paris , nhưng vì tôi bị sợ độ cao nên tôi đã không leo lên tháp Eiffel .
 1	Tôi	tôi	PRON	PRO	_	4	nsubj	_	_
 2	đã	đã	ADV	ADV	_	3	advmod	_	_
-3	ghé	ghé	VERB	V	_	0	root		_
+3	ghé	ghé	VERB	V	_	0	root	visit.01	A0:1|AM-TMP:2|AM-LOC:5
 4	thăm	thăm	VERB	V	_	3	compound:svc	_	_
 5	Paris	paris	NOUN	NNP	_	4	obj	_	_
 6	,	,	PUNCT	PUNCT	_	18	punct	_	_
@@ -3215,14 +3215,14 @@
 8	vì	vì	ADP	PRE	_	11	mark	_	_
 9	tôi	tôi	PRON	PRO	_	11	nsubj	_	_
 10	bị	bị	VERB	V	_	11	aux:pass	_	_
-11	sợ	sợ	VERB	V	_	18	advcl		_
+11	sợ	sợ	VERB	V	_	18	advcl		A0:9|A1:12
 12	độ	độ	NOUN	N	_	11	obj	_	_
 13	cao	cao	ADJ	ADJ	_	12	compound:amod	_	_
 14	nên	nên	SCONJ	C	_	18	mark	_	_
 15	tôi	tôi	PRON	PRO	_	18	nsubj	_	_
 16	đã	đã	ADV	ADV	_	18	advmod	_	_
 17	không	không	ADV	ADV	_	18	advmod:neg	_	_
-18	leo	leo	VERB	V	_	3	conj		_
+18	leo	leo	VERB	V	_	3	conj	climb.01	AM-CAU:11|A0:15|AM-TMP:16|AM-LOC:20|AM-NEG:17
 19	lên	lên	ADV	ADV	_	20	case	_	_
 20	tháp	tháp	NOUN	N	_	18	obl:comp	_	_
 21	Eiffel	eiffel	NOUN	NNP	_	20	compound	_	_
@@ -3231,21 +3231,21 @@
 # text = Tôi không nhớ tôi để cái dù của mình ở đâu .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	nhớ	nhớ	VERB	V	_	0	root	remember.01	A0:1|AM-NEG:2|A1:5
+3	nhớ	nhớ	VERB	V	_	0	root	remember.01	A0:1|A1:5|AM-NEG:2
 4	tôi	tôi	PRON	PRO	_	3	obj	_	_
-5	để	để	ADP	PRE	_	7	case		_
+5	để	để	VERB	V	_	7	ccomp	put.01	A0:4|A1:7|AM-LOC:11
 6	cái	cái	NOUN	Nc	_	7	det:clf	_	_
 7	dù	dù	NOUN	N	_	3	obl:about	_	_
 8	của	của	ADP	PRE	_	9	case	_	_
 9	mình	mình	PRON	PRO	_	7	nmod:poss	_	_
 10	ở	ở	ADP	PRE	_	11	case	_	_
-11	đâu	đâu	PRON	PRO	_	7	nmod	_	_
+11	đâu	đâu	PRON	PRO	_	7	obl	_	_
 12	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Anh ấy cắt một cành con từ cây bằng con dao nhíp của mình .
 1	Anh	anh	NOUN	N	_	3	nsubj	_	_
 2	ấy	ấy	PRON	PRO	_	1	det:pmod	_	_
-3	cắt	cắt	VERB	V	_	0	root	cut.02	A0:1|A1:5|A3:8|AM-MNR:11
+3	cắt	cắt	VERB	V	_	0	root	cut.02	A0:1|A1:5|A3:8|A2:11
 4	một	một	NUM	NUM	_	5	det	_	_
 5	cành	cành	NOUN	N	_	3	obj	_	_
 6	con	con	NOUN	N	_	8	det	_	_
@@ -3253,7 +3253,7 @@
 8	cây	cây	NOUN	N	_	3	obl	_	_
 9	bằng	bằng	ADP	PRE	_	11	case	_	_
 10	con	con	NOUN	Nc	_	11	det:clf	_	_
-11	dao nhíp	dao nhíp	NOUN	N	_	8	nmod	_	_
+11	dao nhíp	dao nhíp	NOUN	N	_	3	obl	_	_
 12	của	của	ADP	PRE	_	13	case	_	_
 13	mình	mình	PRON	PRO	_	11	nmod:poss	_	_
 14	.	.	PUNCT	PUNCT	_	3	punct	_	_
@@ -3261,7 +3261,7 @@
 # text = Tôi có thể lấy một trong những cái đó bất kỳ khi nào tôi muốn .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	có thể	có thể	ADV	ADV	_	3	advmod	_	_
-3	lấy	lấy	VERB	V	_	0	root	take.01	A0:1|AM-TMP:2|A1:8|AM-TMP:10
+3	lấy	lấy	VERB	V	_	0	root	take.01	A0:1|A1:8|AM-TMP:10
 4	một	một	NUM	NUM	_	8	nummod	_	_
 5	trong	trong	ADP	PRE	_	6	case	_	_
 6	những	những	DET	DET	_	8	det	_	_
@@ -3319,8 +3319,8 @@
 6	bằng	bằng	ADP	PRE	_	9	case	_	_
 7	một	một	NUM	NUM	_	9	nummod	_	_
 8	cái	cái	NOUN	Nc	_	7	clf	_	_
-9	cần	cần	VERB	V	_	3	advcl	_	_
-10	tháo	tháo	VERB	V	_	9	xcomp:adj	_	_
+9	cần	cần	NOUN	N	_	3	advcl	_	_
+10	tháo	tháo	VERB	V	_	9	acl:subj	_	_
 11	lốp	lốp	NOUN	N	_	10	obj	_	_
 12	xe	xe	NOUN	N	_	11	nmod	_	_
 13	.	.	PUNCT	PUNCT	_	3	punct	_	_
@@ -3335,8 +3335,8 @@
 7	đưa	đưa	VERB	V	_	5	acl	give.01	A0:5|AM-TMP:6|A2:8|A1:9
 8	tôi	tôi	PRON	PRO	_	7	obj	_	_
 9	đi	đi	VERB	V	_	7	xcomp	get.03	A2:10
-10	xa	xa	ADJ	ADJ	_	10	advmod	far	A2:11
-11	khỏi	khỏi	VERB	V	_	13	case		A2:12
+10	xa	xa	ADJ	ADJ	_	9	acomp	_	A2:11
+11	khỏi	khỏi	VERB	V	_	13	xcomp:adj		A2:12
 12	nơi	nơi	NOUN	N	_	9	obl:comp	_	_
 13	đây	đây	PRON	PRO	_	10	obl	_	_
 14	.	.	PUNCT	PUNCT	_	2	punct	_	_
@@ -3349,7 +3349,7 @@
 5	đã	đã	ADV	ADV	_	6	advmod	_	_
 6	khiến	khiến	VERB	V	_	1	ccomp	make.02	A0:4|AM-TMP:5|A1:8
 7	Tom	tom	NOUN	NNP	_	8	obj	_	_
-8	mua	mua	VERB	V	_	7	acl:subj	buy.01	A1:9|A4:12
+8	mua	mua	VERB	V	_	7	xcomp	buy.01	A1:9|A2:12|A0:7
 9	thứ	thứ	NOUN	N	_	8	obj	_	_
 10	đó	đó	PRON	PRO	_	9	det:pmod	_	_
 11	cho	cho	ADP	PRE	_	12	case	_	_
@@ -3361,12 +3361,12 @@
 2	chắc chắn	chắc chắn	ADJ	ADJ	_	0	root	_	_
 3	sẽ	sẽ	ADV	ADV	_	5	advmod	_	_
 4	không	không	ADV	ADV	_	5	advmod:neg	_	_
-5	hài lòng	hài lòng	VERB	V	_	0	root	satify.01	A0:1|AM-TMP:3
+5	hài lòng	hài lòng	VERB	V	_	0	root	satify.01	A0:1|AM-TMP:3|AM-NEG:4
 6	nếu	nếu	SCONJ	C	_	8	mark	_	_
 7	Mary	mary	NOUN	NNP	_	8	nsubj	_	_
 8	quyết định	quyết định	VERB	V	_	5	advcl	decide.01	A0:7|A1:9
-9	quay	quay	VERB	V	_	8	xcomp	come.01	A1:10
-10	trở lại	trở lại	VERB	V	_	9	compound:dir	back.02	A1:11
+9	quay	quay	VERB	V	_	8	xcomp	back.02	A1:11
+10	trở lại	trở lại	VERB	V	_	9	compound:dir	_	_
 11	làm việc	làm việc	VERB	V	_	9	xcomp	work.01	_
 12	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
@@ -3398,14 +3398,14 @@
 1	Điều	điều	NOUN	N	_	4	nsubj	_	_
 2	gì	gì	PRON	PRO	_	1	det:pmod	_	_
 3	sẽ	sẽ	ADV	ADV	_	4	advmod	_	_
-4	xảy	xảy	VERB	V	_	0	root	_	_
+4	xảy	xảy	VERB	V	_	0	root	happen.01	A0:1|AM-TMP:3
 5	ra	ra	VERB	V	_	4	compound:svc	_	_
 6	nếu	nếu	SCONJ	C	_	9	mark	_	_
 7	bạn	bạn	NOUN	N	_	9	nsubj	_	_
 8	không	không	ADV	ADV	_	9	advmod:neg	_	_
-9	làm	làm	VERB	V	_	4	advcl	do.02	A0:7|A1:10
+9	làm	làm	VERB	V	_	4	advcl	do.02	A0:7|A1:10|AM-NEG:8
 10	thế	thế	PRON	PRO	_	9	obj	_	_
-11	?	?	PUNCT	PUNCT	_	4	punct	happen.01	A1:1|AM-TMP:3
+11	?	?	PUNCT	PUNCT	_	4	punct	_	_
 
 # text = Cô ta luôn phàn nàn về công việc của mình .
 1	Cô	cô	NOUN	N	_	4	nsubj	_	_
@@ -3415,7 +3415,7 @@
 5	về	về	ADP	PRE	_	6	case	_	_
 6	công việc	công việc	NOUN	N	_	4	obl:about	_	_
 7	của	của	ADP	PRE	_	8	case	_	_
-8	mình	mình	PRON	PRO	_	6	nmod	_	_
+8	mình	mình	PRON	PRO	_	6	nmod:poss	_	_
 9	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
 # text = Cô ta dạy học ở trường địa phương chúng tôi .
@@ -3463,7 +3463,7 @@
 8	nhưng	nhưng	SCONJ	C	_	11	mark	_	_
 9	tôi	tôi	PRON	PRO	_	11	nsubj	_	_
 10	không thể	không thể	ADV	ADV	_	11	advmod:neg	_	_
-11	lấy	lấy	VERB	V	_	1	conj	take.01	AM-DIS:8|A0:9|A1:12|AM-ADV:13|AM-ADV:14
+11	lấy	lấy	VERB	V	_	1	conj	take.01	AM-DIS:8|A0:9|A1:12|AM-ADV:13|AM-ADV:14|AM-NEG:10
 12	nó	nó	PRON	PRO	_	11	obj	_	_
 13	ra	ra	ADV	ADV	_	11	advmod	_	_
 14	được	được	ADV	ADV	_	11	advmod	_	_
@@ -3471,12 +3471,12 @@
 
 # text = Sẽ có một ngày tôi sẽ chạy nhanh như gió .
 1	Sẽ	sẽ	ADV	ADV	_	2	advmod	_	_
-2	có	có	VERB	V	_	7	advcl	have.03	AM-TMP:1
+2	có	có	VERB	V	_	7	advcl	have.03	AM-TMP:1|A1:4
 3	một	một	NUM	NUM	_	4	nummod	_	_
 4	ngày	ngày	NOUN	N	_	7	obj	_	_
 5	tôi	tôi	PRON	PRO	_	7	nsubj	_	_
 6	sẽ	sẽ	ADV	ADV	_	7	advmod	_	_
-7	chạy	chạy	VERB	V	_	0	root	run.01	AM-TMP:1|AM-TMP:2|A0:5|AM-MNR:8|A1:10
+7	chạy	chạy	VERB	V	_	0	root	run.01	AM-TMP:2|A0:5|AM-MNR:8|AM-TMP:6
 8	nhanh	nhanh	ADJ	ADJ	_	7	acomp	_	_
 9	như	như	SCONJ	C	_	10	case	_	_
 10	gió	gió	NOUN	N	_	7	obl	_	_
@@ -3488,12 +3488,12 @@
 3	chúng tôi	chúng tôi	PRON	PRO	_	6	nsubj	_	_
 4	đã	đã	ADV	ADV	_	6	advmod	_	_
 5	có thể	có thể	ADV	ADV	_	6	advmod	_	_
-6	bơi	bơi	VERB	V	_	0	root	_	_
+6	bơi	bơi	VERB	V	_	0	root	swim.01	AM-ADV:1|A0:3|AM-TMP:4|AM-LOC:9
 7	qua	qua	ADP	PRE	_	9	case	_	_
 8	con	con	NOUN	Nc	_	9	det	_	_
 9	sông	sông	NOUN	N	_	6	obl:comp	_	_
 10	đó	đó	PRON	PRO	_	9	det:pmod	_	_
-11	.	.	PUNCT	PUNCT	_	6	punct	swim.01	AM-ADV:1|A0:3|AM-TMP:4
+11	.	.	PUNCT	PUNCT	_	6	punct	_	_
 
 # text = Tôi đã tưởng là tôi có thể thay đổi suy nghĩ của bạn .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
@@ -3518,7 +3518,7 @@
 7	anh	anh	NOUN	N	_	10	nsubj	_	_
 8	ấy	ấy	PRON	PRO	_	7	det:pmod	_	_
 9	không thể nào	không thể nào	ADV	ADV	_	10	advmod:neg	_	_
-10	nghĩ	nghĩ	VERB	V	_	3	conj	think.01	A0:7|A1:11|AM-ADV:12
+10	nghĩ	nghĩ	VERB	V	_	3	conj	think.01	A0:7|A1:11|AM-ADV:12|AM-NEG:9
 11	thông suốt	thông suốt	ADJ	ADJ	_	10	acomp	_	_
 12	được	được	ADV	ADV	_	10	advmod	_	_
 13	.	.	PUNCT	PUNCT	_	3	punct	_	_
@@ -3527,13 +3527,13 @@
 1	Tom	tom	NOUN	NNP	_	4	nsubj	_	_
 2	đã	đã	ADV	ADV	_	4	advmod	_	_
 3	không thể	không thể	ADV	ADV	_	4	advmod:neg	_	_
-4	tin	tin	VERB	V	_	0	root	believe.01	A0:1|AM-TMP:2|AM-ADV:5|A1:10
+4	tin	tin	VERB	V	_	0	root	believe.01	A0:1|AM-TMP:2|AM-ADV:5|A1:10|AM-NEG:3
 5	được	được	ADV	ADV	_	4	advmod	_	_
 6	là	là	VERB	V	_	10	mark	_	_
 7	không	không	ADV	ADV	_	9	advmod:neg	_	_
 8	một	một	NUM	NUM	_	9	nummod	_	_
 9	ai	ai	PRON	PRO	_	4	obj	_	_
-10	cười	cười	VERB	V	_	9	acl:subj	laugh.01	AM-TMP:11
+10	cười	cười	VERB	V	_	9	acl:subj	laugh.01	AM-TMP:11|A0:9
 11	khi	khi	NOUN	N	_	10	obl:tmod	_	_
 12	nghe	nghe	VERB	V	_	11	acl:tmod	hear.01	A1:14
 13	những	những	DET	DET	_	14	det	_	_
@@ -3558,16 +3558,16 @@
 
 # text = tôi nghe thấy tên tôi được gọi ở phía sau .
 1	tôi	tôi	PRON	PRO	_	2	nsubj	_	_
-2	nghe	nghe	VERB	V	_	0	root	_	_
+2	nghe	nghe	VERB	V	_	0	root	hear.01	A0:1
 3	thấy	thấy	VERB	V	_	2	compound:svc	_	_
 4	tên	tên	NOUN	N	_	7	nsubj:pass	_	_
 5	tôi	tôi	PRON	PRO	_	4	nmod	_	_
 6	được	được	VERB	V	_	7	aux:pass	_	_
-7	gọi	gọi	VERB	V	_	2	ccomp	call.01	AM-LOC:9
+7	gọi	gọi	VERB	V	_	2	ccomp	call.01	AM-LOC:9|A1:4
 8	ở	ở	ADP	PRE	_	9	case	_	_
 9	phía	phía	NOUN	N	_	7	obl:comp	_	_
 10	sau	sau	ADJ	ADJ	_	9	amod	_	_
-11	.	.	PUNCT	PUNCT	_	2	punct	hear.01	A0:1
+11	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Tại sao trừ chính tôi ra , ai cũng nghĩ là tôi có thể làm được điều này ?
 1	Tại sao	tại sao	X	X	_	9	obl	_	_
@@ -3591,7 +3591,7 @@
 # text = Nó không kiềm chế được và bắt đầu ném đồ .
 1	Nó	nó	PRON	PRO	_	6	nsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	kiềm chế	kiềm chế	VERB	V	_	0	root		A0:1
+3	kiềm chế	kiềm chế	VERB	V	_	0	root		A0:1|AM-NEG:2
 4	được	được	ADV	ADV	_	3	advmod	_	_
 5	và	và	CCONJ	CC	_	6	cc	_	_
 6	bắt đầu	bắt đầu	VERB	V	_	3	conj	start.01	A1:7
@@ -3609,7 +3609,7 @@
 7	ai	ai	PRON	PRO	_	3	obj	_	_
 8	mà	mà	SCONJ	C	_	10	mark	_	_
 9	tôi	tôi	PRON	PRO	_	10	nsubj	_	_
-10	biết	biết	VERB	V	_	3	parataxis	know.01	A0:9
+10	biết	biết	VERB	V	_	7	acl:relcl	know.01	A0:9
 11	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Bạn có thật sự nghĩ là Tom chưa kết hôn không ?
@@ -3620,7 +3620,7 @@
 5	là	là	SCONJ	C	_	4	mark	_	_
 6	Tom	tom	NOUN	NNP	_	8	nsubj	_	_
 7	chưa	chưa	ADV	ADV	_	8	advmod:neg	_	_
-8	kết hôn	kết hôn	VERB	V	_	4	ccomp	marry.01	A1:8
+8	kết hôn	kết hôn	VERB	V	_	4	ccomp	marry.01	A0:6|AM-NEG:7
 9	không	không	ADV	ADV	_	8	advmod	_	_
 10	?	?	PUNCT	PUNCT	_	2	punct	_	_
 
@@ -3633,16 +3633,16 @@
 6	tôi	tôi	PRON	PRO	_	9	nsubj	_	_
 7	đã	đã	ADV	ADV	_	9	advmod	_	_
 8	không	không	ADV	ADV	_	9	advmod:neg	_	_
-9	làm vậy	làm vậy	VERB	V	_	3	conj	_	_
-10	.	.	PUNCT	PUNCT	_	3	punct	do.02	AM-DIS:5|A0:6|AM-TMP:7
+9	làm vậy	làm vậy	VERB	V	_	3	conj	do.02	AM-DIS:5|A0:6|AM-TMP:7|AM-NEG:8
+10	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Tôi tốn hơn hai tiếng để dịch vài trang tiếng Anh .
 1	Tôi	tôi	PRON	PRO	_	2	nsubj	_	_
-2	tốn	tốn	VERB	V	_	0	root	take.10	A0:1|A1:5|AM-GOL:7
+2	tốn	tốn	VERB	V	_	0	root	take.10	A0:1|A1:5|AM-PRP:7
 3	hơn	hơn	ADV	ADV	_	3	fixed	_	_
 4	hai	hai	NUM	NUM	_	5	nummod	_	_
 5	tiếng	tiếng	NOUN	N	_	2	obl:tmod	_	_
-6	để	để	ADP	PRE	_	7	mark	_	_
+6	để	để	ADP	PRE	_	7	mark:pcomp	_	_
 7	dịch	dịch	VERB	V	_	2	advcl:objective	translate.01	A1:9
 8	vài	vài	DET	DET	_	9	amod	_	_
 9	trang	trang	NOUN	Nc	_	7	obj	_	_
@@ -3656,7 +3656,7 @@
 3	anh	anh	NOUN	N	_	6	nsubj	_	_
 4	ta	ta	PRON	PRO	_	3	compound:pron	_	_
 5	không	không	ADV	ADV	_	6	advmod:neg	_	_
-6	ăn	ăn	VERB	V	_	2	ccomp	eat.01	A0:3|A1:7|AM-DIS:8
+6	ăn	ăn	VERB	V	_	2	ccomp	eat.01	A0:3|A1:7|AM-DIS:8|AM-NEG:5
 7	gì	gì	PRON	PRO	_	6	obj	_	_
 8	ngoài	ngoài	ADP	PRE	_	9	case	_	_
 9	hoa quả	hoa quả	NOUN	N	_	7	nmod	_	_
@@ -3674,7 +3674,7 @@
 6	tiền	tiền	NOUN	N	_	5	obj	_	_
 7	từ	từ	ADP	PRE	_	9	mark	_	_
 8	việc	việc	NOUN	Nc	_	5	obl:comp	_	_
-9	buôn bán	buôn bán	VERB	V	_	5	advcl	_	_
+9	buôn bán	buôn bán	VERB	V	_	5	acl:subj	_	_
 10	cá	cá	NOUN	N	_	9	obj	_	_
 11	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
@@ -3700,8 +3700,8 @@
 3	chúng tôi	chúng tôi	PRON	PRO	_	1	nmod:poss	_	_
 4	yêu cầu	yêu cầu	VERB	V	_	0	root	ask.02	A0:1|A1:6
 5	chúng tôi	chúng tôi	PRON	PRO	_	6	nsubj	_	_
-6	giữ	giữ	VERB	V	_	4	ccomp	keep.02	A0:5|A1:7
-7	im lặng	im lặng	ADJ	ADJ	_	6	xcomp	_	_
+6	giữ	giữ	VERB	V	_	4	xcomp	keep.02	A0:5|A1:7
+7	im lặng	im lặng	ADJ	ADJ	_	6	acomp	_	_
 8	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
 # text = Đi dọc theo con sông và bạn sẽ tìm được ngôi trường .
@@ -3721,14 +3721,14 @@
 
 # text = Tôi có một kế hoạch đơn giản để khiến Tom đồng ý .
 1	Tôi	tôi	PRON	PRO	_	2	nsubj	_	_
-2	có	có	VERB	V	_	0	root	have.03	A0:1|A1:4|AM-GOL:7
+2	có	có	VERB	V	_	0	root	have.03	A0:1|A1:4|AM-PRP:7
 3	một	một	NUM	NUM	_	4	det	_	_
 4	kế hoạch	kế hoạch	NOUN	N	_	2	obj	_	_
 5	đơn giản	đơn giản	ADJ	ADJ	_	4	amod	_	_
-6	để	để	ADP	PRE	_	9	mark	_	_
-7	khiến	khiến	VERB	V	_	4	acl	make.02	A1:8
+6	để	để	ADP	PRE	_	9	mark:pcomp	_	_
+7	khiến	khiến	VERB	V	_	4	advcl:objective	make.02	A1:9
 8	Tom	tom	NOUN	NNP	_	9	obj	_	_
-9	đồng ý	đồng ý	VERB	V	_	7	ccomp	agree.01	_
+9	đồng ý	đồng ý	VERB	V	_	7	xcomp	agree.01	A0:8
 10	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Người dùng bạn muốn gởi tin này đến không tồn tại . Vui lòng thử tên khác .
@@ -3741,7 +3741,7 @@
 7	này	này	PRON	PRO	_	6	det:pmod	_	_
 8	đến	đến	ADP	PRE	_	10	case	_	_
 9	không	không	ADV	ADV	_	10	advmod:neg	_	_
-10	tồn tại	tồn tại	VERB	V	_	0	root	exist.01	A1:5
+10	tồn tại	tồn tại	VERB	V	_	0	root	exist.01	A1:5|AM-NEG:9
 11	.	.	PUNCT	PUNCT	_	12	punct	_	_
 12	Vui lòng	vui lòng	VERB	V	_	13	parataxis	_	_
 13	thử	thử	VERB	V	_	12	xcomp	try.01	A1:14
@@ -3751,7 +3751,7 @@
 
 # text = Mary nghĩ rằng thế giới là một nơi nguy hiểm .
 1	Mary	mary	NOUN	NNP	_	2	nsubj	_	_
-2	nghĩ	nghĩ	VERB	V	_	0	root	think.01	A0:1
+2	nghĩ	nghĩ	VERB	V	_	0	root	think.01	A0:1|A1:5
 3	rằng	rằng	SCONJ	C	_	7	mark	_	_
 4	thế giới	thế giới	NOUN	N	_	7	nsubj	_	_
 5	là	là	VERB	V	_	7	cop	be.01	A0:4|A1:7
@@ -3764,7 +3764,7 @@
 1	Đó	đó	PRON	PRO	_	7	nsubj	_	_
 2	có	có	VERB	V	_	7	advmod	_	_
 3	phải	phải	ADJ	ADJ	_	2	aux	_	_
-4	là	là	SCONJ	C	_	7	cop	be.01	A1:7
+4	là	là	SCONJ	C	_	7	cop	be.01	A1:7|A0:1
 5	tất cả	tất cả	PRON	PRO	_	7	det	_	_
 6	những	những	DET	DET	_	7	det	_	_
 7	gì	gì	PRON	PRO	_	0	root	_	_
@@ -3787,36 +3787,36 @@
 
 # text = Xin chú ý rằng chúng tôi đã đưa ra mức giá thấp nhất rồi .
 1	Xin	xin	VERB	V	_	2	root	_	_
-2	chú ý	chú ý	VERB	V	_	1	xcomp	note.01	_
+2	chú ý	chú ý	VERB	V	_	1	xcomp	note.01	A1:6
 3	rằng	rằng	SCONJ	C	_	6	mark	_	_
 4	chúng tôi	chúng tôi	PRON	PRO	_	6	nsubj	_	_
 5	đã	đã	ADV	ADV	_	6	advmod	_	_
-6	đưa	đưa	VERB	V	_	1	ccomp	_	_
+6	đưa	đưa	VERB	V	_	1	ccomp	quote.01	A0:4|A1:8|AM-TMP:5
 7	ra	ra	VERB	V	_	6	compound:dir	_	_
 8	mức	mức	NOUN	N	_	6	obj	_	_
 9	giá	giá	NOUN	N	_	8	compound	_	_
 10	thấp	thấp	ADJ	ADJ	_	8	amod	_	_
 11	nhất	nhất	ADV	ADV	_	10	advmod	_	_
 12	rồi	rồi	ADV	ADV	_	6	advmod	_	_
-13	.	.	PUNCT	PUNCT	_	1	punct	give.01	A0:4|AM-TMP:5|A1:8
+13	.	.	PUNCT	PUNCT	_	1	punct	_	_
 
 # text = Tom nghe thấy có tiếng bước chân đang đi tới .
 1	Tom	tom	NOUN	NNP	_	2	nsubj	_	_
-2	nghe	nghe	VERB	V	_	0	root	_	_
+2	nghe	nghe	VERB	V	_	0	root	hear.01	A0:1|A1:4
 3	thấy	thấy	VERB	V	_	2	compound:svc	_	_
-4	có	có	VERB	V	_	2	ccomp	have.03	A1:5
+4	có	có	VERB	V	_	2	ccomp	have.03	A1:9
 5	tiếng	tiếng	NOUN	N	_	4	obj	_	_
 6	bước	bước	VERB	V	_	5	acl:subj	_	_
 7	chân	chân	NOUN	N	_	6	obj	_	_
 8	đang	đang	ADV	ADV	_	9	advmod	_	_
-9	đi	đi	VERB	V	_	4	ccomp	_	_
+9	đi	đi	VERB	V	_	4	ccomp	approach.01	A1:5|AM-TMP:8
 10	tới	tới	VERB	V	_	9	compound:dir	_	_
-11	.	.	PUNCT	PUNCT	_	2	punct	hear.01	A0:7|AM-TMP:8
+11	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Tôi không thích anh ấy lắm , trên thực tế tôi ghét anh ấy .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	thích	thích	VERB	V	_	0	root	like.02	A0:1|A1:4
+3	thích	thích	VERB	V	_	0	root	like.02	A0:1|A1:4|AM-NEG:2
 4	anh	anh	NOUN	N	_	3	obj	_	_
 5	ấy	ấy	PRON	PRO	_	4	det:pmod	_	_
 6	lắm	lắm	PART	PART:G	_	6	advmod	_	_
@@ -3831,31 +3831,31 @@
 
 # text = Tom hỏi Mary xem cô ta có biết đan len không .
 1	Tom	tom	NOUN	NNP	_	2	nsubj	_	_
-2	hỏi	hỏi	VERB	V	_	0	root	ask.02	A0:1|A2:3|A1:4
+2	hỏi	hỏi	VERB	V	_	0	root	ask.02	A0:1|A1:3|AM-GOL:4
 3	Mary	mary	NOUN	NNP	_	2	obj	_	_
 4	xem	xem	VERB	V	_	2	xcomp	_	_
 5	cô	cô	NOUN	N	_	8	nsubj	_	_
 6	ta	ta	PRON	PRO	_	5	det:pmod	_	_
 7	có	có	VERB	V	_	8	mark	_	_
-8	biết	biết	VERB	V	_	2	xcomp	know.01	A0:5
-9	đan	đan	VERB	V	_	8	xcomp	_	_
+8	biết	biết	VERB	V	_	2	xcomp	know.01	A0:5|A1:9
+9	đan	đan	VERB	V	_	8	xcomp		A1:10
 10	len	len	NOUN	N	_	9	obj	_	_
 11	không	không	ADV	ADV	_	7	advmod:neg	_	_
 12	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Không có lời giải thích nào cho việc xảy đến với Tom .
 1	Không	không	ADV	ADV	_	2	advmod:neg	_	_
-2	có	có	VERB	V	_	0	root	have.03	A1:3
+2	có	có	VERB	V	_	0	root	have.03	A1:3|AM-NEG:1
 3	lời	lời	NOUN	N	_	2	obj	_	_
 4	giải thích	giải thích	VERB	V	_	3	compound:vmod	_	_
 5	nào	nào	PRON	PRO	_	3	det:pmod	_	_
 6	cho	cho	ADP	PRE	_	7	case	_	_
 7	việc	việc	NOUN	N	_	2	obl:comp	_	_
-8	xảy	xảy	VERB	V	_	7	acl:subj	_	_
+8	xảy	xảy	VERB	V	_	7	acl:subj	happen.01	A1:7|A2:11
 9	đến	đến	VERB	V	_	8	compound:svc	_	_
 10	với	với	ADP	PRE	_	11	case	_	_
 11	Tom	tom	NOUN	NNP	_	8	obl:with	_	_
-12	.	.	PUNCT	PUNCT	_	2	punct	happen.01	A1:7|A2:11
+12	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Bạn sẽ vui lòng khuyên anh ấy làm việc chăm chỉ hơn không ?
 1	Bạn	bạn	NOUN	N	_	3	nsubj	_	_
@@ -3887,7 +3887,7 @@
 3	sao	sao	PRON	PRO	_	6	aux	_	_
 4	Tom	tom	NOUN	NNP	_	2	nsubj	_	_
 5	đừng	đừng	VERB	V	_	6	advmod	_	_
-6	hát	hát	VERB	V	_	2	xcomp	sing.01	A0:4|A1:8|AM-TMP:9
+6	hát	hát	VERB	V	_	2	xcomp	sing.01	A0:4|A1:8|AM-TMP:9|AM-MNR:8
 7	quá	quá	ADV	ADV	_	8	advmod	_	_
 8	to	to	ADJ	ADJ	_	6	acomp	_	_
 9	lúc	lúc	NOUN	N	_	10	case	_	_
@@ -3907,7 +3907,7 @@
 9	ấy	ấy	PRON	PRO	_	13	nmod	_	_
 10	không	không	ADV	ADV	_	13	advmod	_	_
 11	phải	phải	ADJ	ADJ	_	13	aux	_	_
-12	là	là	SCONJ	C	_	13	cop	be.01	A0:6|A1:11
+12	là	là	SCONJ	C	_	13	cop	be.01	A0:6|A1:11|AM-NEG:10
 13	cha đẻ	cha đẻ	NOUN	N	_	13	amod	_	_
 14	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
@@ -3916,7 +3916,7 @@
 2	thế nào	thế nào	PRON	PRO	_	1	obl	_	_
 3	mà	mà	SCONJ	C	_	5	mark	_	_
 4	bạn	bạn	NOUN	N	_	5	nsubj	_	_
-5	biết	biết	VERB	V	_	1	ccomp	know.01	A0:4|A1:6
+5	biết	biết	VERB	V	_	1	ccomp	know.01	A0:4|A1:10
 6	được	được	ADV	ADV	_	5	advmod	_	_
 7	là	là	VERB	V	_	10	mark	_	_
 8	tôi	tôi	PRON	PRO	_	10	nsubj	_	_
@@ -3933,7 +3933,7 @@
 4	cũng	cũng	ADV	ADV	_	7	advmod	_	_
 5	không	không	ADV	ADV	_	7	advmod:neg	_	_
 6	còn	còn	ADV	ADV	_	7	advmod	_	_
-7	làm	làm	VERB	V	_	0	root	do.02	A0:3|A1:8|AM-ADV:10
+7	làm	làm	VERB	V	_	0	root	do.02	A0:3|A1:8|AM-ADV:10|AM-NEG:5
 8	điều	điều	NOUN	N	_	7	obj	_	_
 9	đó	đó	PRON	PRO	_	8	det:pmod	_	_
 10	nữa	nữa	ADV	ADV	_	7	advmod	_	_
@@ -3943,14 +3943,14 @@
 1	Đó	đó	PRON	PRO	_	5	nsubj	_	_
 2	không	không	ADV	ADV	_	5	advmod:neg	_	_
 3	phải	phải	ADJ	ADJ	_	5	aux	_	_
-4	là	là	VERB	V	_	5	cop	be.01	A0:1|A1:5
+4	là	là	VERB	V	_	5	cop	be.01	A0:1|A1:5|AM-NEG:2
 5	điều	điều	NOUN	N	_	0	root	_	_
 6	mà	mà	SCONJ	C	_	9	mark	_	_
 7	tôi	tôi	PRON	PRO	_	9	nsubj	_	_
 8	đang	đang	ADV	ADV	_	9	advmod	_	_
-9	nghĩ	nghĩ	VERB	V	_	5	ccomp	_	_
+9	nghĩ	nghĩ	VERB	V	_	5	acl:relcl	think.01	A0:7|AM-TMP:8
 10	tới	tới	VERB	V	_	9	compound:svc	_	_
-11	.	.	PUNCT	PUNCT	_	5	punct	think.01	A0:7|AM-TMP:8
+11	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
 # text = Cô ta đã hứa sẽ không nói cho bất kỳ ai .
 1	Cô	cô	NOUN	N	_	4	nsubj	_	_
@@ -3959,7 +3959,7 @@
 4	hứa	hứa	VERB	V	_	0	root	promise.01	A0:1|AM-TMP:3|A1:7
 5	sẽ	sẽ	ADV	ADV	_	7	advmod	_	_
 6	không	không	ADV	ADV	_	7	advmod:neg	_	_
-7	nói	nói	VERB	V	_	4	conj	say.01	AM-TMP:5|A2:10
+7	nói	nói	VERB	V	_	4	acomp	say.01	AM-TMP:5|A2:10|AM-NEG:6
 8	cho	cho	ADP	PRE	_	10	case	_	_
 9	bất kỳ	bất kỳ	ADJ	ADJ	_	10	advmod:adj	_	_
 10	ai	ai	PRON	PRO	_	7	obl:iobj	_	_
@@ -3982,10 +3982,10 @@
 14	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
 # text = Chuyện của nó tào lao đến nỗi chẳng ai tin được .
-1	Chuyện	chuyện	NOUN	N	_	4	nsubj:nn	_	_
+1	Chuyện	chuyện	NOUN	N	_	4	nsubj	_	_
 2	của	của	ADP	PRE	_	3	case	_	_
 3	nó	nó	PRON	PRO	_	1	nmod:poss	_	_
-4	tào lao	tào lao	NOUN	N	_	0	root	_	_
+4	tào lao	tào lao	ADJ	ADJ	_	0	root	_	_
 5	đến nỗi	đến nỗi	X	X	_	8	discourse	_	_
 6	chẳng	chẳng	ADV	ADV	_	7	advmod:neg	_	_
 7	ai	ai	PRON	PRO	_	8	nsubj	_	_
@@ -3994,13 +3994,13 @@
 10	.	.	PUNCT	PUNCT	_	8	punct	_	_
 
 # text = Tên của gã mà cậu đã hẹn họ trước khi gặp Tom là gì vậy nhỉ ?
-1	Tên	tên	NOUN	N	_	7	nsubj	_	_
+1	Tên	tên	NOUN	N	_	7	nsubj:nn	_	_
 2	của	của	ADP	PRE	_	3	case	_	_
 3	gã	gã	NOUN	N	_	1	nmod:poss	_	_
 4	mà	mà	SCONJ	C	_	7	mark	_	_
 5	cậu	cậu	NOUN	N	_	7	nsubj	_	_
 6	đã	đã	ADV	ADV	_	7	advmod	_	_
-7	hẹn	hẹn	VERB	V	_	14	csubj	date.01	A2:1|A0:5|AM-TMP:6|A1:8|AM-TMP:10
+7	hẹn	hẹn	VERB	V	_	3	acl:relcl	date.01	A0:5|AM-TMP:6|A1:8|AM-TMP:10
 8	họ	họ	PRON	PRO	_	7	obj	_	_
 9	trước	trước	ADP	PRE	_	10	case	_	_
 10	khi	khi	NOUN	N	_	7	obl:tmod	_	_
@@ -4015,7 +4015,7 @@
 # text = Tôi không thể ăn hay uống những thức ăn rất nóng .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	không thể	không thể	ADV	ADV	_	3	advmod:neg	_	_
-3	ăn	ăn	VERB	V	_	0	root	eat.01	A0:1|A1:7
+3	ăn	ăn	VERB	V	_	0	root	eat.01	A0:1|A1:7|AM-NEG:2
 4	hay	hay	CCONJ	CC	_	5	cc	_	_
 5	uống	uống	VERB	V	_	3	conj	drink.01	_
 6	những	những	DET	DET	_	7	det	_	_
@@ -4057,9 +4057,9 @@
 # text = Tom không có tiền để mua một chiếc ô tô .
 1	Tom	tom	NOUN	NNP	_	6	nsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	có	có	VERB	V	_	0	root	have.03	A0:1|A1:4|AM-GOL:6
+3	có	có	VERB	V	_	0	root	have.03	A0:1|A1:4|AM-PRP:6|AM-NEG:2
 4	tiền	tiền	NOUN	N	_	3	obj	_	_
-5	để	để	ADP	PRE	_	6	mark	_	_
+5	để	để	ADP	PRE	_	6	mark:pcomp	_	_
 6	mua	mua	VERB	V	_	3	advcl:objective	buy.01	A1:9
 7	một	một	NUM	NUM	_	9	nummod	_	_
 8	chiếc	chiếc	NOUN	Nc	_	7	clf	_	_
@@ -4068,7 +4068,7 @@
 
 # text = Tom kể cho tôi những gì anh ta đã thấy .
 1	Tom	tom	NOUN	NNP	_	2	nsubj	_	_
-2	kể	kể	VERB	V	_	0	root	tell.01	A0:1|A2:4|A1:6|AM-TMP:9
+2	kể	kể	VERB	V	_	0	root	tell.01	A0:1|A2:4|A1:6
 3	cho	cho	ADP	PRE	_	4	case	_	_
 4	tôi	tôi	PRON	PRO	_	2	obl:iobj	_	_
 5	những	những	DET	DET	_	6	det	_	_
@@ -4076,14 +4076,14 @@
 7	anh	anh	NOUN	N	_	10	nsubj	_	_
 8	ta	ta	PRON	PRO	_	7	compound:pron	_	_
 9	đã	đã	ADV	ADV	_	10	advmod	_	_
-10	thấy	thấy	VERB	V	_	6	acl	see.01	A0:7
+10	thấy	thấy	VERB	V	_	6	acl	see.01	A0:7|AM-TMP:9
 11	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Anh ấy sẽ ngạc nhiên nếu anh ấy thấy bạn .
 1	Anh	anh	NOUN	N	_	4	nsubj	_	_
 2	ấy	ấy	PRON	PRO	_	1	det:pmod	_	_
 3	sẽ	sẽ	ADV	ADV	_	4	advmod	_	_
-4	ngạc nhiên	ngạc nhiên	VERB	V	_	0	root	surprise.01	A0:1|AM-TMP:3
+4	ngạc nhiên	ngạc nhiên	VERB	V	_	0	root	surprise.01	A0:1|AM-TMP:3|AM-CAU:8
 5	nếu	nếu	SCONJ	C	_	8	mark	_	_
 6	anh	anh	NOUN	N	_	8	nsubj	_	_
 7	ấy	ấy	PRON	PRO	_	6	det:pmod	_	_
@@ -4117,14 +4117,14 @@
 
 # text = Đây là ngôi nhà nơi mà anh ấy lớn lên .
 1	Đây	đây	PRON	PRO	_	4	nsubj	_	_
-2	là	là	VERB	V	_	4	cop	be.01	A1:1|A1:10
+2	là	là	VERB	V	_	4	cop	be.01	A1:1|A1:4
 3	ngôi	ngôi	NOUN	Nc	_	4	det:clf	_	_
 4	nhà	nhà	NOUN	N	_	0	root	_	_
 5	nơi	nơi	NOUN	N	_	9	nmod	_	_
 6	mà	mà	SCONJ	C	_	9	mark	_	_
 7	anh	anh	NOUN	N	_	9	nsubj	_	_
 8	ấy	ấy	PRON	PRO	_	7	det:pmod	_	_
-9	lớn	lớn	VERB	V	_	4	ccomp	bring.01	A0:7
+9	lớn	lớn	VERB	V	_	5	acl:relcl	bring.01	A0:7
 10	lên	lên	ADV	ADV	_	9	compound:dir		_
 11	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
@@ -4190,7 +4190,7 @@
 2	không thể	không thể	ADV	ADV	_	3	advmod:neg	_	_
 3	lúc nào	lúc nào	PRON	PRO	_	5	obl:tmod	_	_
 4	cũng	cũng	ADV	ADV	_	5	advmod	_	_
-5	làm	làm	VERB	V	_	0	root	do.02	A0:1|AM-TMP:3|AM-ADV:4|A1:6
+5	làm	làm	VERB	V	_	0	root	do.02	A0:1|AM-TMP:3|AM-ADV:4|A1:6|AM-NEG:2
 6	hài lòng	hài lòng	VERB	V	_	5	xcomp	happy	_
 7	mọi	mọi	DET	DET	_	8	det	_	_
 8	người	người	NOUN	N	_	6	obj	_	_
@@ -4200,25 +4200,25 @@
 1	Một	một	NUM	NUM	_	2	nummod	_	_
 2	người	người	NOUN	N	_	4	nsubj	_	_
 3	không thể	không thể	ADV	ADV	_	4	advmod:neg	_	_
-4	học	học	VERB	V	_	0	root	learn.01	A0:2|A1:5
-5	làm	làm	VERB	V	_	5	mark	do.02	_
+4	học	học	VERB	V	_	0	root	learn.01	A0:2|A1:5|AM-NEG:3
+5	làm	làm	VERB	V	_	5	mark	do.02	A1:8
 6	bất kỳ	bất kỳ	ADJ	ADJ	_	5	acomp	_	_
 7	thứ	thứ	NOUN	N	_	5	obj	_	_
 8	gì	gì	PRON	PRO	_	7	det:pmod	_	_
 9	mà	mà	SCONJ	C	_	12	mark	_	_
 10	không	không	ADV	ADV	_	11	advmod:neg	_	_
-11	gây	gây	VERB	V	_	5	conj	_	_
-12	ra	ra	VERB	V	_	5	advcl	_	_
+11	gây	gây	VERB	V	_	5	conj	cause.01	A1:13|AM-NEG:10
+12	ra	ra	VERB	V	_	5	compound:svc	_	_
 13	lỗi lầm	lỗi lầm	NOUN	N	_	12	obj	_	_
 14	cả	cả	PART	PART:G	_	11	discourse	_	_
-15	.	.	PUNCT	PUNCT	_	4	punct	cause.01	A1:13
+15	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
 # text = Mình sẽ không bao giờ đồng ý làm việc đó .
 1	Mình	mình	PRON	PRO	_	5	nsubj	_	_
 2	sẽ	sẽ	ADV	ADV	_	5	advmod	_	_
 3	không	không	ADV	ADV	_	4	advmod:neg	_	_
 4	bao giờ	bao giờ	PRON	PRO	_	5	obl:tmod	_	_
-5	đồng ý	đồng ý	VERB	V	_	0	root	agree.01	A0:1
+5	đồng ý	đồng ý	VERB	V	_	0	root	agree.01	A0:1|AM-TMP:4
 6	làm việc	làm việc	VERB	V	_	5	xcomp	_	_
 7	đó	đó	PRON	PRO	_	6	obj	_	_
 8	.	.	PUNCT	PUNCT	_	5	punct	work.01	_
@@ -4228,7 +4228,7 @@
 2	Tom	tom	NOUN	NNP	_	5	nsubj	_	_
 3	muốn	muốn	VERB	V	_	5	advcl	want.01	A0:2
 4	thì	thì	SCONJ	C	_	5	mark	_	_
-5	mua	mua	VERB	V	_	0	root	buy.01	A4:7|A1:9
+5	mua	mua	VERB	V	_	0	root	buy.01	A2:7|A1:9
 6	cho	cho	ADP	PRE	_	7	case	_	_
 7	anh	anh	NOUN	N	_	5	obl:iobj	_	_
 8	ta	ta	PRON	PRO	_	7	compound:pron	_	_
@@ -4241,15 +4241,15 @@
 1	Bạn	bạn	NOUN	N	_	4	nsubj	_	_
 2	có	có	VERB	V	_	0	root	_	_
 3	định	định	VERB	V	_	2	xcomp	plan.01	A0:1|A1:4
-4	mời	mời	VERB	V	_	3	xcomp	invite.01	_
+4	mời	mời	VERB	V	_	3	xcomp	invite.01	A1:7
 5	cô	cô	NOUN	N	_	4	obj	_	_
 6	ấy	ấy	PRON	PRO	_	5	det:pmod	_	_
-7	tới	tới	VERB	V	_	4	xcomp	_	_
+7	tới	tới	VERB	V	_	4	xcomp	come.01	A1:5|A4:9
 8	dự	dự	VERB	V	_	7	xcomp	_	_
 9	bữa	bữa	NOUN	N	_	8	obj	_	_
 10	tiệc	tiệc	NOUN	N	_	9	nmod	_	_
 11	không	không	ADV	ADV	_	2	advmod	_	_
-12	?	?	PUNCT	PUNCT	_	2	punct	come.01	A1:5|A4:9
+12	?	?	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Tom là một trong số những người đàn ông mà hôm qua cảnh sát đã bắt giữ trong công viên .
 1	Tom	tom	NOUN	N	_	5	nsubj	_	_
@@ -4311,7 +4311,7 @@
 1	Tại sao	tại sao	X	X	_	4	obl	_	_
 2	chúng ta	chúng ta	PRON	PRO	_	4	nsubj	_	_
 3	không	không	ADV	ADV	_	4	advmod:neg	_	_
-4	chơi	chơi	VERB	V	_	0	root	play.01	AM-MNR:1|A0:2|A1:5|AM-TMP:7
+4	chơi	chơi	VERB	V	_	0	root	play.01	AM-MNR:1|A0:2|A1:5|AM-TMP:7|AM-NEG:3
 5	quần vợt	quần vợt	NOUN	N	_	4	obj	_	_
 6	vào	vào	ADP	PRE	_	7	case	_	_
 7	Thứ	thứ	NOUN	N	_	4	obl:comp	_	_
@@ -4335,7 +4335,7 @@
 
 # text = Tôi học ở Boston từ năm 2003 đến năm 2007 .
 1	Tôi	tôi	PRON	PRO	_	2	nsubj	_	_
-2	học	học	VERB	V	_	0	root	study.01	A0:1|A1:4|AM-TMP:6
+2	học	học	VERB	V	_	0	root	study.01	A0:1|AM-LOC:4|AM-TMP:6
 3	ở	ở	ADP	PRE	_	4	case	_	_
 4	Boston	boston	NOUN	NNP	_	2	obl:comp	_	_
 5	từ	từ	ADP	PRE	_	6	case	_	_
@@ -4378,7 +4378,7 @@
 5	ấy	ấy	PRON	PRO	_	4	det:pmod	_	_
 6	sẽ	sẽ	ADV	ADV	_	8	advmod	_	_
 7	không	không	ADV	ADV	_	8	advmod:neg	_	_
-8	nói	nói	VERB	V	_	2	ccomp	speak.01	A0:4|AM-TMP:6|A3:9
+8	nói	nói	VERB	V	_	2	ccomp	speak.01	A0:4|AM-TMP:6|A1:9|AM-NEG:7
 9	tiếng	tiếng	NOUN	N	_	8	obj	_	_
 10	Pháp	pháp	NOUN	NNP	_	9	compound	_	_
 11	.	.	PUNCT	PUNCT	_	2	punct	_	_
@@ -4387,10 +4387,10 @@
 1	tôi	tôi	PRON	PRO	_	4	nsubj	_	_
 2	sẽ	sẽ	ADV	ADV	_	4	advmod	_	_
 3	không	không	ADV	ADV	_	4	advmod:neg	_	_
-4	hỏi	hỏi	VERB	V	_	0	root	ask.02	A0:1|AM-TMP:2|A1:5|A2:7|AM-TMP:10
+4	hỏi	hỏi	VERB	V	_	0	root	ask.02	A0:1|AM-TMP:2|A1:5|A2:7|AM-TMP:10|AM-NEG:3
 5	bạn	bạn	NOUN	N	_	4	obj	_	_
 6	bất cứ	bất cứ	ADV	ADV	_	7	advmod	_	_
-7	điều	điều	NOUN	N	_	4	ccomp	_	_
+7	điều	điều	NOUN	N	_	4	obl	_	_
 8	gì	gì	PRON	PRO	_	7	det:pmod	_	_
 9	khác	khác	ADJ	ADJ	_	7	amod	_	_
 10	hôm nay	hôm nay	NOUN	N	_	7	nmod	_	_
@@ -4398,13 +4398,13 @@
 # text = Trong những thứ Tom đã làm cuối tuần rồi , anh ta nói rằng lướt ván buồm là vui nhất .
 1	Trong	trong	ADP	PRE	_	3	case	_	_
 2	những	những	DET	DET	_	3	det	_	_
-3	thứ	thứ	NOUN	Nc	_	4	det	_	_
+3	thứ	thứ	NOUN	Nc	_	13	obl	_	_
 4	Tom	tom	NOUN	NNP	_	6	nsubj	_	_
 5	đã	đã	ADV	ADV	_	6	advmod	_	_
-6	làm	làm	VERB	V	_	13	advcl	do.02	A0:4|AM-TMP:5|AM-TMP:7|AM-TMP:9
+6	làm	làm	VERB	V	_	3	acl	do.02	A0:4|AM-TMP:5|AM-TMP:7
 7	cuối	cuối	NOUN	N	_	6	obl:tmod	_	_
 8	tuần	tuần	NOUN	N	_	7	nmod	_	_
-9	rồi	rồi	ADV	ADV	_	6	advmod	_	_
+9	rồi	rồi	ADV	ADV	_	7	advmod	_	_
 10	,	,	PUNCT	PUNCT	_	13	punct	_	_
 11	anh	anh	NOUN	N	_	13	nsubj	_	_
 12	ta	ta	PRON	PRO	_	11	compound:pron	_	_
@@ -4420,12 +4420,12 @@
 # text = Tôi không biết Tom phải tự mình làm điều đó .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	biết	biết	VERB	V	_	0	root	know.01	A0:1|A1:8
+3	biết	biết	VERB	V	_	0	root	know.01	A0:1|A1:8|AM-NEG:2
 4	Tom	tom	NOUN	NNP	_	8	nsubj	_	_
 5	phải	phải	VERB	V	_	8	aux	_	_
 6	tự	tự	PRON	PRO	_	7	advmod	_	_
 7	mình	mình	PRON	PRO	_	8	nsubj	_	_
-8	làm	làm	VERB	V	_	3	ccomp	do.02	A0:7|A1:9
+8	làm	làm	VERB	V	_	3	ccomp	do.02	A0:4|A1:9
 9	điều	điều	NOUN	N	_	8	obj	_	_
 10	đó	đó	PRON	PRO	_	9	det:pmod	_	_
 11	.	.	PUNCT	PUNCT	_	3	punct	_	_
@@ -4443,14 +4443,14 @@
 10	mà	mà	SCONJ	C	_	13	mark	_	_
 11	tôi	tôi	PRON	PRO	_	13	nsubj	_	_
 12	từng	từng	ADV	ADV	_	13	advmod	_	_
-13	xem	xem	VERB	V	_	7	conj	see.01	A0:11|AM-TMP:12
+13	xem	xem	VERB	V	_	7	acl:relcl	see.01	A0:11|AM-TMP:12
 14	.	.	PUNCT	PUNCT	_	7	punct	_	_
 
 # text = Hai bạn đang đi du lịch cùng nhau có phải không ?
-1	Hai	hai	NUM	NUM	_	2	appos	_	_
+1	Hai	hai	NUM	NUM	_	2	det	_	_
 2	bạn	bạn	NOUN	N	_	5	nsubj	_	_
 3	đang	đang	ADV	ADV	_	4	advmod	_	_
-4	đi	đi	VERB	V	_	0	root	go.01	A1:2|AM-TMP:3|A1:5|A2:7
+4	đi	đi	VERB	V	_	0	root	go.01	A0:2|AM-TMP:3|A1:5|A2:7
 5	du lịch	du lịch	VERB	V	_	4	compound:svc	travel.01	_
 6	cùng	cùng	ADJ	ADJ	_	7	advmod:adj	_	_
 7	nhau	nhau	NOUN	N	_	4	obj	_	_
@@ -4466,8 +4466,8 @@
 4	ra	ra	ADV	ADV	_	3	det	_	_
 5	,	,	PUNCT	PUNCT	_	7	punct	_	_
 6	tôi	tôi	PRON	PRO	_	7	nsubj	_	_
-7	để ý	để ý	VERB	V	_	0	root	_	_
-8	thấy	thấy	VERB	V	_	7	compound:svc	see.01	A0:6|A1:13
+7	để ý	để ý	VERB	V	_	0	root	see.01	A0:6|A1:13
+8	thấy	thấy	VERB	V	_	7	compound:svc	_	_
 9	thịt	thịt	NOUN	N	_	13	nsubj	_	_
 10	trong	trong	ADP	PRE	_	11	case	_	_
 11	tủ lạnh	tủ lạnh	NOUN	N	_	9	nmod	_	_
@@ -4492,15 +4492,15 @@
 
 # text = Mặc dù mắt của Tom vẫn còn nước , nó đã bắt đầu cười .
 1	Mặc dù	mặc dù	SCONJ	C	_	6	mark	_	_
-2	mắt	mắt	NOUN	N	_	7	nmod	_	_
-3	của	của	ADP	PRE	_	2	nmod	_	_
-4	Tom	tom	NOUN	NNP	_	6	nsubj	_	_
+2	mắt	mắt	NOUN	N	_	7	nsubj	_	_
+3	của	của	ADP	PRE	_	4	case	_	_
+4	Tom	tom	NOUN	NNP	_	2	nmod	_	_
 5	vẫn	vẫn	ADV	ADV	_	6	advmod	_	_
 6	còn	còn	VERB	V	_	11	advcl	have.03	AM-DIS:1|A0:2|AM-ADV:5|A1:7
 7	nước	nước	NOUN	N	_	6	obj	_	_
 8	,	,	PUNCT	PUNCT	_	11	punct	_	_
 9	nó	nó	PRON	PRO	_	11	nsubj	_	_
-10	đã	đã	ADV	ADV	_	12	mark	_	_
+10	đã	đã	ADV	ADV	_	12	advmod	_	_
 11	bắt đầu	bắt đầu	VERB	V	_	0	root	start.01	A0:9|AM-TMP:10|A1:12
 12	cười	cười	VERB	V	_	11	xcomp	laugh.01	_
 13	.	.	PUNCT	PUNCT	_	11	punct	_	_
@@ -4511,7 +4511,7 @@
 3	khuyến khích	khuyến khích	VERB	V	_	0	root	encourage.01	A0:1|A1:6
 4	anh	anh	NOUN	N	_	6	nsubj	_	_
 5	ấy	ấy	PRON	PRO	_	4	det:pmod	_	_
-6	viết	viết	VERB	V	_	3	ccomp	write.01	A0:4|A1:9
+6	viết	viết	VERB	V	_	3	xcomp	write.01	A0:4|A1:9
 7	một	một	NUM	NUM	_	9	det	_	_
 8	cuốn	cuốn	NOUN	Nc	_	7	clf	_	_
 9	tiểu thuyết	tiểu thuyết	NOUN	N	_	6	obj	_	_
@@ -4520,11 +4520,11 @@
 # text = Tôi vừa dành một giờ đồng hồ nói chuyện với Tom .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	vừa	vừa	ADV	ADV	_	3	advmod	_	_
-3	dành	dành	VERB	V	_	0	root	spend.02	A0:1|AM-TMP:2|A1:5
+3	dành	dành	VERB	V	_	0	root	spend.02	A0:1|AM-TMP:2|A1:5|AM-GOL:7
 4	một	một	NUM	NUM	_	5	nummod	_	_
 5	giờ	giờ	Nu	Nu	_	3	obj	_	_
 6	đồng hồ	đồng hồ	NOUN	N	_	5	nmod	_	_
-7	nói chuyện	nói chuyện	VERB	V	_	3	conj	talk.01	A2:9
+7	nói chuyện	nói chuyện	VERB	V	_	3	advcl:objective	talk.01	A2:9
 8	với	với	ADP	PRE	_	9	case	_	_
 9	Tom	tom	NOUN	NNP	_	7	obl:with	_	_
 10	.	.	PUNCT	PUNCT	_	3	punct	_	_
@@ -4542,14 +4542,14 @@
 
 # text = Cô mở cửa sổ để không khí trong lành ùa vào .
 1	Cô	cô	NOUN	N	_	2	nsubj	_	_
-2	mở cửa	mở cửa	VERB	V	_	0	root	_	_
+2	mở cửa	mở cửa	VERB	V	_	0	root	open.01	A0:5|AM-PRP:7
 3	sổ	sổ	NOUN	N	_	2	obj	_	_
-4	để	để	ADP	PRE	_	4	mark	_	_
-5	không khí	không khí	NOUN	N	_	4	obl	_	_
+4	để	để	ADP	PRE	_	7	mark:comp	_	_
+5	không khí	không khí	NOUN	N	_	7	nsubj	_	_
 6	trong lành	trong lành	ADJ	ADJ	_	5	amod	_	_
 7	ùa	ùa	VERB	V	_	2	advcl:objective	_	_
 8	vào	vào	ADV	ADV	_	5	case	_	_
-9	.	.	PUNCT	PUNCT	_	2	punct	open.01	A0:5
+9	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Tôi hoàn toàn chẳng thể hiểu cách suy nghĩ của cô ấy .
 1	Tôi	tôi	PRON	PRO	_	4	nsubj	_	_
@@ -4566,14 +4566,14 @@
 # text = Chúng ta hãy đi ra ngoài và ngồi trong vườn .
 1	Chúng ta	chúng ta	PRON	PRO	_	3	nsubj	_	_
 2	hãy	hãy	ADV	ADV	_	3	advmod	_	_
-3	đi	đi	VERB	V	_	0	root	_	_
+3	đi	đi	VERB	V	_	0	root	go_out.17	A1:1|AM-ADV:2|A4:5
 4	ra	ra	VERB	V	_	3	compound:dir	_	_
 5	ngoài	ngoài	NOUN	N	_	4	obl	_	_
 6	và	và	CCONJ	CC	_	7	cc	_	_
-7	ngồi	ngồi	VERB	V	_	3	conj	sit.01	A2:9
+7	ngồi	ngồi	VERB	V	_	3	conj	sit.01	A2:9|AM-LOC:9
 8	trong	trong	ADP	PRE	_	9	det	_	_
 9	vườn	vườn	NOUN	N	_	7	obl:comp	_	_
-10	.	.	PUNCT	PUNCT	_	3	punct	go_out.17	A1:1|AM-ADV:2|A1:5
+10	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Tôi không muốn lại phải ăn mỳ Ý tối nay nữa .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
@@ -4597,7 +4597,7 @@
 5	là	là	VERB	V	_	10	cop	_	_
 6	cô	cô	NOUN	N	_	10	nsubj	_	_
 7	ấy	ấy	PRON	PRO	_	6	det:pmod	_	_
-8	không	không	ADV	ADV	_	10	advmod:neg	_	_
+8	không	không	ADV	ADV	_	9	advmod:neg	_	_
 9	nên	nên	VERB	V	_	10	aux	_	_
 10	bơi	bơi	VERB	V	_	2	ccomp	swim.01	A0:6
 11	.	.	PUNCT	PUNCT	_	2	punct	_	_
@@ -4622,7 +4622,7 @@
 5	anh	anh	NOUN	N	_	8	nsubj	_	_
 6	ấy	ấy	PRON	PRO	_	5	det:pmod	_	_
 7	đã	đã	ADV	ADV	_	9	cop	_	_
-8	trả lời	trả lời	VERB	V	_	9	nsubj	answer.01	A0:5|AM-TMP:7|A1:9
+8	trả lời	trả lời	VERB	V	_	9	nsubj	answer.01	A0:5|AM-TMP:7|A2:9
 9	sai	sai	ADJ	ADJ	_	2	acomp	_	_
 10	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
@@ -4645,18 +4645,18 @@
 3	rằng	rằng	SCONJ	C	_	6	mark	_	_
 4	mình	mình	PRON	PRO	_	6	nsubj	_	_
 5	có thể	có thể	ADV	ADV	_	6	aux	_	_
-6	chơi	chơi	VERB	V	_	2	ccomp	play.01	A0:4|A1:7
+6	chơi	chơi	VERB	V	_	2	ccomp	play.01	A0:4|A1:7|AM-MNR:8
 7	tennis	tennis	Nb	Nb	_	6	obj	_	_
-8	giỏi	giỏi	ADJ	ADJ	_	9	fixed	_	_
-9	như	như	SCONJ	C	_	9	fixed	_	_
-10	Mary	mary	NOUN	NNP	_	7	conj	_	_
+8	giỏi	giỏi	ADJ	ADJ	_	6	a	_	_
+9	như	như	SCONJ	C	_	10	case	_	_
+10	Mary	mary	NOUN	NNP	_	8	obl:comp	_	_
 11	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Tôi có thể mang đến một vài thiết bị phức tạp hơn nếu bạn nghĩ là chúng ta cần nó .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	có thể	có thể	ADV	ADV	_	3	advmod	_	_
 3	mang	mang	VERB	V	_	0	root	_	_
-4	đến	đến	ADV	ADV	_	6	case	_	_
+4	đến	đến	ADV	ADV	_	3	compound:svc	_	_
 5	một vài	một vài	DET	DET	_	6	det	_	_
 6	thiết bị	thiết bị	NOUN	N	_	3	obj	_	_
 7	phức tạp	phức tạp	ADJ	ADJ	_	6	amod	_	_
@@ -4672,8 +4672,8 @@
 
 # text = Tôi dành tặng cuốn sách này cho con gái tôi .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
-2	dành	dành	VERB	V	_	0	root	_	_
-3	tặng	tặng	VERB	V	_	2	xcomp	_	_
+2	dành	dành	VERB	V	_	0	root	dedicate.01	A0:1|A1:5|A2:9
+3	tặng	tặng	VERB	V	_	2	compound:svc	_	_
 4	cuốn	cuốn	NOUN	Nc	_	5	det:clf	_	_
 5	sách	sách	NOUN	N	_	3	obj	_	_
 6	này	này	PRON	PRO	_	5	det:pmod	_	_
@@ -4681,7 +4681,7 @@
 8	con	con	NOUN	Nc	_	9	det:clf	_	_
 9	gái	gái	NOUN	N	_	2	obl:iobj	_	_
 10	tôi	tôi	PRON	PRO	_	9	nmod	_	_
-11	.	.	PUNCT	PUNCT	_	2	punct	dedicate.01	A0:1|A1:5
+11	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Tốt hơn là mình nên nhanh chóng chuẩn bị cho xong vì mưa không đợi ai đâu .
 1	Tốt	tốt	ADJ	ADJ	_	7	advcl	_	_
@@ -4693,9 +4693,9 @@
 7	chuẩn bị	chuẩn bị	VERB	V	_	0	root	prepare.02	AM-ADV:1|A0:4|AM-ADV:6|A1:8|AM-CAU:12
 8	cho xong	cho xong	VERB	V	_	12	xcomp		A1:10|A2:13
 9	vì	vì	ADP	PRE	_	12	mark	_	_
-10	mưa	mưa	NOUN	N	_	8	det	_	_
+10	mưa	mưa	NOUN	N	_	8	nsubj	_	_
 11	không	không	ADV	ADV	_	12	advmod:neg	_	_
-12	đợi	đợi	VERB	V	_	7	advcl	wait.01	_
+12	đợi	đợi	VERB	V	_	7	advcl	wait.01	A0:10|A1:13|AM-NEG:11
 13	ai	ai	PRON	PRO	_	12	obj	_	_
 14	đâu	đâu	PART	PART:G	_	12	discourse	_	_
 15	.	.	PUNCT	PUNCT	_	7	punct	_	_
@@ -4708,8 +4708,8 @@
 5	sử dụng	sử dụng	VERB	V	_	0	root	use.01	A1:7|AM-PRP:9
 6	các	các	DET	DET	_	7	det	_	_
 7	ngôi sao	ngôi sao	NOUN	N	_	5	obj	_	_
-8	để	để	ADP	PRE	_	9	case	_	_
-9	định hướng	định hướng	VERB	V	_	7	nmod		_
+8	để	để	ADP	PRE	_	9	mark:pcomp	_	_
+9	định hướng	định hướng	VERB	V	_	5	advcl:objective	navigate.01	_
 10	.	.	PUNCT	PUNCT	_	5	punct	_	_
 
 # text = Tôi không bao giờ làm gì mà không hỏi Tom trước .
@@ -4720,7 +4720,7 @@
 5	gì	gì	PRON	PRO	_	8	obj	_	_
 6	mà	mà	SCONJ	C	_	8	mark	_	_
 7	không	không	ADV	ADV	_	8	advmod:neg	_	_
-8	hỏi	hỏi	VERB	V	_	4	conj	ask.02	A1:9|A2:10
+8	hỏi	hỏi	VERB	V	_	4	conj	ask.02	A1:9|A2:10|AM-NEG:7
 9	Tom	tom	NOUN	NNP	_	8	obj	_	_
 10	trước	trước	ADJ	ADJ	_	8	advmod	_	_
 11	.	.	PUNCT	PUNCT	_	4	punct	_	_
@@ -4759,7 +4759,7 @@
 5	nhưng	nhưng	SCONJ	C	_	8	mark	_	_
 6	tôi	tôi	PRON	PRO	_	8	nsubj	_	_
 7	không thể	không thể	ADV	ADV	_	8	advmod:neg	_	_
-8	làm	làm	VERB	V	_	3	conj	do.02	A0:6|AM-ADV:9|A1:10
+8	làm	làm	VERB	V	_	3	conj	do.02	A0:6|AM-ADV:9|A1:10|AM-NEG:7
 9	được	được	ADV	ADV	_	8	advmod	_	_
 10	việc	việc	NOUN	N	_	8	obj	_	_
 11	đó	đó	PRON	PRO	_	10	det:pmod	_	_
@@ -4796,10 +4796,10 @@
 2	nghĩ	nghĩ	VERB	V	_	0	root	think.01	A0:1|A1:6
 3	là	là	SCONJ	C	_	6	mark	_	_
 4	họ	họ	PRON	PRO	_	6	nsubj	_	_
-5	sẽ	sẽ	ADV	ADV	_	6	aux	_	_
-6	cho phép	cho phép	VERB	V	_	2	ccomp	permit.01	AM-TMP:5|A1:8
-7	bạn	bạn	NOUN	N	_	8	obj	_	_
-8	làm	làm	VERB	V	_	7	acl:subj	do.02	_
+5	sẽ	sẽ	ADV	ADV	_	6	advmod	_	_
+6	cho phép	cho phép	VERB	V	_	2	ccomp	permit.01	AM-TMP:5|A1:8|AM-TMP:5
+7	bạn	bạn	NOUN	N	_	8	nsubj	_	_
+8	làm	làm	VERB	V	_	7	xcomp	do.02	_
 9	điều	điều	NOUN	N	_	8	obj	_	_
 10	đó	đó	PRON	PRO	_	9	det:pmod	_	_
 11	.	.	PUNCT	PUNCT	_	2	punct	_	_
@@ -4810,7 +4810,7 @@
 3	muốn	muốn	VERB	V	_	4	aux	_	_
 4	nói chuyện	nói chuyện	VERB	V	_	0	root	talk.01	A0:1|A1:6
 5	về	về	ADP	PRE	_	6	case	_	_
-6	nó	nó	PRON	PRO	_	4	obl	_	_
+6	nó	nó	PRON	PRO	_	4	obl:about	_	_
 7	ngay	ngay	PART	PART:G	_	8	case	_	_
 8	lúc	lúc	NOUN	N	_	4	obl:tmod	_	_
 9	này	này	PRON	PRO	_	8	det:pmod	_	_
@@ -4821,7 +4821,7 @@
 2	làm	làm	VERB	V	_	0	root	do.02	A0:1|A1:3|AM-PRP:6
 3	thế nào	thế nào	PRON	PRO	_	6	obj	_	_
 4	để	để	ADP	PRE	_	6	mark:pcomp	_	_
-5	có thể	có thể	ADV	ADV	_	6	aux	_	_
+5	có thể	có thể	ADV	ADV	_	6	advmod	_	_
 6	nói chuyện	nói chuyện	VERB	V	_	2	advcl:objective	talk.01	A2:8
 7	với	với	ADP	PRE	_	8	case	_	_
 8	phụ nữ	phụ nữ	NOUN	N	_	6	obl:with	_	_
@@ -4859,7 +4859,7 @@
 3	biết	biết	VERB	V	_	0	root	know.01	A0:1|A1:4|A2:6
 4	nhiều	nhiều	ADJ	ADJ	_	3	advmod:adj	_	_
 5	về	về	ADP	PRE	_	6	case	_	_
-6	tớ	tớ	PRON	PRO	_	4	obl	_	_
+6	tớ	tớ	PRON	PRO	_	4	obl:about	_	_
 7	hơn	hơn	ADJ	ADJ	_	3	advmod:adj	_	_
 8	là	là	SCONJ	C	_	10	mark	_	_
 9	tớ	tớ	PRON	PRO	_	10	nsubj	_	_
@@ -4874,9 +4874,9 @@
 3	thay đổi	thay đổi	VERB	V	_	0	root	change.01	A0:1|AM-TMP:2|AM-EXT:5|AM-TMP:6
 4	rất	rất	ADV	ADV	_	5	det	_	_
 5	nhiều	nhiều	ADJ	ADJ	_	3	advmod:adj	_	_
-6	kể	kể	VERB	V	_	3	xcomp	tell.01	A1:3
+6	kể	kể	VERB	V	_	3	advcl	tell.01	A1:3
 7	từ	từ	ADP	PRE	_	8	case	_	_
-8	trung học	trung học	NOUN	N	_	8	amod	_	_
+8	trung học	trung học	NOUN	N	_	6	obl:tmod	_	_
 9	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Tôi đã thề là sẽ không kể cho bất kỳ ai .
@@ -4886,7 +4886,7 @@
 4	là	là	VERB	V	_	7	mark	_	_
 5	sẽ	sẽ	ADV	ADV	_	7	advmod	_	_
 6	không	không	ADV	ADV	_	7	advmod:neg	_	_
-7	kể	kể	VERB	V	_	3	conj	tell.01	AM-TMP:5|A2:10
+7	kể	kể	VERB	V	_	3	ccomp	tell.01	AM-TMP:5|A2:10|AM-NEG:6
 8	cho	cho	ADP	PRE	_	10	case	_	_
 9	bất kỳ	bất kỳ	ADJ	ADJ	_	10	advmod:adj	_	_
 10	ai	ai	PRON	PRO	_	7	obl:iobj	_	_
@@ -4908,8 +4908,8 @@
 # text = Tôi không biết làm thế nào để cảm ơn bạn đủ .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	biết	biết	VERB	V	_	0	root	know.01	A0:1|A1:4
-4	làm	làm	VERB	V	_	3	xcomp	do.02	A2:7
+3	biết	biết	VERB	V	_	0	root	know.01	A0:1|A1:4|AM-NEG:2
+4	làm	làm	VERB	V	_	3	xcomp	do.02	A2:7|AM-PRP:7
 5	thế nào	thế nào	PRON	PRO	_	7	fixed	_	_
 6	để	để	ADP	PRE	_	7	mark:pcomp	_	_
 7	cảm ơn	cảm ơn	VERB	V	_	4	advcl:objective	thank.01	A1:8
@@ -4923,10 +4923,10 @@
 3	rằng	rằng	SCONJ	C	_	6	mark	_	_
 4	bạn	bạn	NOUN	N	_	6	nsubj	_	_
 5	không	không	ADV	ADV	_	6	advmod:neg	_	_
-6	còn	còn	VERB	V	_	2	ccomp	have.03	A0:4|A1:7
-7	lựa chọn	lựa chọn	VERB	V	_	6	xcomp	_	_
+6	còn	còn	VERB	V	_	2	ccomp	have.03	A0:4|A1:7|AM-NEG:5
+7	lựa chọn	lựa chọn	NOUN	N	_	6	obj	_	_
 8	nào	nào	PRON	PRO	_	7	det:pmod	_	_
-9	khác	khác	ADJ	ADJ	_	7	acomp	_	_
+9	khác	khác	ADJ	ADJ	_	7	amod	_	_
 10	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Tớ hy vọng cậu có thể tới Boston vào mùa hè tới .
@@ -4934,12 +4934,12 @@
 2	hy vọng	hy vọng	VERB	V	_	0	root	hope.01	A0:1|A1:5
 3	cậu	cậu	NOUN	N	_	5	nsubj	_	_
 4	có thể	có thể	ADV	ADV	_	5	aux	_	_
-5	tới	tới	VERB	V	_	6	case	come.01	A1:3|A4:6
-6	Boston	boston	NOUN	NNP	_	5	obl	_	_
+5	tới	tới	VERB	V	_	2	ccomp	come.01	A1:3|A4:6
+6	Boston	boston	NOUN	NNP	_	5	obl:comp	_	_
 7	vào	vào	ADP	PRE	_	8	case	_	_
 8	mùa	mùa	NOUN	N	_	5	obl:tmod	_	_
 9	hè	hè	NOUN	N	_	8	compound	_	_
-10	tới	tới	VERB	V	_	5	xcomp	_	_
+10	tới	tới	VERB	V	_	5	acl:subj	_	_
 11	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Hãy nói cho tôi biết là bạn định đi Úc với ai .
@@ -4950,23 +4950,23 @@
 5	biết	biết	VERB	V	_	4	acl:subj	know.01	A1:8
 6	là	là	SCONJ	C	_	8	mark	_	_
 7	bạn	bạn	NOUN	N	_	8	nsubj	_	_
-8	định	định	VERB	V	_	5	ccomp	plan.01	A0:7|A1:9|A2:12
-9	đi	đi	VERB	V	_	8	xcomp	go.01	A1:10
-10	Úc	úc	NOUN	NNP	_	9	obl	_	_
-11	với	với	ADP	PRE	_	9	obl	_	_
+8	định	định	VERB	V	_	5	ccomp	plan.01	A0:7|A1:9
+9	đi	đi	VERB	V	_	8	xcomp	go.01	A1:10|A2:12|AM-LOC:10
+10	Úc	úc	NOUN	NNP	_	9	obl:comp	_	_
+11	với	với	ADP	PRE	_	12	case	_	_
 12	ai	ai	PRON	PRO	_	8	obl:with	_	_
 13	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Tom không có ý tưởng nào khi Mary đang lên kế hoạch để làm điều đó .
 1	Tom	tom	NOUN	NNP	_	3	nsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	có	có	VERB	V	_	0	root	have.03	A0:1|A1:4|AM-TMP:6
+3	có	có	VERB	V	_	0	root	have.03	A0:1|A1:4|AM-TMP:6|AM-NEG:2
 4	ý tưởng	ý tưởng	NOUN	N	_	3	obj	_	_
-5	nào	nào	PRON	PRO	_	4	det	_	_
+5	nào	nào	PRON	PRO	_	4	det:pmod	_	_
 6	khi	khi	NOUN	N	_	3	obl:tmod	_	_
 7	Mary	mary	NOUN	NNP	_	12	nsubj	_	_
 8	đang	đang	ADV	ADV	_	9	advmod	_	_
-9	lên	lên	VERB	V	_	6	acl:tmod	plan.01	A0:7|AM-PRP:12
+9	lên	lên	VERB	V	_	6	acl:tmod	plan.01	A0:7|AM-PRP:12|AM-TMP:8|A1:10
 10	kế hoạch	kế hoạch	NOUN	N	_	9	obj	_	_
 11	để	để	ADP	PRE	_	12	mark:pcomp	_	_
 12	làm	làm	VERB	V	_	9	advcl:objective	do.02	A1:13
@@ -4983,28 +4983,28 @@
 6	bạn	bạn	NOUN	N	_	7	nsubj	_	_
 7	thắng	thắng	VERB	V	_	5	ccomp	win.01	A0:6|A1:8
 8	giải	giải	NOUN	N	_	7	obj	_	_
-9	đấy	đấy	PRON	PRO	_	8	det	_	_
+9	đấy	đấy	PRON	PRO	_	8	det:pmod	_	_
 10	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Tôi không có thời gian để làm tất cả những điều mà tôi muốn .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	có	có	VERB	V	_	0	root	have.03	A0:1|A1:4|AM-PRP:6
+3	có	có	VERB	V	_	0	root	have.03	A0:1|A1:4|AM-PRP:6|AM-NEG:2
 4	thời gian	thời gian	NOUN	N	_	6	obj	_	_
-5	để	để	ADP	PRE	_	6	mark	_	_
+5	để	để	ADP	PRE	_	6	mark:comp	_	_
 6	làm	làm	VERB	V	_	3	advcl:objective	do.02	A1:9
-7	tất cả	tất cả	PRON	PRO	_	6	obj	_	_
+7	tất cả	tất cả	PRON	PRO	_	9	det	_	_
 8	những	những	DET	DET	_	9	det	_	_
 9	điều	điều	NOUN	N	_	6	obj	_	_
 10	mà	mà	SCONJ	C	_	12	mark	_	_
 11	tôi	tôi	PRON	PRO	_	12	nsubj	_	_
-12	muốn	muốn	VERB	V	_	9	acl	want.01	A0:11
+12	muốn	muốn	VERB	V	_	9	acl:relcl	want.01	A0:11
 13	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Tôi không biết là năm sau chúng tôi sẽ sống ở đâu .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	biết	biết	VERB	V	_	0	root	know.01	A0:1|A1:9
+3	biết	biết	VERB	V	_	0	root	know.01	A0:1|A1:9|AM-NEG:2
 4	là	là	SCONJ	C	_	9	mark	_	_
 5	năm	năm	NOUN	N	_	9	obl:tmod	_	_
 6	sau	sau	ADJ	ADJ	_	5	amod	_	_
@@ -5017,32 +5017,32 @@
 
 # text = Đó là cửa hàng nơi mà tôi đã từng làm việc .
 1	Đó	đó	PRON	PRO	_	3	nsubj	_	_
-2	là	là	VERB	V	_	3	cop	be.01	A0:1|A1:3|A0:6|A1:8
+2	là	là	VERB	V	_	3	cop	be.01	A0:1|A1:3
 3	cửa hàng	cửa hàng	NOUN	N	_	0	root	_	_
 4	nơi	nơi	NOUN	N	_	3	nmod	_	_
 5	mà	mà	SCONJ	C	_	9	mark	_	_
 6	tôi	tôi	PRON	PRO	_	9	nsubj	_	_
 7	đã	đã	ADV	ADV	_	9	advmod	_	_
 8	từng	từng	ADV	ADV	_	9	advmod	_	_
-9	làm việc	làm việc	VERB	V	_	4	acl:relcl	work.01	AM-TMP:7|AM-TMP:8
+9	làm việc	làm việc	VERB	V	_	4	acl:relcl	work.01	AM-TMP:7|AM-TMP:8|A0:6
 10	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Tôi hoàn toàn không hiểu vì sao tôi phải xin lỗi .
 1	Tôi	tôi	PRON	PRO	_	4	nsubj	_	_
 2	hoàn toàn	hoàn toàn	ADJ	ADJ	_	4	advmod:adj	_	_
 3	không	không	ADV	ADV	_	4	advmod:neg	_	_
-4	hiểu	hiểu	VERB	V	_	0	root	understand.01	A0:1|AM-ADV:2|A1:9
+4	hiểu	hiểu	VERB	V	_	0	root	understand.01	A0:1|AM-ADV:2|A1:9|AM-NEG:3
 5	vì	vì	ADP	PRE	_	9	obl	_	_
 6	sao	sao	PRON	PRO	_	5	fixed	_	_
 7	tôi	tôi	PRON	PRO	_	9	nsubj	_	_
 8	phải	phải	VERB	V	_	9	aux	_	_
-9	xin lỗi	xin lỗi	VERB	V	_	4	ccomp	apologize.01	_
+9	xin lỗi	xin lỗi	VERB	V	_	4	ccomp	apologize.01	A0:7
 10	.	.	PUNCT	PUNCT	_	4	punct	_	_
 
 # text = Tôi không nghĩ là Tom thích buổi hoà nhạc đó .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	nghĩ	nghĩ	VERB	V	_	0	root	think.01	A0:1|A1:6
+3	nghĩ	nghĩ	VERB	V	_	0	root	think.01	A0:1|A1:6|AM-NEG:2
 4	là	là	SCONJ	C	_	3	mark	_	_
 5	Tom	tom	NOUN	NNP	_	6	nsubj	_	_
 6	thích	thích	VERB	V	_	3	ccomp	like.02	A0:5|A1:7
@@ -5054,7 +5054,7 @@
 # text = Tôi không biết là Tom đã từng làm điều đó .
 1	Tôi	tôi	PRON	PRO	_	3	nsubj	_	_
 2	không	không	ADV	ADV	_	3	advmod:neg	_	_
-3	biết	biết	VERB	V	_	0	root	know.01	A0:1|A1:8
+3	biết	biết	VERB	V	_	0	root	know.01	A0:1|A1:8|AM-NEG:2
 4	là	là	SCONJ	C	_	8	mark	_	_
 5	Tom	tom	NOUN	NNP	_	8	nsubj	_	_
 6	đã	đã	ADV	ADV	_	8	advmod	_	_
@@ -5070,7 +5070,7 @@
 3	mong ước	mong ước	NOUN	N	_	7	nsubj	_	_
 4	của	của	ADP	PRE	_	5	case	_	_
 5	bạn	bạn	NOUN	N	_	3	nmod:poss	_	_
-6	sẽ	sẽ	ADV	ADV	_	7	aux	_	_
+6	sẽ	sẽ	ADV	ADV	_	7	advmod	_	_
 7	thành	thành	VERB	V	_	1	ccomp	becom.01	A0:3|AM-TMP:6|A1:8
 8	sự thật	sự thật	NOUN	N	_	7	obj	_	_
 9	.	.	PUNCT	PUNCT	_	1	punct	_	_
@@ -5088,14 +5088,14 @@
 10	mà	mà	SCONJ	C	_	13	mark	_	_
 11	tôi	tôi	PRON	PRO	_	13	nsubj	_	_
 12	từng	từng	ADV	ADV	_	13	advmod	_	_
-13	đọc	đọc	VERB	V	_	8	conj	read.01	A0:11|AM-TMP:12
+13	đọc	đọc	VERB	V	_	7	acl:relcl	read.01	A0:11|AM-TMP:12
 14	.	.	PUNCT	PUNCT	_	7	punct	_	_
 
 # text = Tôi mới chỉ đi bộ được khoảng một cây rưỡi thì trời bắt đầu có sấm sét .
 1	Tôi	tôi	PRON	PRO	_	4	nsubj	_	_
 2	mới	mới	ADV	ADV	_	4	advmod	_	_
 3	chỉ	chỉ	ADV	ADV	_	4	advmod	_	_
-4	đi	đi	VERB	V	_	0	root	_	_
+4	đi	đi	VERB	V	_	13	advcl	walk.01	A0:1|AM-ADV:3|AM-ADV:6|AM-EXT:9
 5	bộ	bộ	NOUN	N	_	4	compound:verbnoun	_	_
 6	được	được	ADV	ADV	_	4	advmod	_	_
 7	khoảng	khoảng	ADJ	ADJ	_	10	advmod:adj	_	_
@@ -5104,10 +5104,10 @@
 10	rưỡi	rưỡi	NOUN	N	_	4	obl:tmod	_	_
 11	thì	thì	SCONJ	C	_	13	mark	_	_
 12	trời	trời	NOUN	N	_	13	nsubj	_	_
-13	bắt đầu	bắt đầu	VERB	V	_	0	root	start.01	A1:14
+13	bắt đầu	bắt đầu	VERB	V	_	0	root	start.01	A1:14|A0:12
 14	có	có	VERB	V	_	15	mark	have.03	A1:15
 15	sấm sét	sấm sét	NOUN	N	_	13	obj	_	_
-16	.	.	PUNCT	PUNCT	_	4	punct	walk.01	A1:1|AM-ADV:3|AM-ADV:6|AM-EXT:9
+16	.	.	PUNCT	PUNCT	_	13	punct	_	_
 
 # text = Tôi sẽ bảo cô ấy gọi lại cho bạn khi cô ấy quay lại .
 1	Tôi	tôi	PRON	PRO	_	6	nsubj	_	_
@@ -5115,7 +5115,7 @@
 3	bảo	bảo	VERB	V	_	0	root	tell.01	A0:1|AM-TMP:2|A1:6
 4	cô	cô	NOUN	N	_	6	nsubj	_	_
 5	ấy	ấy	PRON	PRO	_	4	det:pmod	_	_
-6	gọi	gọi	VERB	V	_	3	ccomp	call.02	A0:4|AM-ADV:7|A2:9|AM-TMP:10
+6	gọi	gọi	VERB	V	_	3	xcomp	call.02	A0:4|AM-ADV:7|A2:9|AM-TMP:10
 7	lại	lại	ADV	ADV	_	6	advmod	_	_
 8	cho	cho	ADP	PRE	_	9	case	_	_
 9	bạn	bạn	NOUN	N	_	6	obl:iobj	_	_
@@ -5149,24 +5149,24 @@
 6	một	một	NUM	NUM	_	7	det	_	_
 7	ngày	ngày	NOUN	N	_	9	obl:tmod	_	_
 8	không thể	không thể	ADV	ADV	_	9	advmod:neg	_	_
-9	ăn	ăn	VERB	V	_	2	ccomp	eat.01	AM-TMP:7|AM-ADV:11
+9	ăn	ăn	VERB	V	_	2	ccomp	eat.01	AM-TMP:7|AM-ADV:11|AM-NEG:8
 10	hết	hết	VERB	V	_	9	compound:svc	_	_
 11	được	được	ADV	ADV	_	9	advmod	_	_
 12	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # text = Cậu ta tập chơi đàn hàng ngày để trở thành một nghệ sỹ dương cầm .
 1	Cậu	cậu	NOUN	N	_	3	nsubj	_	_
-2	ta	ta	PRON	PRO	_	1	det:pmod	_	_
+2	ta	ta	PRON	PRO	_	1	compound:pron	_	_
 3	tập	tập	VERB	V	_	0	root	practice.01	A0:1|A1:4|AM-TMP:7|AM-PRP:9
 4	chơi	chơi	VERB	V	_	3	xcomp	play.01	A1:5
-5	đàn	đàn	NOUN	Nc	_	6	det:clf	_	_
+5	đàn	đàn	NOUN	Nc	_	6	obj	_	_
 6	hàng	hàng	NOUN	N	_	3	obl:tmod	_	_
 7	ngày	ngày	NOUN	N	_	6	nmod	_	_
-8	để	để	ADP	PRE	_	9	mark	_	_
+8	để	để	ADP	PRE	_	9	mark:pcomp	_	_
 9	trở thành	trở thành	VERB	V	_	3	advcl:objective	become.01	A1:11
 10	một	một	NUM	NUM	_	11	nummod	_	_
 11	nghệ sỹ	nghệ sỹ	NOUN	N	_	9	obj	_	_
-12	dương cầm	dương cầm	ADJ	ADJ	_	11	amod	_	_
+12	dương cầm	dương cầm	NOUN	N	_	11	compound	_	_
 13	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Tom đã nói rằng anh ấy nghe thấy tiếng súng .
@@ -5176,20 +5176,21 @@
 4	rằng	rằng	SCONJ	C	_	7	mark	_	_
 5	anh	anh	NOUN	N	_	7	nsubj	_	_
 6	ấy	ấy	PRON	PRO	_	5	det:pmod	_	_
-7	nghe	nghe	VERB	V	_	3	ccomp	_	_
-8	thấy	thấy	VERB	V	_	10	det	_	_
+7	nghe	nghe	VERB	V	_	3	ccomp	hear.01	A0:5|A1:9
+8	thấy	thấy	VERB	V	_	10	compound:svc	_	_
 9	tiếng	tiếng	NOUN	N	_	7	obj	_	_
-10	súng	súng	NOUN	N	_	7	obj	_	_
-11	.	.	PUNCT	PUNCT	_	3	punct	hear.01	A0:5|A1:9
+10	súng	súng	NOUN	N	_	9	compound	_	_
+11	.	.	PUNCT	PUNCT	_	3	punct	_	_
 
 # text = Ai mà chẳng muốn mình trẻ trung và gợi cảm ?
 1	Ai	ai	PRON	PRO	_	4	nsubj	_	_
 2	mà	mà	SCONJ	C	_	4	mark	_	_
 3	chẳng	chẳng	ADV	ADV	_	4	advmod:neg	_	_
-4	muốn	muốn	VERB	V	_	0	root	want.01	A0:1|A1:7
-5	mình	mình	PRON	PRO	_	6	mark	_	_
-6	trẻ trung	trẻ trung	ADJ	ADJ	_	6	xcomp	_	_
+4	muốn	muốn	VERB	V	_	0	root	want.01	A0:1|A1:7|AM-NEG:3
+5	mình	mình	PRON	PRO	_	6	nsubj	_	_
+6	trẻ trung	trẻ trung	ADJ	ADJ	_	6	ccomp	_	_
 7	và	và	CCONJ	CC	_	8	cc	_	_
 8	gợi cảm	gợi cảm	ADJ	ADJ	_	6	conj	_	_
 9	?	?	PUNCT	PUNCT	_	4	punct	_	_
+
 
